@@ -13,3 +13,7 @@
 
 .structure-legend .equipment::before{background:#367fa3;}
 .export-status{margin:0;padding:0 27px 16px;font-size:11px;line-height:1.8;color:#65765c}.scene-actions .primary{background:#304d3c;color:#fff;border-color:#304d3c}@media(max-width:650px){.export-status{padding:0 19px 14px}}
+
+/* Conversion feedback stays beside the action, outside either workspace. */
+.conversion-status{margin:-8px 0 18px;padding:10px 14px;border:1px solid #dfe6d8;border-radius:7px;background:#eef2e9;font-size:12px;line-height:1.7;color:#53684a}
+.main>.model-error{margin:-8px 0 18px;padding:13px 16px;border:1px solid #e8b9ab;border-radius:7px;background:#fff2ee;color:#923d31;font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;scroll-margin-block:18px}

@@ -12,7 +12,7 @@ import { drawDxf } from './dxf-preview.js';
 import { normalizeBox } from './plan-analysis.js';
 const $=id=>document.getElementById(id), stage=$('stage'), canvas=$('drawing'), paper=$('paper');
 const state={source:null,kind:null,file:null,pdf:null,dxf:null,page:1,rotation:0,width:0,height:0,zoom:1,x:0,y:0,token:0,renderID:0,task:null,busy:false,analysis:null,analyses:new Map(),main:true,crop:null,selecting:false,fullWidth:0,fullHeight:0,viewport:null};
-const modeling={key:null,candidates:null,structure:null,revision:0,converting:false,exporting:false,plan:null,scene:null,baseScene:null,report:null};
+const modeling={key:null,candidates:null,structure:null,revision:0,converting:false,exporting:false,failure:null,plan:null,scene:null,baseScene:null,report:null};
 let scenePreview=null,objectCatalog=null,modelCatalog=null;
 let appearanceProfiles=null,modelColors={},colorControls=null;
 $('file-input').accept=supportedInputExtensions().map(extension=>'.'+extension).join(',');
@@ -176,15 +176,16 @@ function updateModelControls(){
   $('convert-3d').disabled=off||!hasStructures||!modeling.structure?.calibration;
   $('structure-overlay-toggle').disabled=off||!modeling.structure?.objects.length;
   const ready=!!(modeling.scene&&scenePreview&&!modeling.converting&&!state.busy);
-  $('view-3d').disabled=!ready;$('scene-tab-status').textContent=ready?'可查看':modeling.converting?'轉換中':'待轉換';
-  $('view-3d').title=ready?'查看本次圖面的 3D 初稿':'成功轉換後即可查看 3D';
+  $('view-3d').disabled=!ready;$('scene-tab-status').textContent=ready?'可查看':modeling.converting?'轉換中':modeling.failure?'未完成':'待轉換';
+  $('view-3d').title=ready?'查看本次圖面的 3D 初稿':modeling.failure?'轉換未完成，請查看下方原因':'成功轉換後即可查看 3D';
+  $('conversion-status').hidden=!modeling.converting;
   for(const id of ['scene-fit','scene-png'])$(id).disabled=!ready;
   $('scene-export').disabled=!ready||modeling.exporting;
   $('scene-export').textContent=modeling.exporting?'正在產生 DAE…':'下載 DAE 編輯初稿';
-  $('convert-label').textContent=modeling.converting?'正在建立模型…':modeling.scene?'重新產生 3D 預覽':'產生 3D 預覽';
+  $('convert-label').textContent=modeling.converting?'正在建立模型…':modeling.scene?'重新產生 3D 預覽':modeling.failure?'重試產生 3D 預覽':'產生 3D 預覽';
 }
 function invalidateModel(){
-  modeling.revision++;modeling.converting=false;modeling.exporting=false;modeling.scene=null;modeling.baseScene=null;modeling.plan=null;modeling.report=null;
+  modeling.revision++;modeling.converting=false;modeling.exporting=false;modeling.failure=null;modeling.scene=null;modeling.baseScene=null;modeling.plan=null;modeling.report=null;
   colorControls=null;$('model-color-controls').replaceChildren();$('model-color-panel').hidden=true;
   $('export-status').textContent='下載單一 DAE 檔，在 SketchUp「檔案 → 匯入」選擇即可；缺少模型以無字紅色方塊顯示。';
   if(scenePreview){scenePreview.dispose();scenePreview=null;}
@@ -246,23 +247,38 @@ function setWorkspace(mode){
   if(is3D){scenePreview.resize();scenePreview.fit();}else if(state.kind)fit();
 }
 function previewError(message){
-  invalidateModel();$('model-error').textContent=message;$('model-error').hidden=false;notify(message);
+  invalidateModel();showConversionFailure(message,'顯示 3D 預覽');
+}
+function showConversionFailure(error,step){
+  const reason=(typeof error==='string'?error:error?.message)?.trim()||'未取得詳細原因，請重新嘗試；若再次失敗，請提供這份圖檔以便檢查。';
+  modeling.failure=`3D 預覽未完成（${step}）：${reason}`;
+  $('model-error').textContent=modeling.failure;$('model-error').hidden=false;
+  $('model-status').textContent='這次轉換未完成，原因顯示於產生預覽按鈕下方。';
+  updateModelControls();$('model-error').focus({preventScroll:true});$('model-error').scrollIntoView({block:'nearest'});
 }
 async function convertCurrentPlan(){
   if($('convert-3d').disabled)return;
   invalidateModel();const revision=modeling.revision,token=state.token;
-  modeling.converting=true;updateModelControls();$('model-status').textContent='正在把結構與家具轉換成 3D 網格…';
+  modeling.converting=true;updateModelControls();
+  let step='準備轉換';
+  const progress=message=>{step=message;$('conversion-status').textContent=message+'…';$('model-status').textContent=message+'…';};
+  progress(step);
   const current=()=>revision===modeling.revision&&token===state.token;
   let viewer=null;
   try{
     await new Promise(resolve=>requestAnimationFrame(resolve));if(!current())return;
+    progress('讀取模型設定');
     modelCatalog ||= await loadModelAssets();if(!current())return;
     appearanceProfiles ||= await loadAppearanceProfiles();if(!current())return;
     modelColors=readModelColors(appearanceProfiles);
+    progress('整理圖面物件');
     const plan=buildStructurePlan(state.source,modeling.structure,{modelCatalog});
+    progress('載入物件模型');
     const modelScenes=await loadModelGeometry(plan,modelCatalog);if(!current())return;
+    progress('建立 3D 幾何');
     const result=convert2DTo3D(plan,{mode:'preview'},modelScenes);
     if(!result.scene||result.report.status!=='success')throw new Error(result.report.diagnostics.filter(d=>d.severity==='error').map(d=>d.message).join('；')||'轉換失敗。');
+    progress('顯示 3D 預覽');
     const {createScenePreview}=await import('./services/preview-service.js');if(!current())return;
     viewer=createScenePreview($('scene-stage'),message=>{if(scenePreview===viewer||current())previewError(message);});
     const coloredScene=applyModelColors(result.scene,appearanceProfiles,modelColors);
@@ -283,8 +299,11 @@ async function convertCurrentPlan(){
     $('model-status').textContent=`已轉換 ${columns} 柱、${count} 牆區、${doors} 門、${chairs} 椅、${cabinets} 櫃、${tables} 桌及 ${markers} 紅色方塊；${models} 個物件已套用模型，可切換 3D 預覽。`;
     updateModelControls();setWorkspace('3d');
   }catch(error){
-    viewer?.dispose();if(!current())return;scenePreview=null;modeling.scene=null;modeling.report=null;modeling.plan=null;
-    $('model-error').textContent=error.message;$('model-error').hidden=false;$('model-status').textContent='這次轉換未完成，請檢查下方原因。';
+    try{viewer?.dispose();}catch(cleanupError){console.error(cleanupError);}
+    if(!current())return;console.error('3D 預覽未完成：'+step,error);
+    scenePreview=null;modeling.scene=null;modeling.baseScene=null;modeling.report=null;modeling.plan=null;
+    colorControls=null;$('model-color-controls').replaceChildren();$('model-color-panel').hidden=true;
+    showConversionFailure(error,step);
   }finally{if(current()){modeling.converting=false;updateModelControls();}}
 }
 function downloadBlob(blob,filename){const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}

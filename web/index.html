@@ -45,6 +45,8 @@
     <header class="topbar"><div class="breadcrumb">工作空間<svg><use href="#i-arrow"/></svg><span>圖面檢視</span></div><span class="local-badge"><i></i>本機處理</span></header>
     <section class="page-heading"><div><div class="eyebrow">01 / IMPORT & REVIEW</div><h1>每個空間，從一張圖開始<span>。</span></h1><p>匯入你的平面圖，先看清楚每一個細節。</p></div><div class="heading-note"><svg><use href="#i-box"/></svg><span>從 2D 到 3D<small>你的空間轉換工作台</small></span></div></section>
     <div class="workspace-actions"><div class="preview-switch" role="group" aria-label="檢視模式"><button id="view-2d" aria-pressed="true" class="selected">2D 圖面</button><button id="view-3d" aria-pressed="false" disabled title="成功轉換後即可查看 3D"><svg><use href="#i-box"/></svg>3D 預覽<span id="scene-tab-status">待轉換</span></button></div><button id="convert-3d" class="button primary" disabled><svg><use href="#i-box"/></svg><span id="convert-label">產生 3D 預覽</span></button></div>
+    <p id="conversion-status" class="conversion-status" role="status" hidden></p>
+    <p id="model-error" class="model-error" role="alert" tabindex="-1" hidden></p>
     <div id="plan-workspace" class="workspace-grid">
       <section class="viewer" aria-label="圖面預覽區">
         <div class="viewer-toolbar"><div class="view-tab"><svg><use href="#i-file"/></svg><span id="view-title">主要平面圖</span></div><div class="viewer-actions"><button id="fit" class="icon-button" aria-label="符合視窗" title="符合視窗（F）" disabled><svg><use href="#i-fit"/></svg></button><button id="rotate" class="icon-button" aria-label="順時針旋轉 PDF" title="旋轉 PDF" disabled><svg><use href="#i-rotate"/></svg></button><span class="toolbar-divider"></span><button id="zoom-out" class="icon-button" aria-label="縮小" disabled>−</button><span id="zoom-label" class="zoom-label">100%</span><button id="zoom-in" class="icon-button" aria-label="放大" disabled>+</button></div></div>
@@ -72,7 +74,7 @@
           <label class="structure-toggle"><input id="structure-overlay-toggle" type="checkbox" checked disabled>顯示結構標記</label>
           <p class="automatic-scale">自動以左上牆厚 20 cm 換算；牆高 250 cm、辦公屏風 120 cm、桌高 90 cm。</p>
           <details id="structure-details" hidden><summary>查看萃取明細</summary><ul id="structure-list"></ul><p id="structure-diagnostics"></p></details>
-          <p id="model-status" role="status"></p><p id="model-error" class="model-error" role="alert" hidden></p>
+          <p id="model-status" role="status"></p>
         </section>
         <button id="text-toggle" class="button secondary" disabled>查看圖面物件<svg><use href="#i-arrow"/></svg></button>
       </aside>
