@@ -81,7 +81,9 @@ if(pdf){
   const extracted=await extractData(source,{includeGeometry:true}),candidates=prepareWallCandidates(source,extracted);
   const catalog=JSON.parse(await fs.readFile('web/config/object-catalog.json')),models=JSON.parse(await fs.readFile('web/config/model-assets.json'));
   const structure=extractStructure(source,extracted,{wallCandidates:candidates,catalog});
-  assert.equal(structure.summary.chairs,17);assert.equal(structure.summary.tables,9,'Table fixes are explicitly outside this change');
+  assert.equal(structure.summary.chairs,17);assert.equal(structure.summary.tables,10);
+  const conference=structure.objects.find(o=>o.evidence.chair_contacts);
+  assert.equal(conference.holes.length,1);assert.equal(conference.evidence.chair_contacts.length,6);
   const offices=structure.objects.filter(o=>o.evidence.template_id==='builtin.office_chair.v1');assert.equal(offices.length,3);assert(offices.every(o=>Math.abs(o.rotation_deg-90)<1e-6));
   const actual=buildStructurePlan(source,structure,{modelCatalog:models});
   assert.equal(actual.levels[0].furniture.filter(o=>o.template_id==='builtin.chair.v1').length,14);
@@ -91,6 +93,6 @@ if(pdf){
   assert.equal(converted.report.metrics.chairs,17);buildSceneObject(converted.scene);
   const exported=export3D(converted.scene,{mode:'draft',container:'dae'});assert(exported.success,JSON.stringify(exported));
   await fs.writeFile('.local/office-chair/actual.dae',exported.artifact.content);
-  console.log('PASS: new PDF → 14 legacy chairs + 3 armrest chairs facing the desks → full Scene3D and standalone DAE; tables unchanged (9, including known tiny-symbol false positives).');
+  console.log('PASS: new PDF → 14 legacy chairs + 3 armrest chairs and restored conference table with central hole → full Scene3D and standalone DAE; 10 table candidates still include 6 known tiny-symbol false positives.');
  }finally{await source.dispose();}
 }

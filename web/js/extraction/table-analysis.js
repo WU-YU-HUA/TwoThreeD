@@ -1,6 +1,7 @@
 // PDF evidence only. Empty furniture faces become tables by the user's rule.
 // Smooth closed curves retain their actual outline and nested openings.
 import {closedFaces,insidePolygon,joinAdjacent} from './structure-analysis.js';
+import {resolveTableChairContacts} from './table-chair-connections.js';
 const area=r=>r.reduce((s,p,i)=>{const q=r[(i+1)%r.length];return s+p[0]*q[1]-q[0]*p[1];},0)/2;
 const bounds=r=>[Math.min(...r.map(p=>p[0])),Math.min(...r.map(p=>p[1])),Math.max(...r.map(p=>p[0])),Math.max(...r.map(p=>p[1]))];
 const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
@@ -76,7 +77,7 @@ export function findTables(paths,box,{fingerprint='',pageNumber=1,mmPerSourceUni
   const labelledOther=ring=>nonTableLabels.some(t=>insidePolygon([(t.box[0]+t.box[2])/2,(t.box[1]+t.box[3])/2],ring));
   const loops=curvedLoops(edges,tolerance);
   const contains=(a,b)=>area(a.ring)>area(b.ring)&&b.ring.every(p=>strictlyInside(p,a.ring,tolerance));
-  const outwardConnection=ring=>edges.some(e=>[e.points[0],e.points.at(-1)].some(p=>ring.some((a,i)=>pointSegment(p,a,ring[(i+1)%ring.length])<=tolerance))&&e.points.some(p=>!insidePolygon(p,ring,tolerance)));
+  const outwardConnections=(ring,source=edges)=>source.filter(e=>[e.points[0],e.points.at(-1)].some(p=>ring.some((a,i)=>pointSegment(p,a,ring[(i+1)%ring.length])<=tolerance))&&e.points.some(p=>!insidePolygon(p,ring,tolerance)));
   // Establish nesting before crop filtering: an inner opening must never turn
   // into a standalone filled table when its outer outline crosses the crop.
   const curves=loops.filter(f=>!loops.some(p=>p!==f&&contains(p,f))).map(f=>({...f,holes:loops.filter(h=>contains(f,h)&&!loops.some(p=>p!==f&&p!==h&&contains(f,p)&&contains(p,h))).map(h=>h.ring.slice().reverse())}));
@@ -91,13 +92,28 @@ export function findTables(paths,box,{fingerprint='',pageNumber=1,mmPerSourceUni
     const a=faces[i],b=faces[j],ring=joinAdjacent(a.rawRing,b.rawRing);if(!ring)continue;
     a.rawRing=ring;a.ring=canonical(ring);a.refs.push(...b.refs);faces.splice(j,1);j=i;
   }
-  const objects=[...curves.filter(f=>contained(f.ring,box)&&!overlapsKnown(f.ring)&&!labelledOther(f.ring)&&!outwardConnection(f.ring)).map(f=>({...f,curved:true})),...faces].map(f=>{
+  const acceptedCurves=[];
+  for(const f of curves){
+    if(!contained(f.ring,box)||overlapsKnown(f.ring)||labelledOther(f.ring))continue;
+    if(!outwardConnections(f.ring).length){acceptedCurves.push({...f,curved:true});continue;}
+    // Keep the old acceptance path unchanged. A rejected curve can only be
+    // rescued if each outline closes independently and all outgoing contacts
+    // have an unambiguous, separately drawn chair front coincident with it.
+    const outlines=[f,...loops.filter(l=>f.holes.some(h=>JSON.stringify(canonical(h))===JSON.stringify(l.ring)))];
+    const tablePaths=new Set(outlines.flatMap(l=>l.refs.map(r=>r.source_id.split(':').slice(0,3).join(':'))));
+    const tableEdges=edges.filter(e=>tablePaths.has(e.ref.source_id.split(':').slice(0,3).join(':')));
+    const ownLoops=curvedLoops(tableEdges,tolerance);
+    if(outlines.some(l=>!ownLoops.some(o=>JSON.stringify(o.ring)===JSON.stringify(l.ring))))continue;
+    const contacts=resolveTableChairContacts({ring:f.ring,tableEdges,connections:outwardConnections(f.ring,allEdges),edges:allEdges,crossingEdges:edges,occupied,tolerance,scale:mmPerSourceUnit});
+    if(contacts)acceptedCurves.push({...f,curved:true,chairContacts:contacts});
+  }
+  const objects=[...acceptedCurves,...faces].map(f=>{
     const boundary=canonical(f.ring),holes=(f.holes||[]).map(h=>canonical(h).reverse()),refs=new Map(f.refs.map(r=>[r.source_id,r]));
     // Include inner-loop evidence so the opening can be traced back to the PDF.
     for(const hole of holes)for(const loop of loops)if(JSON.stringify(canonical(hole))===JSON.stringify(loop.ring))for(const r of loop.refs)refs.set(r.source_id,r);
     return {id:'table_'+hash(fingerprint+JSON.stringify([pageNumber,boundary,holes])),kind:'table',boundary,holes,bbox:bounds(boundary),area_source_units2:area(boundary)+holes.reduce((s,h)=>s+area(h),0),confirmed:false,
       material:{kind:'table_wood',color:'#dec99d',basis:'user_empty_furniture_outline_rule',confirmed:false},
-      evidence:{method:f.curved?'closed_curved_table_outline':'empty_closed_furniture_faces',pattern:'none',boundary_layers:[...new Set([...refs.values()].map(r=>r.layer))],classification_basis:'user_empty_outline_is_table',note:f.curved?'保留曲線桌面與內部留空。':'空白家具框視為桌面；相鄰桌面合併，保留凹角。'},
+      evidence:{method:f.curved?'closed_curved_table_outline':'empty_closed_furniture_faces',pattern:'none',boundary_layers:[...new Set([...refs.values()].map(r=>r.layer))],classification_basis:'user_empty_outline_is_table',note:f.curved?'保留曲線桌面與內部留空。':'空白家具框視為桌面；相鄰桌面合併，保留凹角。',...(f.chairContacts?{connection_basis:'independent_closed_contours_with_coincident_edges',chair_contacts:f.chairContacts}:{})},
       source_refs:[...refs.values()].sort((a,b)=>a.source_id.localeCompare(b.source_id,'en'))};
   });
   return {objects:objects.sort((a,b)=>b.bbox[3]-a.bbox[3]||a.bbox[0]-b.bbox[0]||a.id.localeCompare(b.id,'en')),diagnostics:[]};
