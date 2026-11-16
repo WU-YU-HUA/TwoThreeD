@@ -299,8 +299,8 @@
 - [x] 儲存庫 `WU-YU-HUA/TwoThreeD` 的 `main` 使用 GitHub Actions；工作流程只發布 `web/`，不包含原始 PDF、測試與開發輸出。
 - [x] `tests/check-static-site.py` 驗證 `/TwoThreeD/` 專案子路徑、HTML 與 JavaScript 模組參照、52 個模型 SHA-256、PDF worker／字型／WASM 依賴，沒有新增網站後端或外部轉檔服務。
 - [x] 部署使用官方 checkout／configure-pages／upload-pages-artifact／deploy-pages，限定 Pages 寫入與 OIDC 權限；main 網站變更自動部署，支援手動觸發，並行部署排隊。
-- [ ] 啟用儲存庫 Pages、完成首次 Actions 發布，驗證 HTTPS 線上入口與模型庫。
-- [ ] 線上網站載入範例圖面、產生 3D、下載 DAE，核對資源無 404 及 console 錯誤。
+- [x] 啟用儲存庫 Pages、完成首次 Actions 發布，驗證 HTTPS 線上入口與模型庫：<https://wu-yu-hua.github.io/TwoThreeD/>（2026-11-16，Actions #1 成功）。
+- [x] 線上網站載入 DXF 範例及原 PDF、產生 3D、下載 DAE；PDF 共 69 物件／28 模型／2 紅色方塊，下載檔通過 COLLADA XSD，瀏覽器未觀察到資源 404 或 console error／warn。
 
 ## 1. 目標與驗收邊界
 

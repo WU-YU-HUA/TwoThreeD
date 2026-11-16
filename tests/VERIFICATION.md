@@ -220,8 +220,13 @@
 - 模型庫與主圖的恢復原色操作及反向同步成功，測試顏色全部還原；兩頁 console 無 error/warn。截圖 `.local/model-colors-preview.jpg` 是藍色外殼示範。保留使用者原預覽分頁，主圖測試在獨立分頁完成。
 - SPEC 1.18.0 §0.23 已勾選。尚未在 SketchUp 實機核對色彩／匯入編輯；不同軟體光照與色彩管理不保證像素一致。
 
-## 2026-11-16：GitHub Pages 部署準備
+## 2026-11-16：GitHub Pages 部署與線上驗證
 
 - 本機 main 與 origin/main 起點均為 fa08c22，既有儲存庫為 WU-YU-HUA/TwoThreeD（public）。新增官方 Actions 工作流程，發布範圍僅 web/。
 - check-static-site 通過：52 個 GLB 雜湊、HTML／模組在 /TwoThreeD/ 下的參照、PDF.js worker／字型／WASM，部署目錄無 PDF、DAE 或 ZIP 等開發產物。
-- 現有 Git 憑證可存取儲存庫，但 Pages API 回覆 403 Resource not accessible by personal access token；需透過已登入 GitHub 的網頁啟用。首次實際發布與線上驗證仍待完成。
+- 現有 Git 憑證可推送一般內容，但缺少 workflow scope，Pages API 回覆 403；使用者指定已登入的 Chrome，透過 GitHub 網頁將 Source 設為 GitHub Actions 並提交部署流程，未修改憑證權限。一般內容提交 4a4be65、部署流程提交 cd81fb3，本機已同步遠端。
+- [首次 Actions #1](https://github.com/WU-YU-HUA/TwoThreeD/actions/runs/43792782815) 成功（22 秒），只發布 web/；正式入口 <https://wu-yu-hua.github.io/TwoThreeD/>。官方 Actions 有 Node 20→24 遷移提示，但全部步驟成功。
+- Chrome 線上 DXF 範例成功辨識 7 面牆、啟用 3D TAB、顯示 Three.js 模型及下載 DAE。實際下載檔 23,184 bytes，獨立 XML 讀回 15 節點／7 網格／0 圖片。
+- Chrome 線上模型庫載入六款原創模型與落地飲水機，顯示各模型零件數、下載入口及配色控制；主頁與模型庫 console 無 error／warn。
+- Chrome 自動選檔因擴充套件未開放 file URL 存取而無法注入檔案；未修改瀏覽器權限，改用獨立測試瀏覽器驗證同一 HTTPS 網站。原 PDF 成功萃取 69 物件，轉成 6 柱／8 牆區／2 門／18 椅／18 櫃／5 桌／28 套用模型／2 紅色方塊，未觀察到 console error／warn 或資源 404。
+- 線上原 PDF 的單一 DAE 實際下載 3,589,226 bytes，獨立 XML 讀回 510 節點／440 網格／0 外部圖片，通過官方 COLLADA 1.4.1 XSD。截圖 `.local/github-pages-preview.jpg`。本次部署未變更解析、轉換、預覽、輸出服務與資料契約；SketchUp 實機匯入／編輯仍待原驗收項目完成。

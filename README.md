@@ -15,9 +15,9 @@ Python 僅提供 `web/` 的靜態檔案；解析、轉換、3D 繪製與模型�
 
 ## GitHub Pages 部署
 
-網站目標網址：<https://wu-yu-hua.github.io/TwoThreeD/>。
+網站已上線：<https://wu-yu-hua.github.io/TwoThreeD/>。
 
-儲存庫 Settings → Pages 的 Source 設為 **GitHub Actions**。推送 `main` 上的 `web/` 變更會自動發布，也可在 Actions → Deploy GitHub Pages → Run workflow 手動部署。首次啟用及發布結果以 Actions 執行紀錄為準。
+儲存庫 Settings → Pages 的 Source 已設為 **GitHub Actions**。推送 `main` 上的 `web/` 變更會自動發布，也可在 Actions → Deploy GitHub Pages → Run workflow 手動部署。[首次發布](https://github.com/WU-YU-HUA/TwoThreeD/actions/runs/43792782815)於 2026-11-16 成功；線上 DXF／PDF 讀取、3D 預覽、設備模型庫與單一 DAE 下載已驗證。
 
 工作流程先執行 `python3 tests/check-static-site.py`，確認專案子路徑、HTML／模組連結、PDF worker／字型／WASM 與模型雜湊，再只上傳 `web/` 作為 Pages artifact。專案原圖、測試、開發輸出與本機設定不在網站發布目錄。沒有建置或伺服器後端，檔案仍由瀏覽器讀取；配色偏好依網站來源保存，localhost 的配色不會自動搬到線上網址。
 
