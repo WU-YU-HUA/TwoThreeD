@@ -13,6 +13,14 @@ python3 scripts/serve.py
 開啟 `http://127.0.0.1:8765/`（連接埠已使用時會自動選下一個）。請使用 HTTP 本機網址，不要直接雙擊 HTML。
 Python 僅提供 `web/` 的靜態檔案；解析、轉換、3D 繪製與模型匯出都在瀏覽器，沒有上傳 API 或本機轉檔後端。
 
+## GitHub Pages 部署
+
+網站目標網址：<https://wu-yu-hua.github.io/TwoThreeD/>。
+
+儲存庫 Settings → Pages 的 Source 設為 **GitHub Actions**。推送 `main` 上的 `web/` 變更會自動發布，也可在 Actions → Deploy GitHub Pages → Run workflow 手動部署。首次啟用及發布結果以 Actions 執行紀錄為準。
+
+工作流程先執行 `python3 tests/check-static-site.py`，確認專案子路徑、HTML／模組連結、PDF worker／字型／WASM 與模型雜湊，再只上傳 `web/` 作為 Pages artifact。專案原圖、測試、開發輸出與本機設定不在網站發布目錄。沒有建置或伺服器後端，檔案仍由瀏覽器讀取；配色偏好依網站來源保存，localhost 的配色不會自動搬到線上網址。
+
 ## 使用
 
 1. 選擇或拖入一份 PDF／ASCII DXF，最大 50 MB。PDF 可換頁、旋轉；圖面可縮放／平移。
@@ -138,7 +146,7 @@ SPEC.md                        七階段清單與完成狀態
 ```
 
 使用者原始 PDF 不放進 `web/`。網站每次從選取的檔案重新計算，不讀取 `outputs/`，也不再顯示固定 `scene3d.example.json`。
-GitHub Pages 可提供這套靜態網站；3D 使用本機附帶的 Three.js／WebGL 2，無 CDN。裝置不支援 WebGL 2 時顯示錯誤。本次未部署網站。
+GitHub Pages 使用 `.github/workflows/deploy-pages.yml` 發布 `web/`；3D 使用附帶的 Three.js／WebGL 2，無 CDN。裝置不支援 WebGL 2 時顯示錯誤。
 
 ## 開發驗證
 

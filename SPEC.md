@@ -1,7 +1,7 @@
 # FloorPlan → Editable SketchUp：技術規格（SPEC）
 
 - **文件狀態**：Draft / 可作為 MVP 開發基線
-- **版本**：1.18.0（文件；FloorPlan2D／Report 支援 v1–v8；Scene3D 維持 v1）
+- **版本**：1.19.0（文件；FloorPlan2D／Report 支援 v1–v8；Scene3D 維持 v1）
 - **目標環境**：桌面瀏覽器、純靜態 HTML/CSS/JavaScript；先提供本機開啟，後續可部署 GitHub Pages。2D 檔案在瀏覽器處理，生成可下載的 DAE，使用者自行匯入 Windows SketchUp 編輯。無本機轉檔工具依賴；Python 僅用於開發時提供靜態網頁。
 - **最重要的原則**：**Input Adapter、2D IR、Transfer Engine、3D IR、Exporter 彼此隔離；替換任何一層，其他層的公開契約都不變。**
 
@@ -293,6 +293,14 @@
 - [x] `check-model-colors` 驗證六款、原色值、sRGB 數值、錯誤色碼／儲存、來源不可變、受保護零件、同款多物件、恢復原色、Preview 與 DAE 顏色一致。18 份契約與預覽回歸通過。
 - [x] 瀏覽器實測烘碗機藍色 #0077CC、白板板框橘色 #E67E22，跨頁同步、主圖初始化讀取偏好、無效色碼提示、單款與整圖 DAE 下載及恢復原色成功；console 無 error/warn。整圖下載 510 節點、0 外部圖片，配色 metadata 完整，官方 COLLADA XSD 通過。測試完還原原色，示範截圖 `.local/model-colors-preview.jpg`。
 - SketchUp 實際顯示色差、群組編輯與另存重開仍屬第 7.2 項待驗收；不宣稱所有軟體的光照／色彩管理完全一致。
+
+### 0.24 GitHub Pages 部署
+
+- [x] 儲存庫 `WU-YU-HUA/TwoThreeD` 的 `main` 使用 GitHub Actions；工作流程只發布 `web/`，不包含原始 PDF、測試與開發輸出。
+- [x] `tests/check-static-site.py` 驗證 `/TwoThreeD/` 專案子路徑、HTML 與 JavaScript 模組參照、52 個模型 SHA-256、PDF worker／字型／WASM 依賴，沒有新增網站後端或外部轉檔服務。
+- [x] 部署使用官方 checkout／configure-pages／upload-pages-artifact／deploy-pages，限定 Pages 寫入與 OIDC 權限；main 網站變更自動部署，支援手動觸發，並行部署排隊。
+- [ ] 啟用儲存庫 Pages、完成首次 Actions 發布，驗證 HTTPS 線上入口與模型庫。
+- [ ] 線上網站載入範例圖面、產生 3D、下載 DAE，核對資源無 404 及 console 錯誤。
 
 ## 1. 目標與驗收邊界
 

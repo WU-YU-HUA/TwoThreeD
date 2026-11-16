@@ -219,3 +219,9 @@
 - 獨立測試頁讀原 PDF、轉成 3D 後，主圖配色欄載入儲存的 #0077CC。一般白板板框設定 #E67E22，模型庫即時同步；整圖 DAE 實際下載 3,590,704 bytes，510 節點、0 外部圖片，包含兩個色碼，通過 XSD。
 - 模型庫與主圖的恢復原色操作及反向同步成功，測試顏色全部還原；兩頁 console 無 error/warn。截圖 `.local/model-colors-preview.jpg` 是藍色外殼示範。保留使用者原預覽分頁，主圖測試在獨立分頁完成。
 - SPEC 1.18.0 §0.23 已勾選。尚未在 SketchUp 實機核對色彩／匯入編輯；不同軟體光照與色彩管理不保證像素一致。
+
+## 2026-11-16：GitHub Pages 部署準備
+
+- 本機 main 與 origin/main 起點均為 fa08c22，既有儲存庫為 WU-YU-HUA/TwoThreeD（public）。新增官方 Actions 工作流程，發布範圍僅 web/。
+- check-static-site 通過：52 個 GLB 雜湊、HTML／模組在 /TwoThreeD/ 下的參照、PDF.js worker／字型／WASM，部署目錄無 PDF、DAE 或 ZIP 等開發產物。
+- 現有 Git 憑證可存取儲存庫，但 Pages API 回覆 403 Resource not accessible by personal access token；需透過已登入 GitHub 的網頁啟用。首次實際發布與線上驗證仍待完成。
