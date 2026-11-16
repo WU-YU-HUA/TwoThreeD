@@ -1,0 +1,535 @@
+{
+  "description": "Normalized vector evidence for one armrest office chair; local source units, facing left. Two closed armrest outlines, one front edge and back/seat curves.",
+  "paths": [
+    {
+      "sourceOperatorIndex": 1,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              28.86,
+              3.72
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              30.29203125,
+              3.72
+            ],
+            [
+              31.66113281,
+              4.30831055
+            ],
+            [
+              32.64679687,
+              5.34711914
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 2,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              9.84,
+              0.0
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              28.8,
+              1.56
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              28.8,
+              4.8
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              5.04,
+              4.8
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              5.04,
+              1.56
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              9.84,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 3,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              32.64679687,
+              33.77288086
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              31.66113281,
+              34.81168945
+            ],
+            [
+              30.29203125,
+              35.4
+            ],
+            [
+              28.86,
+              35.4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 4,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              5.04,
+              37.44
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              9.84,
+              39.0
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              28.8,
+              37.44
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              28.8,
+              34.2
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              5.04,
+              34.2
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              5.04,
+              37.44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 5,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              5.1,
+              35.88
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              2.34960937,
+              35.88
+            ],
+            [
+              0.12,
+              33.65039062
+            ],
+            [
+              0.12,
+              30.9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 6,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              -0.0,
+              30.84
+            ]
+          ]
+        },
+        {
+          "op": "line_to",
+          "points": [
+            [
+              -0.0,
+              8.16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 7,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              0.12,
+              8.22
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              0.12,
+              5.46960937
+            ],
+            [
+              2.34960937,
+              3.24
+            ],
+            [
+              5.1,
+              3.24
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 8,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              31.47111328,
+              5.57835937
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              33.46529297,
+              4.80208008
+            ],
+            [
+              35.72847656,
+              5.58041016
+            ],
+            [
+              36.82330078,
+              7.41905273
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 9,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              36.86314453,
+              7.49428711
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              41.31228516,
+              14.96589844
+            ],
+            [
+              41.31228516,
+              24.27410156
+            ],
+            [
+              36.86314453,
+              31.74571289
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 10,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              36.82330078,
+              31.70094727
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              35.72847656,
+              33.53958984
+            ],
+            [
+              33.46529297,
+              34.31791992
+            ],
+            [
+              31.47111328,
+              33.54164062
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 11,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              31.40408203,
+              33.54424805
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              30.72398437,
+              33.27952148
+            ],
+            [
+              30.18785156,
+              32.73914062
+            ],
+            [
+              29.92845703,
+              32.05699219
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              29.6690625,
+              31.37481445
+            ],
+            [
+              29.71072266,
+              30.61473633
+            ],
+            [
+              30.04306641,
+              29.96499023
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 12,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              30.01166016,
+              9.20897461
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              33.35613281,
+              15.74677734
+            ],
+            [
+              33.35613281,
+              23.49322266
+            ],
+            [
+              30.01166016,
+              30.03102539
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOperatorIndex": 13,
+      "names": [
+        "活動家具"
+      ],
+      "commands": [
+        {
+          "op": "move_to",
+          "points": [
+            [
+              30.04306641,
+              9.15500977
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              29.71072266,
+              8.50526367
+            ],
+            [
+              29.6690625,
+              7.74518555
+            ],
+            [
+              29.92845703,
+              7.06300781
+            ]
+          ]
+        },
+        {
+          "op": "cubic_bezier_to",
+          "points": [
+            [
+              30.18785156,
+              6.38085938
+            ],
+            [
+              30.72398437,
+              5.84047852
+            ],
+            [
+              31.40408203,
+              5.57575195
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "chairs": 1,
+    "rotation_deg": 90,
+    "width_source": 39,
+    "depth_source": 40.2
+  }
+}

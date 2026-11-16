@@ -1,6 +1,7 @@
 // Extraction evidence only: rounded chair glyphs and large X-marked cabinet
 // rectangles. Source curves stop here; templates consume measured poses in mm.
 import {closedFaces,insidePolygon} from './structure-analysis.js';
+import {officeChairFront} from './office-chair-analysis.js';
 const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
 const dot=(a,b)=>a[0]*b[0]+a[1]*b[1];
 const bounds=points=>[Math.min(...points.map(p=>p[0])),Math.min(...points.map(p=>p[1])),Math.max(...points.map(p=>p[0])),Math.max(...points.map(p=>p[1]))];
@@ -45,14 +46,15 @@ export function findFurniture(paths,box,{fingerprint='',pageNumber=1,mmPerSource
     if(!group.some(p=>p.curves))continue;
     const points=group.flatMap(p=>p.points),lines=group.flatMap(p=>p.lines),curveCount=group.reduce((s,p)=>s+p.curves,0);
     if(!contained(points,box))continue;
-    if(lines.length!==3||curveCount<6){unresolved++;continue;}
     // Two nearly parallel sides and their perpendicular front distinguish this
     // rounded-seat/backrest glyph. Facing follows the front edge, including rotation.
     let frontLine=null;
-    for(let i=0;i<3;i++){
+    for(let i=0;lines.length===3&&curveCount>=6&&i<3;i++){
       const others=lines.filter((_,j)=>j!==i),unit=line=>line[1].map((v,k)=>(v-line[0][k])/distance(...line));
       if(Math.abs(dot(unit(others[0]),unit(others[1])))>.995&&Math.abs(dot(unit(lines[i]),unit(others[0])))<.03)frontLine=lines[i];
     }
+    const office=!frontLine;
+    if(office)frontLine=officeChairFront(group,tolerance);
     if(!frontLine){unresolved++;continue;}
     const [a,b]=frontLine,length=distance(a,b),normal=[-(b[1]-a[1])/length,(b[0]-a[0])/length];
     const midpoint=a.map((v,i)=>(v+b[i])/2),mean=points.reduce((sum,p)=>sum.map((v,i)=>v+p[i]/points.length),[0,0]);
@@ -61,7 +63,7 @@ export function findFurniture(paths,box,{fingerprint='',pageNumber=1,mmPerSource
     if(w<250||w>1200||d<250||d>1200||w/d<.5||w/d>2){unresolved++;continue;}
     objects.push({id:'chair_'+hash(fingerprint+JSON.stringify([pageNumber,geometry.boundary])),kind:'chair',...geometry,holes:[],bbox:bounds(geometry.boundary),area_source_units2:geometry.width*geometry.depth,
       material:{kind:'chair_fabric',color:'#284f57',basis:'builtin_template_display',confirmed:false},confirmed:false,
-      evidence:{method:'rounded_chair_symbol',pattern:'chair_symbol',boundary_layers:[...new Set(group.flatMap(p=>p.names))],classification_basis:'rounded_back_and_three_seat_edges',curve_count:curveCount,note:'依椅背弧線與座面三邊辨識位置及朝向；3D 款式採簡化模板。'},source_refs:group.map(p=>reference(p,pageNumber,'chair_symbol')).sort((a,b)=>a.source_id.localeCompare(b.source_id))});
+      evidence:{method:office?'armrest_office_chair_symbol':'rounded_chair_symbol',pattern:'chair_symbol',boundary_layers:[...new Set(group.flatMap(p=>p.names))],classification_basis:office?'paired_closed_armrests_curved_back_and_front_edge':'rounded_back_and_three_seat_edges',curve_count:curveCount,...(office?{template_id:'builtin.office_chair.v1'}:{}),note:office?'依成對扶手、椅背曲線與座面前緣辨識；扶手與腳輪底座為簡化示意。':'依椅背弧線與座面三邊辨識位置及朝向；3D 款式採簡化模板。'},source_refs:group.map(p=>reference(p,pageNumber,office?'office_chair_symbol':'chair_symbol')).sort((a,b)=>a.source_id.localeCompare(b.source_id))});
   }
   if(unresolved)diagnostics.push({code:'W_FURNITURE_UNMATCHED',message:`${unresolved} 組家具曲線不符合目前椅子符號規則，未補猜測模型。`});
 

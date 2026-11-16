@@ -2,9 +2,11 @@
 // Scene3D consumer; no renderer, source-format or exporter dependencies.
 import {extrudePolygon} from './model-geometry.js';
 import {tableIssue,buildTableParts} from './table-template.js';
+import {buildOfficeChairParts} from './office-chair-template.js';
 
 export const FURNITURE_TEMPLATES=Object.freeze({
   'builtin.chair.v1':Object.freeze({kind:'chair',name:'簡化四腳椅',source:'project_parametric_geometry'}),
+  'builtin.office_chair.v1':Object.freeze({kind:'chair',name:'扶手辦公椅',source:'project_parametric_geometry'}),
   'builtin.tall_cabinet.v1':Object.freeze({kind:'tall_cabinet',name:'簡化雙門高櫃',source:'project_parametric_geometry'}),
   'builtin.cabinet.v1':Object.freeze({kind:'cabinet',name:'可調高度簡化櫃體',source:'project_parametric_geometry'}),
   'builtin.table.v1':Object.freeze({kind:'table',name:'輪廓桌面與桌腳',source:'project_parametric_geometry'}),
@@ -24,7 +26,9 @@ export function buildFurnitureParts(object,base=0){
   const {width_mm:w,depth_mm:d,height_mm:h,material_id:body,accent_material_id:accent}=object,parts=[];
   const rectangle=(x0,y0,x1,y1)=>[[x0,y0],[x1,y0],[x1,y1],[x0,y1]];
   const box=(id,ring,z0,z1,material=body)=>parts.push({id,mesh:extrudePolygon(ring,[],z0,z1,material)});
-  if(object.kind==='chair'){
+  if(object.template_id==='builtin.office_chair.v1'){
+    parts.push(...buildOfficeChairParts(object));
+  }else if(object.kind==='chair'){
     const seat=object.seat_height_mm,t=Math.min(60,seat*.15,w*.1,d*.1),backT=Math.min(50,d*.1),leg=Math.min(40,w*.08,d*.08);
     const x=w/2,y0=-d/2+backT,y1=d/2,r=Math.min(w,d)*.08;
     // Chamfered corners keep the seat readable without a texture dependency.

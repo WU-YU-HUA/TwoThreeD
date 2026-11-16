@@ -11,3 +11,5 @@ v4 增加 level 必要的 `furniture` 陣列。家具使用獨立語意與可替
 - `migrateFloorPlanV3ToV4` 驗證、深複製、更新版本並補 `furniture: []`，不變更舊模型幾何。v1／v2／v3 舊 Schema 與入口維持相容，不提供有家具資料的無損降版。
 
 Golden fixture：旋轉椅子與高櫃，驗證精確高度、平面尺寸、正面方向、封閉零件、材質、來源與群組；負例包含零尺寸、座高超過總高、未知模板、錯誤材質及重複 ID。
+
+2026-11-17 模板擴充：`chair.template_id` 另支援 `builtin.office_chair.v1`，新增雙扶手、五腳底座及腳輪，沿用相同寬深、座高、總高、朝向及材質欄位。這是模板登錄的新增值，Schema 本來即接受字串，無須遷移；舊 `builtin.chair.v1` 幾何不變，未知模板仍拒絕。舊版程式未登錄新模板時不能顯示新款。測試見 `tests/check-office-chairs.mjs`；兩款皆由共用 Scene3D 管線預覽及輸出 DAE。

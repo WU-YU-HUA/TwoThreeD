@@ -1,13 +1,13 @@
 # FloorPlan → Editable SketchUp：技術規格（SPEC）
 
 - **文件狀態**：Draft / 可作為 MVP 開發基線
-- **版本**：1.19.0（文件；FloorPlan2D／Report 支援 v1–v8；Scene3D 維持 v1）
+- **版本**：1.20.0（文件；FloorPlan2D／Report 支援 v1–v8；Scene3D 維持 v1）
 - **目標環境**：桌面瀏覽器、純靜態 HTML/CSS/JavaScript；先提供本機開啟，後續可部署 GitHub Pages。2D 檔案在瀏覽器處理，生成可下載的 DAE，使用者自行匯入 Windows SketchUp 編輯。無本機轉檔工具依賴；Python 僅用於開發時提供靜態網頁。
 - **最重要的原則**：**Input Adapter、2D IR、Transfer Engine、3D IR、Exporter 彼此隔離；替換任何一層，其他層的公開契約都不變。**
 
 ## 0. 開發項目與完成狀態
 
-依使用者指定順序執行；只有完成且確認實際結果的項目才勾選。最後更新：2026-11-16。
+依使用者指定順序執行；只有完成且確認實際結果的項目才勾選。最後更新：2026-11-17。
 
 - [x] **1. 畫面**：本機可開啟圖面工作台，包含選檔入口、預覽區與圖面資訊。
 - [x] **2. 讀檔**：選擇或拖放 PDF / ASCII DXF，顯示原始圖面；支援 PDF 換頁、旋轉及圖面縮放、平移。
@@ -301,6 +301,16 @@
 - [x] 部署使用官方 checkout／configure-pages／upload-pages-artifact／deploy-pages，限定 Pages 寫入與 OIDC 權限；main 網站變更自動部署，支援手動觸發，並行部署排隊。
 - [x] 啟用儲存庫 Pages、完成首次 Actions 發布，驗證 HTTPS 線上入口與模型庫：<https://wu-yu-hua.github.io/TwoThreeD/>（2026-11-16，Actions #1 成功）。
 - [x] 線上網站載入 DXF 範例及原 PDF、產生 3D、下載 DAE；PDF 共 69 物件／28 模型／2 紅色方塊，下載檔通過 COLLADA XSD，瀏覽器未觀察到資源 404 或 console error／warn。
+
+### 0.25 扶手辦公椅（本機已完成）與新圖會議桌（討論中）
+
+- [x] 新增成對封閉扶手、椅背曲線與座面前緣的椅子符號規則，獨立於 `extraction/office-chair-analysis.js`；原椅子規則優先，未符合才嘗試新款，仍檢查尺寸、裁切、旋轉及附接的不明線條。
+- [x] 新增 `builtin.office_chair.v1` 原創參數模型，幾何獨立於 `geometry/office-chair-template.js`。包含座面、椅背、左右扶手、支撐、五腳底座及腳輪，共 24 個封閉零件；寬深依圖框比例，椅座 45 cm、總高 85 cm 沿用既定值，扶手頂 65 cm 與底座款式為示意。
+- [x] 新舊款同屬 `chair`，新模板沿用現有契約與群組／來源 mapping；Extraction → Transfer → Three.js → 單一 DAE 已接通，不改動 Reader、Preview、Export 或 JSON Schema。
+- [x] 新 PDF `(2)0615` 辨識 14 張原款＋3 張扶手辦公椅，新增三張朝向辦公桌。舊 PDF 的 18 張椅子、12 個 X 高櫃及 5 組桌面回歸通過；修改前後舊家具辨識及幾何比對一致。
+- [x] `tests/check-office-chairs.mjs` 驗證新符號旋轉／去重／缺扶手／開口／錯位／多餘連線／尺寸／裁切、模型閉合／高度／方向／樓層偏移、群組與來源；新圖全流程、瀏覽器預覽與 DAE XSD 通過。尚未在 SketchUp 實機驗收；本次未發布 GitHub Pages。
+- [ ] 新 PDF 中央會議桌：目前完整外輪廓被相接的椅子線段觸發「向外連接」排除。討論方案為只在連接檢查中排除已確認屬於椅子符號的來源線段，仍保留閉合、孔洞、缺弧及不明連線檢查；依使用者要求，本次不修改桌子規則。
+- [ ] 新 PDF 六個微小圓形被當成桌面的既有誤判，尚待另行處理；目前桌面候選數維持 9，不能將此數量視為九張實體桌子。
 
 ## 1. 目標與驗收邊界
 
