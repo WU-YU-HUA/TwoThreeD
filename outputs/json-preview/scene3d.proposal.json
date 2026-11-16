@@ -1,0 +1,765 @@
+{
+  "schema": "Scene3DProposal",
+  "schema_version": "0.1.0",
+  "status": "planning_only",
+  "source_2d_file": "plan2d.inspection.json",
+  "source_pdf_sha256": "4353aa12450c23763f1e22d691c473d8584133c9f2bd4acc7b8b08943a042ac3",
+  "description": "列出此圖面預計生成的物件類型，並附獨立的 3D 格式範例。尚未從此 PDF 生成正式 Scene3D。",
+  "actual_scene3d": null,
+  "export_ready": false,
+  "model_defaults": {
+    "wall_height_mm": 2500,
+    "wall_height_source": "user_default",
+    "note": "牆高為使用者指定預設值，不是從 PDF 量得；厚度須依選定外牆的 200 mm 參考比例計算。"
+  },
+  "calibration_reference": {
+    "kind": "exterior_wall",
+    "proposed_thickness_mm": 200,
+    "source": "user_proposed_reference",
+    "boundary_points_pdf_pt": null,
+    "measured_gap_pdf_pt": null,
+    "confirmed": false
+  },
+  "expected_contract": {
+    "schema": "Scene3D",
+    "schema_version": "1.0.0",
+    "units": "mm",
+    "axes": {
+      "x": "right",
+      "y": "forward_in_plan",
+      "z": "up"
+    },
+    "handedness": "right",
+    "mesh_coordinates": "world",
+    "parent_id_meaning": "hierarchy_only"
+  },
+  "blockers": [
+    {
+      "code": "E_SCALE_UNVERIFIED",
+      "message": "使用者提出外牆 200 mm 作為參考；尚未選定並確認該外牆的兩側邊線。"
+    },
+    {
+      "code": "E_UNRESOLVED_ELEMENT",
+      "message": "圖層類別、文字標示與向量路徑尚未配對成獨立牆、門窗、家具。"
+    }
+  ],
+  "planned_object_groups": [
+    {
+      "id": "planned_group_db54948b22a0f119",
+      "name": "原有牆",
+      "source_inspection_layer_ids": ["layer_a4f61a5f64f81e52"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "wall",
+        "method": "extrude_centerline",
+        "requires": ["centerline_mm","thickness_mm","height_mm","joined_endpoints","openings"]
+      }
+    },
+    {
+      "id": "planned_group_784303870a5b089e",
+      "name": "平面地坪",
+      "source_inspection_layer_ids": ["layer_e8da7e7b6cbc4038"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "slab",
+        "method": "extrude_polygon_downward",
+        "requires": ["boundary_mm","holes_mm","thickness_mm","top_elevation_mm"]
+      }
+    },
+    {
+      "id": "planned_group_640aaaa6661cf424",
+      "name": "廚具設備",
+      "source_inspection_layer_ids": ["layer_e1b75eb5597b1630"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "equipment",
+        "method": "place_confirmed_asset",
+        "requires": ["individual_object_type","position_mm","dimensions_mm","asset_id"]
+      }
+    },
+    {
+      "id": "planned_group_e557b2d1bec94961",
+      "name": "木作",
+      "source_inspection_layer_ids": ["layer_3b2b239eea4a9e7b"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "cabinet_or_partition",
+        "method": "confirm_type_then_parametric_geometry_or_asset",
+        "requires": ["individual_object_type","footprint_mm","height_mm","material_id"]
+      }
+    },
+    {
+      "id": "planned_group_36b122768f1fced0",
+      "name": "活動家具",
+      "source_inspection_layer_ids": ["layer_79834ee6f811c5d3"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "furniture",
+        "method": "place_confirmed_asset",
+        "requires": ["individual_object_type","footprint_mm","position_mm","rotation_degrees","height_mm","asset_id"]
+      }
+    },
+    {
+      "id": "planned_group_b81c4aacddb109bb",
+      "name": "窗",
+      "source_inspection_layer_ids": ["layer_a47642bdf0650fb3"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "window_opening",
+        "method": "cut_host_wall_then_optional_window_asset",
+        "requires": ["host_wall_id","offset_mm","width_mm","height_mm","sill_height_mm"]
+      }
+    },
+    {
+      "id": "planned_group_b00bf75b5cb0b8e4",
+      "name": "鐵件",
+      "source_inspection_layer_ids": ["layer_2c96a30c1fb43f2c"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "metalwork",
+        "method": "manual_review_then_parametric_geometry",
+        "requires": ["individual_object_type","geometry_mm","material_id"]
+      }
+    },
+    {
+      "id": "planned_group_e3aa75b82caeae46",
+      "name": "門",
+      "source_inspection_layer_ids": ["layer_26035388ce1b0cd9"],
+      "instances": null,
+      "confirmed": false,
+      "planned_action": {
+        "target": "door_opening",
+        "method": "cut_host_wall_then_optional_door_asset",
+        "requires": ["host_wall_id","offset_mm","width_mm","height_mm","door_swing"]
+      }
+    }
+  ],
+  "asset_policy": {
+    "selection": "需確認家具類型、位置、方向與尺寸後，選擇具再散布權的模型",
+    "default_asset_id": null,
+    "missing_asset": "顯示簡化物件並清楚標示；不可聲稱已還原原家具",
+    "mesh_contract": "模型的位移、旋轉與縮放需烘焙到世界座標 vertices_mm，再交給 Exporter"
+  },
+  "format_example": {
+    "example_only": true,
+    "derived_from_uploaded_pdf": false,
+    "notice": "以下為獨立格式示例，牆高採使用者指定的 2500 mm；其餘位置及尺寸仍為示例，不能視為原圖辨識成果。未經正式 Schema 或 SketchUp 匯入驗收。",
+    "example_source_objects": [
+      {
+        "id": "example_wall",
+        "kind": "wall",
+        "start_mm": [0,0],
+        "end_mm": [5000,0],
+        "thickness_mm": 200,
+        "height_mm": 2500
+      },
+      {
+        "id": "example_door",
+        "kind": "door_opening",
+        "wall_id": "example_wall",
+        "offset_from_start_mm": 1000,
+        "width_mm": 900,
+        "height_mm": 2100,
+        "sill_height_mm": 0
+      },
+      {
+        "id": "example_slab",
+        "kind": "slab",
+        "boundary_mm": [
+          [0,0],
+          [5000,0],
+          [5000,3000],
+          [0,3000]
+        ],
+        "thickness_mm": 100,
+        "top_elevation_mm": 0
+      },
+      {
+        "id": "example_chair",
+        "kind": "furniture_format_proposal",
+        "dimensions_mm": [500,500,900],
+        "position_mm": [2500,1500,0],
+        "note": "家具的正式 FloorPlan2D 欄位仍待設計。"
+      }
+    ],
+    "scene3d": {
+      "schema": "Scene3D",
+      "schema_version": "1.0.0",
+      "units": "mm",
+      "materials": [
+        {
+          "id": "example_wall_paint",
+          "name": "牆面",
+          "color_rgba": [0.9,0.9,0.87,1]
+        },
+        {
+          "id": "example_floor",
+          "name": "地板",
+          "color_rgba": [0.65,0.55,0.4,1]
+        },
+        {
+          "id": "example_chair_material",
+          "name": "簡化椅子",
+          "color_rgba": [0.25,0.35,0.3,1]
+        }
+      ],
+      "nodes": [
+        {
+          "id": "example_node_wall",
+          "name": "示例牆體",
+          "kind": "group",
+          "parent_id": null,
+          "source_2d_ids": ["example_wall"],
+          "mesh": null,
+          "semantic": {
+            "wall_id": "example_wall",
+            "thickness_mm": 200,
+            "height_mm": 2500,
+            "opening_ids": ["example_door"]
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_wall_left",
+          "name": "門洞左側",
+          "kind": "mesh",
+          "parent_id": "example_node_wall",
+          "source_2d_ids": ["example_wall"],
+          "mesh": {
+            "vertices_mm": [
+              [0,-100,0],
+              [1000,-100,0],
+              [1000,100,0],
+              [0,100,0],
+              [0,-100,2500],
+              [1000,-100,2500],
+              [1000,100,2500],
+              [0,100,2500]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_wall_paint"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "wall_segment"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_wall_right",
+          "name": "門洞右側",
+          "kind": "mesh",
+          "parent_id": "example_node_wall",
+          "source_2d_ids": ["example_wall"],
+          "mesh": {
+            "vertices_mm": [
+              [1900,-100,0],
+              [5000,-100,0],
+              [5000,100,0],
+              [1900,100,0],
+              [1900,-100,2500],
+              [5000,-100,2500],
+              [5000,100,2500],
+              [1900,100,2500]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_wall_paint"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "wall_segment"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_wall_header",
+          "name": "門洞上緣",
+          "kind": "mesh",
+          "parent_id": "example_node_wall",
+          "source_2d_ids": ["example_wall","example_door"],
+          "mesh": {
+            "vertices_mm": [
+              [1000,-100,2100],
+              [1900,-100,2100],
+              [1900,100,2100],
+              [1000,100,2100],
+              [1000,-100,2500],
+              [1900,-100,2500],
+              [1900,100,2500],
+              [1000,100,2500]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_wall_paint"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_wall_paint"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "wall_segment",
+            "opening_id": "example_door"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_floor",
+          "name": "示例地板",
+          "kind": "mesh",
+          "parent_id": null,
+          "source_2d_ids": ["example_slab"],
+          "mesh": {
+            "vertices_mm": [
+              [0,0,-100],
+              [5000,0,-100],
+              [5000,3000,-100],
+              [0,3000,-100],
+              [0,0,0],
+              [5000,0,0],
+              [5000,3000,0],
+              [0,3000,0]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_floor"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_floor"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_floor"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_floor"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_floor"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_floor"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "slab",
+            "thickness_mm": 100
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair",
+          "name": "示例簡化椅子",
+          "kind": "group",
+          "parent_id": null,
+          "source_2d_ids": ["example_chair"],
+          "mesh": null,
+          "semantic": {
+            "category": "furniture",
+            "asset_id": null,
+            "representation": "procedural_placeholder",
+            "placement_example": {
+              "position_mm": [2500,1500,0],
+              "rotation_z_degrees": 0
+            },
+            "note": "位置已寫入子網格世界座標；不得再次套用 placement_example。"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_seat",
+          "name": "椅座",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2250,1250,430],
+              [2750,1250,430],
+              [2750,1750,430],
+              [2250,1750,430],
+              [2250,1250,470],
+              [2750,1250,470],
+              [2750,1750,470],
+              [2250,1750,470]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_seat"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_back",
+          "name": "椅背",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2250,1710,470],
+              [2750,1710,470],
+              [2750,1750,470],
+              [2250,1750,470],
+              [2250,1710,900],
+              [2750,1710,900],
+              [2750,1750,900],
+              [2250,1750,900]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_back"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_leg_1",
+          "name": "椅腳 1",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2270,1270,0],
+              [2305,1270,0],
+              [2305,1305,0],
+              [2270,1305,0],
+              [2270,1270,430],
+              [2305,1270,430],
+              [2305,1305,430],
+              [2270,1305,430]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_leg"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_leg_2",
+          "name": "椅腳 2",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2685,1270,0],
+              [2720,1270,0],
+              [2720,1305,0],
+              [2685,1305,0],
+              [2685,1270,430],
+              [2720,1270,430],
+              [2720,1305,430],
+              [2685,1305,430]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_leg"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_leg_3",
+          "name": "椅腳 3",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2270,1685,0],
+              [2305,1685,0],
+              [2305,1720,0],
+              [2270,1720,0],
+              [2270,1685,430],
+              [2305,1685,430],
+              [2305,1720,430],
+              [2270,1720,430]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_leg"
+          },
+          "editable": true
+        },
+        {
+          "id": "example_node_chair_leg_4",
+          "name": "椅腳 4",
+          "kind": "mesh",
+          "parent_id": "example_node_chair",
+          "source_2d_ids": ["example_chair"],
+          "mesh": {
+            "vertices_mm": [
+              [2685,1685,0],
+              [2720,1685,0],
+              [2720,1720,0],
+              [2685,1720,0],
+              [2685,1685,430],
+              [2720,1685,430],
+              [2720,1720,430],
+              [2685,1720,430]
+            ],
+            "faces": [
+              {
+                "indices": [0,3,2,1],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [4,5,6,7],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [0,1,5,4],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [1,2,6,5],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [2,3,7,6],
+                "material_id": "example_chair_material"
+              },
+              {
+                "indices": [3,0,4,7],
+                "material_id": "example_chair_material"
+              }
+            ]
+          },
+          "semantic": {
+            "category": "chair_leg"
+          },
+          "editable": true
+        }
+      ]
+    },
+    "source_to_node_mapping": [
+      {
+        "source_2d_id": "example_wall",
+        "generated_node_ids": ["example_node_wall","example_node_wall_left","example_node_wall_right","example_node_wall_header"],
+        "method": "solid"
+      },
+      {
+        "source_2d_id": "example_door",
+        "generated_node_ids": ["example_node_wall_header"],
+        "method": "cut"
+      },
+      {
+        "source_2d_id": "example_slab",
+        "generated_node_ids": ["example_node_floor"],
+        "method": "solid"
+      },
+      {
+        "source_2d_id": "example_chair",
+        "generated_node_ids": ["example_node_chair","example_node_chair_seat","example_node_chair_back","example_node_chair_leg_1","example_node_chair_leg_2","example_node_chair_leg_3","example_node_chair_leg_4"],
+        "method": "group"
+      }
+    ]
+  }
+}

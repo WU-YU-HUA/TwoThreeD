@@ -1,0 +1,12 @@
+{
+  "nodes": 510,
+  "groups": 70,
+  "object_groups": 69,
+  "meshes": 440,
+  "triangles": 19305,
+  "label_textures": 0,
+  "materials": 58,
+  "units": "mm",
+  "up_axis": "Z_UP",
+  "draft": true
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "1.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "door_1",
+      "generated_node_ids": [
+        "wall_wall_1",
+        "solid_wall_1_0_0",
+        "solid_wall_1_1_0",
+        "solid_wall_1_2_0",
+        "solid_wall_1_3_0",
+        "solid_wall_1_3_1",
+        "solid_wall_1_4_0"
+      ],
+      "method": "cut"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "slab_1",
+      "generated_node_ids": [
+        "slab_slab_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_1",
+      "generated_node_ids": [
+        "wall_wall_1",
+        "solid_wall_1_0_0",
+        "solid_wall_1_1_0",
+        "solid_wall_1_2_0",
+        "solid_wall_1_3_0",
+        "solid_wall_1_3_1",
+        "solid_wall_1_4_0"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "window_1",
+      "generated_node_ids": [
+        "wall_wall_1",
+        "solid_wall_1_0_0",
+        "solid_wall_1_1_0",
+        "solid_wall_1_2_0",
+        "solid_wall_1_3_0",
+        "solid_wall_1_3_1",
+        "solid_wall_1_4_0"
+      ],
+      "method": "cut"
+    }
+  ],
+  "diagnostics": [],
+  "metrics": {
+    "walls": 1,
+    "openings": 2,
+    "slabs": 1,
+    "rooms": 0,
+    "nodes": 9
+  },
+  "preview_only": false
+}

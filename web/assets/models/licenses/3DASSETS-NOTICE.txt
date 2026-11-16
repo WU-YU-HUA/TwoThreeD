@@ -1,0 +1,6 @@
+Selected models by 3D Assets
+Source: https://3dassets.dev/
+License declaration: https://3dassets.dev/license
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
+Individual source URLs, author declarations, immutable download URLs and SHA-256 hashes are recorded in web/config/model-assets.json. These selected models are reported by the contributor as AI-assisted. Attribution is optional; source credits are retained in CREDITS.md.

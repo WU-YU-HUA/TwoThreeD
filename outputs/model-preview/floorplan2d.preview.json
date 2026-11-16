@@ -1,0 +1,254 @@
+{
+  "schema": "FloorPlan2D",
+  "schema_version": "1.0.0",
+  "units": "mm",
+  "source": {
+    "filename": "基隆女中秘書室-平面規劃圖(5)1105.pdf",
+    "format": "pdf",
+    "sha256": "4353aa12450c23763f1e22d691c473d8584133c9f2bd4acc7b8b08943a042ac3",
+    "scale_verified": false,
+    "source_to_model_3x3": [
+      20.57613168724274,
+      0,
+      -4270.041152263361,
+      0,
+      20.57613168724274,
+      -3226.41975308641,
+      0,
+      0,
+      1
+    ],
+    "extensions": {
+      "calibration": {
+        "method": "reference_wall_thickness_ratio",
+        "reference_wall_rule": "user_default_upper_left",
+        "reference_wall_id": "wall_19fiq01",
+        "reference_thickness_mm": 200,
+        "dimension_source": "user_default",
+        "measured_gap_source_units": 9.720000000000027,
+        "reference_geometry_confirmed": false,
+        "confirmed": false
+      }
+    }
+  },
+  "materials": [
+    {
+      "id": "wall_paint",
+      "name": "待核對牆體",
+      "color_rgba": [
+        0.72,
+        0.78,
+        0.68,
+        1
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "error",
+      "code": "E_UNRESOLVED_ELEMENT",
+      "element_id": null,
+      "message": "尚未建模的圖層：活動家具、木作、平面地坪、窗、門、廚具設備、鐵件。門窗與家具不會被猜測成牆。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNPAIRED_WALL_EVIDENCE",
+      "element_id": null,
+      "message": "牆圖層仍有 26 段未配對線及 0 組曲線，請核對是否漏牆或包含柱體。"
+    }
+  ],
+  "levels": [
+    {
+      "id": "level_1",
+      "name": "圖面第 1 頁",
+      "base_elevation_mm": 0,
+      "walls": [
+        {
+          "id": "wall_19fiq01",
+          "name": "候選牆 1 · 原有牆",
+          "start_mm": [
+            2035.308642,
+            11688.395062
+          ],
+          "end_mm": [
+            6287.160494,
+            11688.395062
+          ],
+          "thickness_mm": 200,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint",
+          "confirmed": false,
+          "confidence": 0.5,
+          "source_refs": [
+            {
+              "source_id": "pdf:1:662:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            },
+            {
+              "source_id": "pdf:1:661:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "wall_140m60g",
+          "name": "候選牆 2 · 原有牆",
+          "start_mm": [
+            6852.592593,
+            11688.395062
+          ],
+          "end_mm": [
+            11062.469136,
+            11688.395062
+          ],
+          "thickness_mm": 200,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint",
+          "confirmed": false,
+          "confidence": 0.5,
+          "source_refs": [
+            {
+              "source_id": "pdf:1:542:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            },
+            {
+              "source_id": "pdf:1:541:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "wall_sjussw",
+          "name": "候選牆 3 · 原有牆",
+          "start_mm": [
+            769.876543,
+            1052.592593
+          ],
+          "end_mm": [
+            769.876543,
+            10968.641975
+          ],
+          "thickness_mm": 160.4938271604936,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint",
+          "confirmed": false,
+          "confidence": 0.5,
+          "source_refs": [
+            {
+              "source_id": "pdf:1:1730:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            },
+            {
+              "source_id": "pdf:1:1729:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "wall_12xa9q9",
+          "name": "候選牆 4 · 原有牆",
+          "start_mm": [
+            877.283951,
+            830.37037
+          ],
+          "end_mm": [
+            6287.160494,
+            830.37037
+          ],
+          "thickness_mm": 202.46913580246863,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint",
+          "confirmed": false,
+          "confidence": 0.5,
+          "source_refs": [
+            {
+              "source_id": "pdf:1:664:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            },
+            {
+              "source_id": "pdf:1:663:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "wall_u6m245",
+          "name": "候選牆 5 · 原有牆",
+          "start_mm": [
+            6864.938272,
+            830.37037
+          ],
+          "end_mm": [
+            12232.839506,
+            830.37037
+          ],
+          "thickness_mm": 202.46913580246863,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint",
+          "confirmed": false,
+          "confidence": 0.5,
+          "source_refs": [
+            {
+              "source_id": "pdf:1:2014:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            },
+            {
+              "source_id": "pdf:1:2013:0",
+              "layer": "原有牆",
+              "page": 1,
+              "method": "parallel_boundary_hypothesis"
+            }
+          ]
+        }
+      ],
+      "openings": [],
+      "slabs": [],
+      "rooms": []
+    }
+  ],
+  "extensions": {
+    "twothreeD": {
+      "scope": "wall_candidates_only",
+      "wall_height_source": "user_default",
+      "requires_review": true,
+      "model_defaults": {
+        "reference_wall_rule": "upper_left",
+        "reference_wall_thickness_mm": 200,
+        "wall_height_mm": 2500,
+        "office_screen_height_mm": 1200,
+        "door_height_mm": 2100,
+        "window_sill_height_mm": 900,
+        "window_height_mm": 1200,
+        "chair_seat_height_mm": 450,
+        "chair_height_mm": 850,
+        "tall_cabinet_height_mm": 2100,
+        "table_height_mm": 900,
+        "table_top_thickness_mm": 40
+      },
+      "pending_opening_defaults": true
+    }
+  }
+}

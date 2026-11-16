@@ -1,0 +1,1447 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "8.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "cabinet_10jdqgu",
+      "generated_node_ids": [
+        "furniture_cabinet_10jdqgu",
+        "solid_cabinet_10jdqgu_part_0",
+        "solid_cabinet_10jdqgu_part_1",
+        "solid_cabinet_10jdqgu_part_2",
+        "solid_cabinet_10jdqgu_part_3",
+        "solid_cabinet_10jdqgu_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1cmnini",
+      "generated_node_ids": [
+        "furniture_cabinet_1cmnini",
+        "solid_cabinet_1cmnini_part_0",
+        "solid_cabinet_1cmnini_part_1",
+        "solid_cabinet_1cmnini_part_2",
+        "solid_cabinet_1cmnini_part_3",
+        "solid_cabinet_1cmnini_part_4",
+        "solid_cabinet_1cmnini_part_5",
+        "solid_cabinet_1cmnini_part_6",
+        "solid_cabinet_1cmnini_part_7",
+        "solid_cabinet_1cmnini_part_8",
+        "solid_cabinet_1cmnini_part_9",
+        "solid_cabinet_1cmnini_part_10",
+        "solid_cabinet_1cmnini_part_11"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1h0v0dc",
+      "generated_node_ids": [
+        "furniture_cabinet_1h0v0dc",
+        "solid_cabinet_1h0v0dc_part_0",
+        "solid_cabinet_1h0v0dc_part_1",
+        "solid_cabinet_1h0v0dc_part_2",
+        "solid_cabinet_1h0v0dc_part_3",
+        "solid_cabinet_1h0v0dc_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1hh8a04",
+      "generated_node_ids": [
+        "furniture_cabinet_1hh8a04",
+        "solid_cabinet_1hh8a04_part_0",
+        "solid_cabinet_1hh8a04_part_1",
+        "solid_cabinet_1hh8a04_part_2",
+        "solid_cabinet_1hh8a04_part_3",
+        "solid_cabinet_1hh8a04_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1jark2y",
+      "generated_node_ids": [
+        "furniture_cabinet_1jark2y",
+        "solid_cabinet_1jark2y_part_0",
+        "solid_cabinet_1jark2y_part_1",
+        "solid_cabinet_1jark2y_part_2",
+        "solid_cabinet_1jark2y_part_3",
+        "solid_cabinet_1jark2y_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1lhli9w",
+      "generated_node_ids": [
+        "furniture_cabinet_1lhli9w",
+        "solid_cabinet_1lhli9w_part_0",
+        "solid_cabinet_1lhli9w_part_1",
+        "solid_cabinet_1lhli9w_part_2",
+        "solid_cabinet_1lhli9w_part_3",
+        "solid_cabinet_1lhli9w_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1olwqgy",
+      "generated_node_ids": [
+        "furniture_cabinet_1olwqgy",
+        "solid_cabinet_1olwqgy_part_0",
+        "solid_cabinet_1olwqgy_part_1",
+        "solid_cabinet_1olwqgy_part_2",
+        "solid_cabinet_1olwqgy_part_3",
+        "solid_cabinet_1olwqgy_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1td4tmz",
+      "generated_node_ids": [
+        "furniture_cabinet_1td4tmz",
+        "solid_cabinet_1td4tmz_part_0",
+        "solid_cabinet_1td4tmz_part_1",
+        "solid_cabinet_1td4tmz_part_2",
+        "solid_cabinet_1td4tmz_part_3",
+        "solid_cabinet_1td4tmz_part_4",
+        "solid_cabinet_1td4tmz_part_5",
+        "solid_cabinet_1td4tmz_part_6"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1tkbp70",
+      "generated_node_ids": [
+        "furniture_cabinet_1tkbp70",
+        "solid_cabinet_1tkbp70_part_0",
+        "solid_cabinet_1tkbp70_part_1",
+        "solid_cabinet_1tkbp70_part_2",
+        "solid_cabinet_1tkbp70_part_3",
+        "solid_cabinet_1tkbp70_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_1ttpxb8",
+      "generated_node_ids": [
+        "furniture_cabinet_1ttpxb8",
+        "solid_cabinet_1ttpxb8_part_0",
+        "solid_cabinet_1ttpxb8_part_1",
+        "solid_cabinet_1ttpxb8_part_2",
+        "solid_cabinet_1ttpxb8_part_3",
+        "solid_cabinet_1ttpxb8_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_2hckc6",
+      "generated_node_ids": [
+        "furniture_cabinet_2hckc6",
+        "solid_cabinet_2hckc6_part_0",
+        "solid_cabinet_2hckc6_part_1",
+        "solid_cabinet_2hckc6_part_2",
+        "solid_cabinet_2hckc6_part_3",
+        "solid_cabinet_2hckc6_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_3pq5gy",
+      "generated_node_ids": [
+        "furniture_cabinet_3pq5gy",
+        "solid_cabinet_3pq5gy_part_0",
+        "solid_cabinet_3pq5gy_part_1",
+        "solid_cabinet_3pq5gy_part_2",
+        "solid_cabinet_3pq5gy_part_3",
+        "solid_cabinet_3pq5gy_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_3qpvso",
+      "generated_node_ids": [
+        "furniture_cabinet_3qpvso",
+        "solid_cabinet_3qpvso_part_0",
+        "solid_cabinet_3qpvso_part_1",
+        "solid_cabinet_3qpvso_part_2",
+        "solid_cabinet_3qpvso_part_3",
+        "solid_cabinet_3qpvso_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_97pcpy",
+      "generated_node_ids": [
+        "furniture_cabinet_97pcpy",
+        "solid_cabinet_97pcpy_part_0",
+        "solid_cabinet_97pcpy_part_1",
+        "solid_cabinet_97pcpy_part_2",
+        "solid_cabinet_97pcpy_part_3",
+        "solid_cabinet_97pcpy_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_d356pq",
+      "generated_node_ids": [
+        "furniture_cabinet_d356pq",
+        "solid_cabinet_d356pq_part_0",
+        "solid_cabinet_d356pq_part_1",
+        "solid_cabinet_d356pq_part_2",
+        "solid_cabinet_d356pq_part_3",
+        "solid_cabinet_d356pq_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_jp54mn",
+      "generated_node_ids": [
+        "furniture_cabinet_jp54mn",
+        "solid_cabinet_jp54mn_part_0",
+        "solid_cabinet_jp54mn_part_1",
+        "solid_cabinet_jp54mn_part_2",
+        "solid_cabinet_jp54mn_part_3",
+        "solid_cabinet_jp54mn_part_4",
+        "solid_cabinet_jp54mn_part_5",
+        "solid_cabinet_jp54mn_part_6"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_rd0psi",
+      "generated_node_ids": [
+        "furniture_cabinet_rd0psi",
+        "solid_cabinet_rd0psi_part_0",
+        "solid_cabinet_rd0psi_part_1",
+        "solid_cabinet_rd0psi_part_2",
+        "solid_cabinet_rd0psi_part_3",
+        "solid_cabinet_rd0psi_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "cabinet_y49ttv",
+      "generated_node_ids": [
+        "furniture_cabinet_y49ttv",
+        "solid_cabinet_y49ttv_part_0",
+        "solid_cabinet_y49ttv_part_1",
+        "solid_cabinet_y49ttv_part_2",
+        "solid_cabinet_y49ttv_part_3",
+        "solid_cabinet_y49ttv_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_129vbcx",
+      "generated_node_ids": [
+        "furniture_chair_129vbcx",
+        "solid_chair_129vbcx_seat",
+        "solid_chair_129vbcx_back",
+        "solid_chair_129vbcx_leg_0_0",
+        "solid_chair_129vbcx_leg_0_1",
+        "solid_chair_129vbcx_leg_1_0",
+        "solid_chair_129vbcx_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_12momf8",
+      "generated_node_ids": [
+        "furniture_chair_12momf8",
+        "solid_chair_12momf8_seat",
+        "solid_chair_12momf8_back",
+        "solid_chair_12momf8_leg_0_0",
+        "solid_chair_12momf8_leg_0_1",
+        "solid_chair_12momf8_leg_1_0",
+        "solid_chair_12momf8_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_1kze4dt",
+      "generated_node_ids": [
+        "furniture_chair_1kze4dt",
+        "solid_chair_1kze4dt_seat",
+        "solid_chair_1kze4dt_back",
+        "solid_chair_1kze4dt_leg_0_0",
+        "solid_chair_1kze4dt_leg_0_1",
+        "solid_chair_1kze4dt_leg_1_0",
+        "solid_chair_1kze4dt_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_1pwoktg",
+      "generated_node_ids": [
+        "furniture_chair_1pwoktg",
+        "solid_chair_1pwoktg_seat",
+        "solid_chair_1pwoktg_back",
+        "solid_chair_1pwoktg_leg_0_0",
+        "solid_chair_1pwoktg_leg_0_1",
+        "solid_chair_1pwoktg_leg_1_0",
+        "solid_chair_1pwoktg_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_1rw4eha",
+      "generated_node_ids": [
+        "furniture_chair_1rw4eha",
+        "solid_chair_1rw4eha_seat",
+        "solid_chair_1rw4eha_back",
+        "solid_chair_1rw4eha_leg_0_0",
+        "solid_chair_1rw4eha_leg_0_1",
+        "solid_chair_1rw4eha_leg_1_0",
+        "solid_chair_1rw4eha_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_1y6iwzv",
+      "generated_node_ids": [
+        "furniture_chair_1y6iwzv",
+        "solid_chair_1y6iwzv_seat",
+        "solid_chair_1y6iwzv_back",
+        "solid_chair_1y6iwzv_leg_0_0",
+        "solid_chair_1y6iwzv_leg_0_1",
+        "solid_chair_1y6iwzv_leg_1_0",
+        "solid_chair_1y6iwzv_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_46mn7e",
+      "generated_node_ids": [
+        "furniture_chair_46mn7e",
+        "solid_chair_46mn7e_seat",
+        "solid_chair_46mn7e_back",
+        "solid_chair_46mn7e_leg_0_0",
+        "solid_chair_46mn7e_leg_0_1",
+        "solid_chair_46mn7e_leg_1_0",
+        "solid_chair_46mn7e_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_6nk8u8",
+      "generated_node_ids": [
+        "furniture_chair_6nk8u8",
+        "solid_chair_6nk8u8_seat",
+        "solid_chair_6nk8u8_back",
+        "solid_chair_6nk8u8_leg_0_0",
+        "solid_chair_6nk8u8_leg_0_1",
+        "solid_chair_6nk8u8_leg_1_0",
+        "solid_chair_6nk8u8_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_adfz6c",
+      "generated_node_ids": [
+        "furniture_chair_adfz6c",
+        "solid_chair_adfz6c_seat",
+        "solid_chair_adfz6c_back",
+        "solid_chair_adfz6c_leg_0_0",
+        "solid_chair_adfz6c_leg_0_1",
+        "solid_chair_adfz6c_leg_1_0",
+        "solid_chair_adfz6c_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_fajmhy",
+      "generated_node_ids": [
+        "furniture_chair_fajmhy",
+        "solid_chair_fajmhy_seat",
+        "solid_chair_fajmhy_back",
+        "solid_chair_fajmhy_leg_0_0",
+        "solid_chair_fajmhy_leg_0_1",
+        "solid_chair_fajmhy_leg_1_0",
+        "solid_chair_fajmhy_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_kvfnxc",
+      "generated_node_ids": [
+        "furniture_chair_kvfnxc",
+        "solid_chair_kvfnxc_seat",
+        "solid_chair_kvfnxc_back",
+        "solid_chair_kvfnxc_leg_0_0",
+        "solid_chair_kvfnxc_leg_0_1",
+        "solid_chair_kvfnxc_leg_1_0",
+        "solid_chair_kvfnxc_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_oomft0",
+      "generated_node_ids": [
+        "furniture_chair_oomft0",
+        "solid_chair_oomft0_seat",
+        "solid_chair_oomft0_back",
+        "solid_chair_oomft0_leg_0_0",
+        "solid_chair_oomft0_leg_0_1",
+        "solid_chair_oomft0_leg_1_0",
+        "solid_chair_oomft0_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_pmas9o",
+      "generated_node_ids": [
+        "furniture_chair_pmas9o",
+        "solid_chair_pmas9o_seat",
+        "solid_chair_pmas9o_back",
+        "solid_chair_pmas9o_leg_0_0",
+        "solid_chair_pmas9o_leg_0_1",
+        "solid_chair_pmas9o_leg_1_0",
+        "solid_chair_pmas9o_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_puo39m",
+      "generated_node_ids": [
+        "furniture_chair_puo39m",
+        "solid_chair_puo39m_seat",
+        "solid_chair_puo39m_back",
+        "solid_chair_puo39m_leg_0_0",
+        "solid_chair_puo39m_leg_0_1",
+        "solid_chair_puo39m_leg_1_0",
+        "solid_chair_puo39m_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_q0b9k2",
+      "generated_node_ids": [
+        "furniture_chair_q0b9k2",
+        "solid_chair_q0b9k2_seat",
+        "solid_chair_q0b9k2_back",
+        "solid_chair_q0b9k2_leg_0_0",
+        "solid_chair_q0b9k2_leg_0_1",
+        "solid_chair_q0b9k2_leg_1_0",
+        "solid_chair_q0b9k2_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_w0w9yt",
+      "generated_node_ids": [
+        "furniture_chair_w0w9yt",
+        "solid_chair_w0w9yt_seat",
+        "solid_chair_w0w9yt_back",
+        "solid_chair_w0w9yt_leg_0_0",
+        "solid_chair_w0w9yt_leg_0_1",
+        "solid_chair_w0w9yt_leg_1_0",
+        "solid_chair_w0w9yt_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_woout4",
+      "generated_node_ids": [
+        "furniture_chair_woout4",
+        "solid_chair_woout4_seat",
+        "solid_chair_woout4_back",
+        "solid_chair_woout4_leg_0_0",
+        "solid_chair_woout4_leg_0_1",
+        "solid_chair_woout4_leg_1_0",
+        "solid_chair_woout4_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_x82jpe",
+      "generated_node_ids": [
+        "furniture_chair_x82jpe",
+        "solid_chair_x82jpe_seat",
+        "solid_chair_x82jpe_back",
+        "solid_chair_x82jpe_leg_0_0",
+        "solid_chair_x82jpe_leg_0_1",
+        "solid_chair_x82jpe_leg_1_0",
+        "solid_chair_x82jpe_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "door_157ak2a",
+      "generated_node_ids": [
+        "door_door_157ak2a",
+        "solid_door_157ak2a"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "door_5j30q2",
+      "generated_node_ids": [
+        "door_door_5j30q2",
+        "solid_door_5j30q2"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "office_partition_sw3nwq",
+      "generated_node_ids": [
+        "wall_office_partition_sw3nwq",
+        "solid_office_partition_sw3nwq"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_1ccxwwc",
+      "generated_node_ids": [
+        "furniture_placeholder_1ccxwwc",
+        "solid_placeholder_1ccxwwc_part_0",
+        "solid_placeholder_1ccxwwc_part_1",
+        "solid_placeholder_1ccxwwc_part_2",
+        "solid_placeholder_1ccxwwc_part_3",
+        "solid_placeholder_1ccxwwc_part_4",
+        "solid_placeholder_1ccxwwc_part_5",
+        "solid_placeholder_1ccxwwc_part_6",
+        "solid_placeholder_1ccxwwc_part_7",
+        "solid_placeholder_1ccxwwc_part_8",
+        "solid_placeholder_1ccxwwc_part_9",
+        "solid_placeholder_1ccxwwc_part_10",
+        "solid_placeholder_1ccxwwc_part_11",
+        "solid_placeholder_1ccxwwc_part_12",
+        "solid_placeholder_1ccxwwc_part_13",
+        "solid_placeholder_1ccxwwc_part_14",
+        "solid_placeholder_1ccxwwc_part_15",
+        "solid_placeholder_1ccxwwc_part_16",
+        "solid_placeholder_1ccxwwc_part_17",
+        "solid_placeholder_1ccxwwc_part_18",
+        "solid_placeholder_1ccxwwc_part_19",
+        "solid_placeholder_1ccxwwc_part_20",
+        "solid_placeholder_1ccxwwc_part_21",
+        "solid_placeholder_1ccxwwc_part_22",
+        "solid_placeholder_1ccxwwc_part_23",
+        "solid_placeholder_1ccxwwc_part_24",
+        "solid_placeholder_1ccxwwc_part_25",
+        "solid_placeholder_1ccxwwc_part_26",
+        "solid_placeholder_1ccxwwc_part_27",
+        "solid_placeholder_1ccxwwc_part_28",
+        "solid_placeholder_1ccxwwc_part_29",
+        "solid_placeholder_1ccxwwc_part_30",
+        "solid_placeholder_1ccxwwc_part_31",
+        "solid_placeholder_1ccxwwc_part_32",
+        "solid_placeholder_1ccxwwc_part_33",
+        "solid_placeholder_1ccxwwc_part_34",
+        "solid_placeholder_1ccxwwc_part_35",
+        "solid_placeholder_1ccxwwc_part_36",
+        "solid_placeholder_1ccxwwc_part_37",
+        "solid_placeholder_1ccxwwc_part_38",
+        "solid_placeholder_1ccxwwc_part_39",
+        "solid_placeholder_1ccxwwc_part_40",
+        "solid_placeholder_1ccxwwc_part_41",
+        "solid_placeholder_1ccxwwc_part_42",
+        "solid_placeholder_1ccxwwc_part_43",
+        "solid_placeholder_1ccxwwc_part_44",
+        "solid_placeholder_1ccxwwc_part_45",
+        "solid_placeholder_1ccxwwc_part_46",
+        "solid_placeholder_1ccxwwc_part_47",
+        "solid_placeholder_1ccxwwc_part_48",
+        "solid_placeholder_1ccxwwc_part_49",
+        "solid_placeholder_1ccxwwc_part_50",
+        "solid_placeholder_1ccxwwc_part_51",
+        "solid_placeholder_1ccxwwc_part_52",
+        "solid_placeholder_1ccxwwc_part_53",
+        "solid_placeholder_1ccxwwc_part_54",
+        "solid_placeholder_1ccxwwc_part_55",
+        "solid_placeholder_1ccxwwc_part_56",
+        "solid_placeholder_1ccxwwc_part_57"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_1cjqg8j",
+      "generated_node_ids": [
+        "furniture_placeholder_1cjqg8j",
+        "solid_placeholder_1cjqg8j_part_0",
+        "solid_placeholder_1cjqg8j_part_1",
+        "solid_placeholder_1cjqg8j_part_2",
+        "solid_placeholder_1cjqg8j_part_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_1ra8fj0",
+      "generated_node_ids": [
+        "furniture_placeholder_1ra8fj0",
+        "solid_placeholder_1ra8fj0_part_0",
+        "solid_placeholder_1ra8fj0_part_1",
+        "solid_placeholder_1ra8fj0_part_2",
+        "solid_placeholder_1ra8fj0_part_3",
+        "solid_placeholder_1ra8fj0_part_4",
+        "solid_placeholder_1ra8fj0_part_5",
+        "solid_placeholder_1ra8fj0_part_6",
+        "solid_placeholder_1ra8fj0_part_7",
+        "solid_placeholder_1ra8fj0_part_8",
+        "solid_placeholder_1ra8fj0_part_9",
+        "solid_placeholder_1ra8fj0_part_10"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_1thdel0",
+      "generated_node_ids": [
+        "furniture_placeholder_1thdel0",
+        "solid_placeholder_1thdel0_part_0",
+        "solid_placeholder_1thdel0_part_1",
+        "solid_placeholder_1thdel0_part_2",
+        "solid_placeholder_1thdel0_part_3",
+        "solid_placeholder_1thdel0_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_447as2",
+      "generated_node_ids": [
+        "furniture_placeholder_447as2",
+        "solid_placeholder_447as2_part_0",
+        "solid_placeholder_447as2_part_1",
+        "solid_placeholder_447as2_part_2",
+        "solid_placeholder_447as2_part_3",
+        "solid_placeholder_447as2_part_4",
+        "solid_placeholder_447as2_part_5",
+        "solid_placeholder_447as2_part_6",
+        "solid_placeholder_447as2_part_7",
+        "solid_placeholder_447as2_part_8",
+        "solid_placeholder_447as2_part_9",
+        "solid_placeholder_447as2_part_10",
+        "solid_placeholder_447as2_part_11",
+        "solid_placeholder_447as2_part_12",
+        "solid_placeholder_447as2_part_13",
+        "solid_placeholder_447as2_part_14",
+        "solid_placeholder_447as2_part_15",
+        "solid_placeholder_447as2_part_16",
+        "solid_placeholder_447as2_part_17",
+        "solid_placeholder_447as2_part_18",
+        "solid_placeholder_447as2_part_19",
+        "solid_placeholder_447as2_part_20",
+        "solid_placeholder_447as2_part_21",
+        "solid_placeholder_447as2_part_22",
+        "solid_placeholder_447as2_part_23"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_64j073",
+      "generated_node_ids": [
+        "furniture_placeholder_64j073",
+        "solid_placeholder_64j073_cube"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_6c5sgh",
+      "generated_node_ids": [
+        "furniture_placeholder_6c5sgh",
+        "solid_placeholder_6c5sgh_part_0",
+        "solid_placeholder_6c5sgh_part_1",
+        "solid_placeholder_6c5sgh_part_2",
+        "solid_placeholder_6c5sgh_part_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_b5cpwh",
+      "generated_node_ids": [
+        "furniture_placeholder_b5cpwh",
+        "solid_placeholder_b5cpwh_part_0",
+        "solid_placeholder_b5cpwh_part_1",
+        "solid_placeholder_b5cpwh_part_2",
+        "solid_placeholder_b5cpwh_part_3",
+        "solid_placeholder_b5cpwh_part_4",
+        "solid_placeholder_b5cpwh_part_5",
+        "solid_placeholder_b5cpwh_part_6"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_iidehz",
+      "generated_node_ids": [
+        "furniture_placeholder_iidehz",
+        "solid_placeholder_iidehz_part_0",
+        "solid_placeholder_iidehz_part_1",
+        "solid_placeholder_iidehz_part_2",
+        "solid_placeholder_iidehz_part_3",
+        "solid_placeholder_iidehz_part_4",
+        "solid_placeholder_iidehz_part_5",
+        "solid_placeholder_iidehz_part_6",
+        "solid_placeholder_iidehz_part_7",
+        "solid_placeholder_iidehz_part_8",
+        "solid_placeholder_iidehz_part_9",
+        "solid_placeholder_iidehz_part_10",
+        "solid_placeholder_iidehz_part_11",
+        "solid_placeholder_iidehz_part_12",
+        "solid_placeholder_iidehz_part_13",
+        "solid_placeholder_iidehz_part_14",
+        "solid_placeholder_iidehz_part_15",
+        "solid_placeholder_iidehz_part_16",
+        "solid_placeholder_iidehz_part_17",
+        "solid_placeholder_iidehz_part_18",
+        "solid_placeholder_iidehz_part_19",
+        "solid_placeholder_iidehz_part_20",
+        "solid_placeholder_iidehz_part_21",
+        "solid_placeholder_iidehz_part_22",
+        "solid_placeholder_iidehz_part_23",
+        "solid_placeholder_iidehz_part_24",
+        "solid_placeholder_iidehz_part_25",
+        "solid_placeholder_iidehz_part_26"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_ik0zk1",
+      "generated_node_ids": [
+        "furniture_placeholder_ik0zk1",
+        "solid_placeholder_ik0zk1_part_0",
+        "solid_placeholder_ik0zk1_part_1",
+        "solid_placeholder_ik0zk1_part_2",
+        "solid_placeholder_ik0zk1_part_3",
+        "solid_placeholder_ik0zk1_part_4",
+        "solid_placeholder_ik0zk1_part_5",
+        "solid_placeholder_ik0zk1_part_6",
+        "solid_placeholder_ik0zk1_part_7",
+        "solid_placeholder_ik0zk1_part_8",
+        "solid_placeholder_ik0zk1_part_9",
+        "solid_placeholder_ik0zk1_part_10",
+        "solid_placeholder_ik0zk1_part_11",
+        "solid_placeholder_ik0zk1_part_12",
+        "solid_placeholder_ik0zk1_part_13",
+        "solid_placeholder_ik0zk1_part_14",
+        "solid_placeholder_ik0zk1_part_15",
+        "solid_placeholder_ik0zk1_part_16",
+        "solid_placeholder_ik0zk1_part_17",
+        "solid_placeholder_ik0zk1_part_18",
+        "solid_placeholder_ik0zk1_part_19",
+        "solid_placeholder_ik0zk1_part_20",
+        "solid_placeholder_ik0zk1_part_21",
+        "solid_placeholder_ik0zk1_part_22",
+        "solid_placeholder_ik0zk1_part_23",
+        "solid_placeholder_ik0zk1_part_24",
+        "solid_placeholder_ik0zk1_part_25",
+        "solid_placeholder_ik0zk1_part_26",
+        "solid_placeholder_ik0zk1_part_27",
+        "solid_placeholder_ik0zk1_part_28",
+        "solid_placeholder_ik0zk1_part_29",
+        "solid_placeholder_ik0zk1_part_30",
+        "solid_placeholder_ik0zk1_part_31",
+        "solid_placeholder_ik0zk1_part_32",
+        "solid_placeholder_ik0zk1_part_33"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_oz9p1w",
+      "generated_node_ids": [
+        "furniture_placeholder_oz9p1w",
+        "solid_placeholder_oz9p1w_cube"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "placeholder_ugqdx1",
+      "generated_node_ids": [
+        "furniture_placeholder_ugqdx1",
+        "solid_placeholder_ugqdx1_part_0",
+        "solid_placeholder_ugqdx1_part_1",
+        "solid_placeholder_ugqdx1_part_2",
+        "solid_placeholder_ugqdx1_part_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_10m04dc",
+      "generated_node_ids": [
+        "wall_structure_10m04dc",
+        "solid_structure_10m04dc"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_15wl03y",
+      "generated_node_ids": [
+        "column_structure_15wl03y",
+        "solid_structure_15wl03y"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_15zdfbi",
+      "generated_node_ids": [
+        "column_structure_15zdfbi",
+        "solid_structure_15zdfbi"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_1ee0jeu",
+      "generated_node_ids": [
+        "wall_structure_1ee0jeu",
+        "solid_structure_1ee0jeu"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_1n0gbgm",
+      "generated_node_ids": [
+        "column_structure_1n0gbgm",
+        "solid_structure_1n0gbgm"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_1s3bl2e",
+      "generated_node_ids": [
+        "column_structure_1s3bl2e",
+        "solid_structure_1s3bl2e"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_4tqyy",
+      "generated_node_ids": [
+        "column_structure_4tqyy",
+        "solid_structure_4tqyy"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_7xxqym",
+      "generated_node_ids": [
+        "wall_structure_7xxqym",
+        "solid_structure_7xxqym"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_8lwbf2",
+      "generated_node_ids": [
+        "column_structure_8lwbf2",
+        "solid_structure_8lwbf2"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_wall_12xa9q9",
+      "generated_node_ids": [
+        "wall_structure_wall_12xa9q9",
+        "solid_structure_wall_12xa9q9"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_wall_140m60g",
+      "generated_node_ids": [
+        "wall_structure_wall_140m60g",
+        "solid_structure_wall_140m60g"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_wall_19fiq01",
+      "generated_node_ids": [
+        "wall_structure_wall_19fiq01",
+        "solid_structure_wall_19fiq01"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "structure_wall_u6m245",
+      "generated_node_ids": [
+        "wall_structure_wall_u6m245",
+        "solid_structure_wall_u6m245"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_1cwzbu8",
+      "generated_node_ids": [
+        "furniture_table_1cwzbu8",
+        "solid_table_1cwzbu8_tabletop",
+        "solid_table_1cwzbu8_leg_0",
+        "solid_table_1cwzbu8_leg_1",
+        "solid_table_1cwzbu8_leg_2",
+        "solid_table_1cwzbu8_leg_3",
+        "solid_table_1cwzbu8_leg_4",
+        "solid_table_1cwzbu8_leg_5"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_1h3mva6",
+      "generated_node_ids": [
+        "furniture_table_1h3mva6",
+        "solid_table_1h3mva6_tabletop",
+        "solid_table_1h3mva6_leg_0",
+        "solid_table_1h3mva6_leg_1",
+        "solid_table_1h3mva6_leg_2",
+        "solid_table_1h3mva6_leg_3",
+        "solid_table_1h3mva6_leg_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_1nk6hsi",
+      "generated_node_ids": [
+        "furniture_table_1nk6hsi",
+        "solid_table_1nk6hsi_tabletop",
+        "solid_table_1nk6hsi_leg_0",
+        "solid_table_1nk6hsi_leg_1",
+        "solid_table_1nk6hsi_leg_2",
+        "solid_table_1nk6hsi_leg_3",
+        "solid_table_1nk6hsi_leg_4",
+        "solid_table_1nk6hsi_leg_5",
+        "solid_table_1nk6hsi_leg_6",
+        "solid_table_1nk6hsi_leg_7",
+        "solid_table_1nk6hsi_leg_8"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_8zwnse",
+      "generated_node_ids": [
+        "furniture_table_8zwnse",
+        "solid_table_8zwnse_tabletop",
+        "solid_table_8zwnse_leg_0",
+        "solid_table_8zwnse_leg_1",
+        "solid_table_8zwnse_leg_2",
+        "solid_table_8zwnse_leg_3",
+        "solid_table_8zwnse_leg_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_l74f3w",
+      "generated_node_ids": [
+        "furniture_table_l74f3w",
+        "solid_table_l74f3w_tabletop",
+        "solid_table_l74f3w_leg_0",
+        "solid_table_l74f3w_leg_1",
+        "solid_table_l74f3w_leg_2",
+        "solid_table_l74f3w_leg_3",
+        "solid_table_l74f3w_leg_4"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_SCALE_UNVERIFIED",
+      "message": "目前依使用者指定的參考牆厚換算比例；參考牆的邊線配對仍待核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_BLOCKED_DOOR",
+      "message": "「封門(不出入)」未當成可出入門片；封閉方式仍待確認。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_SMALL_X_NOT_CABINET",
+      "message": "較小的 X 符號未當成大型高櫃，避免將鐵件或小配件放大。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCLASSIFIED_OBJECT",
+      "message": "「海報機」不在物件字典，以原名方塊標記，類型待核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCLASSIFIED_OBJECT",
+      "message": "「雨傘架」不在物件字典，以原名方塊標記，類型待核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_SUPPORT_OVERHANG",
+      "message": "「印表機」跨越承載櫃邊界，依中心所在檯面放置，位置待核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_STRUCTURE_REVIEW_ONLY",
+      "message": "牆／柱與材質皆為待核對候選，可建立 3D 初稿供檢視。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNRESOLVED_ELEMENT",
+      "message": "椅子與桌子採簡化模板；可用外部模型依物件框線比例配置。缺項及款式待核對者保留紅色方塊，方塊不是實物尺寸；門框、過樑、窗、地板及其他未辨識物件仍待補齊。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_MODEL_FALLBACK",
+      "element_id": "placeholder_oz9p1w",
+      "message": "「雨傘架」保留紅色方塊：尚無對應模型。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_MODEL_FALLBACK",
+      "element_id": "placeholder_64j073",
+      "message": "「海報機」保留紅色方塊：尚無對應模型。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_wall_19fiq01"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_wall_140m60g"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_1ee0jeu"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "office_partition_sw3nwq"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_10m04dc"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_7xxqym"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_wall_12xa9q9"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_wall_u6m245"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_15zdfbi"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_15wl03y"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_4tqyy"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_1s3bl2e"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_8lwbf2"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "structure_1n0gbgm"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "door_5j30q2"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "door_157ak2a"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_jp54mn"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_oz9p1w"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_iidehz"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_447as2"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_rd0psi"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1lhli9w"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_129vbcx"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_pmas9o"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "table_l74f3w"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "table_1nk6hsi"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_w0w9yt"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_1kze4dt"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_d356pq"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_3qpvso"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_1rw4eha"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1h0v0dc"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_ugqdx1"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_3pq5gy"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1olwqgy"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "table_1h3mva6"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_oomft0"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_1pwoktg"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_1cjqg8j"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1hh8a04"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_2hckc6"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1tkbp70"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_woout4"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_kvfnxc"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_puo39m"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_6c5sgh"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_46mn7e"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_fajmhy"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1cmnini"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_10jdqgu"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "table_8zwnse"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_b5cpwh"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_1thdel0"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1ttpxb8"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_y49ttv"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_1ra8fj0"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_1ccxwwc"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_x82jpe"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_6nk8u8"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_1y6iwzv"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_ik0zk1"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_12momf8"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_q0b9k2"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1jark2y"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "table_1cwzbu8"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_97pcpy"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "chair_adfz6c"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "placeholder_64j073"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "cabinet_1td4tmz"
+    },
+    {
+      "severity": "warning",
+      "code": "W_MODEL_SUPPORT_OVERHANG",
+      "message": "「印表機」的模型輪廓超出承載檯面或跨越孔洞，保留圖面位置待核對。",
+      "element_id": "placeholder_1cjqg8j"
+    },
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_ASSET_PREVIEW",
+      "message": "外部模型依自身外框估算尺寸，方向與款式仍待核對；使用來源預設姿態與簡化純色材質。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 8,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 510,
+    "columns": 6,
+    "doors": 2,
+    "chairs": 18,
+    "tall_cabinets": 12,
+    "tables": 5,
+    "cabinets": 6,
+    "placeholders": 2,
+    "asset_models": 28
+  },
+  "preview_only": true
+}

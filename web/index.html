@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#243f35">
+  <meta name="description" content="twothreeD 圖面工作室。在瀏覽器中讀取與檢視 PDF、DXF 平面圖。">
+  <title>twothreeD — 圖面工作室</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./vendor/dxf-parser/dist/dxf-parser.js" defer></script>
+  <script type="module" src="./js/app.js"></script>
+<link rel="stylesheet" href="model-colors.css"></head>
+<body>
+  <svg class="symbol-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><rect x="7" y="7" width="10" height="10" rx="1"/></symbol>
+    <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20 8a8 8 0 1 0 0 8M20 3v5h-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8zm0 10 9-5M3 8l9 5v9M7.5 5.5l9 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+  </defs></svg>
+  <input id="file-input" type="file" accept=".pdf,.dxf,application/pdf" hidden>
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="twothreeD 首頁"><img src="./assets/mark.svg" alt="" width="34" height="34"><span>two<span class="brand-light">three</span>D</span></a>
+    <div class="sidebar-label">YOUR WORKSPACE</div>
+    <div class="workspace-name"><span class="workspace-avatar">T</span><div>圖面工作室<small>把平面，帶進空間</small></div></div>
+    <button class="button new-file" data-open-file><svg><use href="#i-plus"/></svg>匯入新圖面</button>
+    <div class="sidebar-label section-label">工作流程</div>
+    <nav class="workflow" aria-label="工作流程">
+      <div class="workflow-item active" aria-current="step"><span class="step-number">01</span><span>匯入與檢視<small>從原始圖面開始</small></span><span class="active-dot"></span></div>
+      <div class="workflow-item future"><span class="step-number">02</span><span>結構辨識<small>牆柱與材質候選</small></span></div>
+      <div class="workflow-item"><span class="step-number">03</span><span>3D 預覽<small>完成轉換後查看</small></span></div>
+      <div class="workflow-item"><span class="step-number">04</span><span>下載模型<small>DAE 編輯初稿</small></span></div>
+    </nav>
+    <a class="button model-library-link" href="./model-library.html" target="_blank" rel="noopener">查看設備模型</a>
+    <div class="sidebar-bottom"><div class="privacy"><svg><use href="#i-shield"/></svg><div>圖面留在你的裝置<small>所有檔案都在瀏覽器本機讀取</small></div></div><div class="version">twothreeD <span>PREVIEW · 0.1</span></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumb">工作空間<svg><use href="#i-arrow"/></svg><span>圖面檢視</span></div><span class="local-badge"><i></i>本機處理</span></header>
+    <section class="page-heading"><div><div class="eyebrow">01 / IMPORT & REVIEW</div><h1>每個空間，從一張圖開始<span>。</span></h1><p>匯入你的平面圖，先看清楚每一個細節。</p></div><div class="heading-note"><svg><use href="#i-box"/></svg><span>從 2D 到 3D<small>你的空間轉換工作台</small></span></div></section>
+    <div class="workspace-actions"><div class="preview-switch" role="group" aria-label="檢視模式"><button id="view-2d" aria-pressed="true" class="selected">2D 圖面</button><button id="view-3d" aria-pressed="false" disabled title="成功轉換後即可查看 3D"><svg><use href="#i-box"/></svg>3D 預覽<span id="scene-tab-status">待轉換</span></button></div><button id="convert-3d" class="button primary" disabled><svg><use href="#i-box"/></svg><span id="convert-label">產生 3D 預覽</span></button></div>
+    <div id="plan-workspace" class="workspace-grid">
+      <section class="viewer" aria-label="圖面預覽區">
+        <div class="viewer-toolbar"><div class="view-tab"><svg><use href="#i-file"/></svg><span id="view-title">主要平面圖</span></div><div class="viewer-actions"><button id="fit" class="icon-button" aria-label="符合視窗" title="符合視窗（F）" disabled><svg><use href="#i-fit"/></svg></button><button id="rotate" class="icon-button" aria-label="順時針旋轉 PDF" title="旋轉 PDF" disabled><svg><use href="#i-rotate"/></svg></button><span class="toolbar-divider"></span><button id="zoom-out" class="icon-button" aria-label="縮小" disabled>−</button><span id="zoom-label" class="zoom-label">100%</span><button id="zoom-in" class="icon-button" aria-label="放大" disabled>+</button></div></div>
+        <div class="region-toolbar"><div class="view-modes"><button id="main-view" class="selected" disabled>主要圖面</button><button id="full-view" disabled>完整原圖</button></div><span id="region-status">匯入後自動尋找主要圖面</span><button id="select-region" disabled>框選範圍</button></div>
+        <div id="stage" class="stage" tabindex="0" aria-label="圖面，可拖曳移動、滾輪縮放">
+          <div id="empty-state" class="empty-state">
+            <div class="drawing-illustration" aria-hidden="true"><span class="illustration-orbit"></span><svg viewBox="0 0 220 166"><g fill="none" stroke-linejoin="round"><path d="m43 58 89-35 59 35-89 35z" fill="#e5ebe2" stroke="#c3cfc1"/><path d="M43 58v49l59 35 89-35V58M102 93v49" stroke="#b1c2b0" stroke-dasharray="4 5"/><path d="m29 84 89-35 73 42-89 35z" fill="#fbfcf9" stroke="#67846b" stroke-width="1.6"/><path d="m49 84 67-26 54 31-67 27zM78 74l26 15 34-13M104 89l-1 27M129 92l25 14M114 93l9-4" stroke="#668468" stroke-width="2"/><path d="m44 118 58 34 90-35M27 110l4-2m164 7 4-2" stroke="#a6b9a4"/><circle cx="102" cy="152" r="3" fill="#668468" stroke="none"/></g></svg><span class="illustration-plus">+</span></div>
+            <div class="empty-kicker">A NEW PERSPECTIVE</div><h2>把你的圖面放進來</h2><p>拖曳檔案至此，或從裝置中選擇檔案</p><button class="button primary" data-open-file><svg><use href="#i-upload"/></svg>選擇圖面<svg class="button-arrow"><use href="#i-arrow"/></svg></button><div class="format-tags"><span>PDF</span><span>DXF</span><em>單一檔案最大 50 MB</em></div><button id="demo" class="demo-button">先看看範例圖面 <span>↗</span></button>
+          </div>
+          <div id="paper" class="paper" hidden><canvas id="drawing" aria-label="匯入檔案的圖面內容"></canvas><svg id="wall-overlay" class="wall-overlay" aria-label="結構與家具輪廓及比例參考牆" hidden></svg><div id="crop-selection" class="crop-selection" hidden></div></div>
+          <div id="busy" class="busy" role="status" hidden><span class="spinner"></span><span id="busy-label">正在讀取圖面…</span></div>
+          <div id="drop-overlay" class="drop-overlay" hidden><svg><use href="#i-upload"/></svg><strong>放開滑鼠以匯入圖面</strong><span>支援 PDF 與 DXF</span></div>
+          <div id="stage-hint" class="stage-hint" hidden><span>拖曳移動</span><i>·</i><span>滾輪縮放</span><i>·</i><span>F 符合視窗</span></div>
+        </div>
+        <div class="viewer-footer"><div class="viewer-status"><i id="status-dot"></i><span id="status-text" role="status">準備好接收你的圖面</span></div><div id="page-controls" class="page-controls" hidden><button id="previous-page" class="icon-button" aria-label="上一頁"><svg class="previous-icon"><use href="#i-arrow"/></svg></button><label for="page-select" class="sr-only">PDF 頁碼</label><select id="page-select"></select><span id="page-total"></span><button id="next-page" class="icon-button" aria-label="下一頁"><svg><use href="#i-arrow"/></svg></button></div><span id="footer-type">PDF / DXF</span></div>
+      </section>
+      <aside class="details-panel">
+        <section class="detail-section"><div class="panel-heading"><h2>圖面資訊</h2><svg><use href="#i-info"/></svg></div><div id="file-placeholder" class="file-placeholder"><svg><use href="#i-file"/></svg><span>尚未匯入檔案<small>匯入後，在這裡查看圖面資訊</small></span></div><div id="file-card" class="file-card" hidden><span id="file-badge" class="file-badge">PDF</span><div><strong id="file-name"></strong><span id="file-size"></span></div><button id="clear" class="icon-button" title="移除檔案" aria-label="移除檔案"><svg><use href="#i-close"/></svg></button></div><dl class="metadata"><div><dt>檔案格式</dt><dd id="meta-format">—</dd></div><div><dt id="meta-count-label">頁面數量</dt><dd id="meta-count">—</dd></div><div><dt id="meta-dim-label">頁面尺寸</dt><dd id="meta-dim">—</dd></div><div><dt>圖面比例</dt><dd id="meta-scale">尚未校正</dd></div></dl></section>
+        <section class="detail-section"><h2>讀取狀態</h2><div class="check-row"><span id="read-check" class="check-marker">1</span><div>主要圖面預覽<small id="read-detail">等待檔案匯入</small></div></div><div class="check-row"><span class="check-marker">2</span><div>結構輪廓<small id="wall-pair-status">等待讀取圖面</small></div></div><div id="diagnostics" class="diagnostics" hidden></div></section>
+        <section class="structure-panel detail-section" aria-label="結構萃取結果">
+          <div class="eyebrow">02 / EXTRACTION</div><h2>辨識結構與家具</h2>
+          <p id="structure-status" role="status">讀入圖面後，依填充紋理與輪廓整理結構。</p>
+          <div id="structure-counts" class="structure-counts" hidden></div>
+          <div class="structure-legend"><span class="column">柱候選</span><span class="concrete-wall">水泥牆</span><span class="light-wall">輕隔間 · 淺木色</span><span class="door">門片 · 深木色</span><span class="chair">椅子 · 藍綠色</span><span class="cabinet">櫃子 · 木色</span><span class="table">桌子 · 淺木色</span><span class="equipment">設備框線 · 藍色</span></div>
+          <label class="structure-toggle"><input id="structure-overlay-toggle" type="checkbox" checked disabled>顯示結構標記</label>
+          <p class="automatic-scale">自動以左上牆厚 20 cm 換算；牆高 250 cm、辦公屏風 120 cm、桌高 90 cm。</p>
+          <details id="structure-details" hidden><summary>查看萃取明細</summary><ul id="structure-list"></ul><p id="structure-diagnostics"></p></details>
+          <p id="model-status" role="status"></p><p id="model-error" class="model-error" role="alert" hidden></p>
+        </section>
+        <button id="text-toggle" class="button secondary" disabled>查看圖面物件<svg><use href="#i-arrow"/></svg></button>
+      </aside>
+    </div>
+    <section id="scene-workspace" class="scene-workspace" aria-label="3D 模型預覽" hidden>
+      <div class="scene-heading"><div><div class="eyebrow">YOUR DRAWING IN 3D</div><h2>從平面，走進空間。</h2><p id="scene-source">從目前圖面產生的柱與隔間初稿。</p></div><div class="scene-actions"><button id="scene-fit" class="button" disabled>重設視角</button><button id="scene-png" class="button" disabled>下載預覽圖</button><button id="scene-export" class="button primary" disabled>下載 DAE 編輯初稿</button></div></div>
+      <p id="export-status" class="export-status" role="status">下載單一 DAE 檔，在 SketchUp「檔案 → 匯入」選擇即可；缺少模型以無字紅色方塊顯示。</p>
+      <div class="scene-disclaimer"><strong>待核對的結構初稿</strong><span>依圖面辨識牆柱、辦公屏風、門與家具，以左上牆厚 20 cm 換算。桌高 90 cm、辦公屏風高 120 cm；櫃高依名稱分為 90／150／210 cm。可用模型依物件自身圖框換算寬深，設備等比例縮放並放到承載檯面；支架白板採圖上完整寬深高。缺項保留 40 cm 紅色方塊，上浮 10 cm，並非實物尺寸。門框、窗與地板尚未建模。</span></div>
+      <details id="model-color-panel" class="model-color-panel" hidden><summary>模型配色</summary><p>同款模型共用顏色；僅調整外殼或板框，保留玻璃、白板板面、金屬配件與按鈕。</p><div id="model-color-controls" class="model-color-list"></div><p id="model-color-status" role="status">可輸入 HEX 色碼或使用選色器，配色會套用到預覽與 DAE。</p></details>
+      <div id="scene-stage" class="scene-stage"><div id="scene-message" class="scene-message" role="status">正在準備 3D 預覽…</div></div>
+      <div class="scene-footer"><span id="scene-summary">等待模型</span><span>拖曳旋轉 · 右鍵平移 · 滾輪縮放</span></div>
+      <div id="scene-notes" class="scene-notes"></div>
+      <details class="scene-review"><summary>查看待核對項目</summary><ul id="scene-diagnostics"></ul></details>
+    </section>
+    <footer class="page-footer"><span>讓設計的下一步，更靠近一點。</span><span>2D <span class="footer-line"></span> 3D</span></footer>
+  </main>
+  <div id="toast" class="toast" role="alert" hidden><svg><use href="#i-info"/></svg><span id="toast-text"></span><button id="dismiss-toast" class="icon-button" aria-label="關閉提示"><svg><use href="#i-close"/></svg></button></div>
+  <dialog id="content-dialog"><div class="dialog-heading"><div><div class="eyebrow">DOCUMENT CONTENT</div><h2 id="content-title">檔案內容</h2></div><button id="close-dialog" class="icon-button" aria-label="關閉內容"><svg><use href="#i-close"/></svg></button></div><p id="content-description"></p><div id="content-objects" class="content-objects"></div></dialog>
+</body>
+</html>

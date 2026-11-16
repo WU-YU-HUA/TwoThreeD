@@ -1,0 +1,924 @@
+{
+  "schema": "Scene3D",
+  "schema_version": "1.0.0",
+  "units": "mm",
+  "materials": [
+    {
+      "id": "floor",
+      "name": "地板",
+      "color_rgba": [
+        0.65,
+        0.55,
+        0.4,
+        1
+      ]
+    },
+    {
+      "id": "wall_paint",
+      "name": "牆面",
+      "color_rgba": [
+        0.9,
+        0.9,
+        0.87,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "level_level_1",
+      "name": "一樓",
+      "kind": "group",
+      "parent_id": null,
+      "source_2d_ids": [
+        "level_1"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "level",
+        "base_elevation_mm": 0
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_1",
+      "name": "測試牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_1",
+        "thickness_mm": 150,
+        "height_mm": 2500,
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_0_0",
+      "name": "測試牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            0,
+            -75,
+            0
+          ],
+          [
+            1000,
+            -75,
+            0
+          ],
+          [
+            1000,
+            75,
+            0
+          ],
+          [
+            0,
+            75,
+            0
+          ],
+          [
+            0,
+            -75,
+            2500
+          ],
+          [
+            1000,
+            -75,
+            2500
+          ],
+          [
+            1000,
+            75,
+            2500
+          ],
+          [
+            0,
+            75,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_1_0",
+      "name": "測試牆 區段 2.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            1000,
+            -75,
+            2100
+          ],
+          [
+            1900,
+            -75,
+            2100
+          ],
+          [
+            1900,
+            75,
+            2100
+          ],
+          [
+            1000,
+            75,
+            2100
+          ],
+          [
+            1000,
+            -75,
+            2500
+          ],
+          [
+            1900,
+            -75,
+            2500
+          ],
+          [
+            1900,
+            75,
+            2500
+          ],
+          [
+            1000,
+            75,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_2_0",
+      "name": "測試牆 區段 3.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            1900,
+            -75,
+            0
+          ],
+          [
+            3000,
+            -75,
+            0
+          ],
+          [
+            3000,
+            75,
+            0
+          ],
+          [
+            1900,
+            75,
+            0
+          ],
+          [
+            1900,
+            -75,
+            2500
+          ],
+          [
+            3000,
+            -75,
+            2500
+          ],
+          [
+            3000,
+            75,
+            2500
+          ],
+          [
+            1900,
+            75,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_3_0",
+      "name": "測試牆 區段 4.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            3000,
+            -75,
+            0
+          ],
+          [
+            4000,
+            -75,
+            0
+          ],
+          [
+            4000,
+            75,
+            0
+          ],
+          [
+            3000,
+            75,
+            0
+          ],
+          [
+            3000,
+            -75,
+            900
+          ],
+          [
+            4000,
+            -75,
+            900
+          ],
+          [
+            4000,
+            75,
+            900
+          ],
+          [
+            3000,
+            75,
+            900
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_3_1",
+      "name": "測試牆 區段 4.2",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            3000,
+            -75,
+            1900
+          ],
+          [
+            4000,
+            -75,
+            1900
+          ],
+          [
+            4000,
+            75,
+            1900
+          ],
+          [
+            3000,
+            75,
+            1900
+          ],
+          [
+            3000,
+            -75,
+            2500
+          ],
+          [
+            4000,
+            -75,
+            2500
+          ],
+          [
+            4000,
+            75,
+            2500
+          ],
+          [
+            3000,
+            75,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_1_4_0",
+      "name": "測試牆 區段 5.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_1",
+      "source_2d_ids": [
+        "wall_1",
+        "door_1",
+        "window_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            4000,
+            -75,
+            0
+          ],
+          [
+            5000,
+            -75,
+            0
+          ],
+          [
+            5000,
+            75,
+            0
+          ],
+          [
+            4000,
+            75,
+            0
+          ],
+          [
+            4000,
+            -75,
+            2500
+          ],
+          [
+            5000,
+            -75,
+            2500
+          ],
+          [
+            5000,
+            75,
+            2500
+          ],
+          [
+            4000,
+            75,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_1",
+        "opening_ids": [
+          "door_1",
+          "window_1"
+        ]
+      },
+      "editable": true
+    },
+    {
+      "id": "slab_slab_1",
+      "name": "地板",
+      "kind": "mesh",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "slab_1"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            0,
+            0,
+            -100
+          ],
+          [
+            5000,
+            0,
+            -100
+          ],
+          [
+            5000,
+            3000,
+            -100
+          ],
+          [
+            0,
+            3000,
+            -100
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5000,
+            0,
+            0
+          ],
+          [
+            5000,
+            3000,
+            0
+          ],
+          [
+            0,
+            3000,
+            0
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              6,
+              7,
+              4
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              0,
+              3,
+              2
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              2,
+              1,
+              0
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "floor"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "floor"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "slab",
+        "slab_id": "slab_1",
+        "thickness_mm": 100
+      },
+      "editable": true
+    }
+  ],
+  "extensions": {
+    "twothreeD": {
+      "preview_only": false,
+      "source_filename": "手工測試圖",
+      "source_sha256": null,
+      "scope": "confirmed_model"
+    }
+  }
+}

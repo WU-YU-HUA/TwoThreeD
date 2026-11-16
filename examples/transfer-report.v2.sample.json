@@ -1,0 +1,55 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "2.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "column_1",
+      "generated_node_ids": [
+        "column_column_1",
+        "solid_column_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "wall_L",
+      "generated_node_ids": [
+        "wall_wall_L",
+        "solid_wall_L"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_light",
+      "generated_node_ids": [
+        "wall_wall_light",
+        "solid_wall_light"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 2,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 7,
+    "columns": 1
+  },
+  "preview_only": false
+}

@@ -1,0 +1,4433 @@
+{
+  "schema": "ModelAssetCatalog",
+  "schema_version": "1.0.0",
+  "checked_on": "2026-11-15",
+  "status": "preview_integration",
+  "description": "外部與原創模型來源表。純色模型依圖框配置；飲水機依桌／櫃承載關係選擇檯上或落地款。",
+  "license_policy": "CC0-1.0；保留原作者、來源、授權與檔案 SHA-256。",
+  "runtime_enabled": true,
+  "assets": [
+    {
+      "id": "kenney.furniture.bathroomSink",
+      "name": "bathroomSink",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/bathroomSink.glb",
+      "bytes": 22536,
+      "sha256": "39d4f19608cab7e0fed52303b2c689f5f51fae1bad9b6913cb53d838875e797e",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "bathroomSink — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/bathroomSink.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1545,
+        "triangles": 316,
+        "unique_mesh_triangles": 316,
+        "bounds_m": {
+          "min": [
+            0,
+            -0.4000000059604645,
+            -0.28999999165534973
+          ],
+          "max": [
+            0.3400000035762787,
+            0.1599999964237213,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 340.0000035762787,
+          "height": 560.0000023841858,
+          "depth": 289.99999165534973
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.bedSingle",
+      "name": "bedSingle",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/bedSingle.glb",
+      "bytes": 18636,
+      "sha256": "ca00c63f9a12da3138d902b2f5f18e0360fb6e8a5ac42ccb4bc3f185724b65d1",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "bedSingle — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/bedSingle.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 768,
+        "triangles": 214,
+        "unique_mesh_triangles": 214,
+        "bounds_m": {
+          "min": [
+            0.38500000250536454,
+            3.311768719503616e-14,
+            -1.125
+          ],
+          "max": [
+            0.9559999920426173,
+            0.375,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 570.9999895372529,
+          "height": 374.99999999996686,
+          "depth": 1125
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.bookcaseClosedDoors",
+      "name": "bookcaseClosedDoors",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/bookcaseClosedDoors.glb",
+      "bytes": 22644,
+      "sha256": "ff33f535acdb1825c0e958a293642b39665adcae0b1317b650e83d2bb687f4e2",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "bookcaseClosedDoors — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/bookcaseClosedDoors.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 568,
+        "triangles": 296,
+        "unique_mesh_triangles": 296,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.25
+          ],
+          "max": [
+            0.4000000059604645,
+            0.8499999642372131,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 400.0000059604645,
+          "height": 849.9999642372131,
+          "depth": 250
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.bookcaseOpen",
+      "name": "bookcaseOpen",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/bookcaseOpen.glb",
+      "bytes": 18020,
+      "sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "bookcaseOpen — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/bookcaseOpen.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 400,
+        "triangles": 320,
+        "unique_mesh_triangles": 320,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.25
+          ],
+          "max": [
+            0.4000000059604645,
+            0.8799999356269836,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 400.0000059604645,
+          "height": 879.9999356269836,
+          "depth": 250
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.cabinetBed",
+      "name": "cabinetBed",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/cabinetBed.glb",
+      "bytes": 7496,
+      "sha256": "b651fafb9e2c8e4adcb8cad3d10dc94404b46fe039b26e66b2c9020df4e5301d",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "cabinetBed — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/cabinetBed.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 168,
+        "triangles": 72,
+        "unique_mesh_triangles": 72,
+        "bounds_m": {
+          "min": [
+            -0.009999999776482582,
+            0,
+            -0.20500001311302185
+          ],
+          "max": [
+            0.25599998235702515,
+            0.23320001363754272,
+            0.009999999776482582
+          ]
+        },
+        "dimensions_mm": {
+          "width": 265.99998213350773,
+          "height": 233.20001363754272,
+          "depth": 215.00001288950443
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.cabinetTelevisionDoors",
+      "name": "cabinetTelevisionDoors",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/cabinetTelevisionDoors.glb",
+      "bytes": 16876,
+      "sha256": "8959347bfe26b1ac7e44c476f05789466bb84bcd2ad8b0fb40286005399bfcfc",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "cabinetTelevisionDoors — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/cabinetTelevisionDoors.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 420,
+        "triangles": 210,
+        "unique_mesh_triangles": 210,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.25
+          ],
+          "max": [
+            0.800000011920929,
+            0.3100000023841858,
+            0.010000001192092895
+          ]
+        },
+        "dimensions_mm": {
+          "width": 800.000011920929,
+          "height": 310.0000023841858,
+          "depth": 260.0000011920929
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.dryer",
+      "name": "dryer",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/dryer.glb",
+      "bytes": 17760,
+      "sha256": "d8b727612fdfc141c0b56360f75b897f1b71d3420c8c0942b5ec626bd3c8303c",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "dryer — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/dryer.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 817,
+        "triangles": 262,
+        "unique_mesh_triangles": 262,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.3499999940395355
+          ],
+          "max": [
+            0.39000001549720764,
+            0.4699999988079071,
+            0.030000001192092896
+          ]
+        },
+        "dimensions_mm": {
+          "width": 390.00001549720764,
+          "height": 469.9999988079071,
+          "depth": 379.9999952316284
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.hoodModern",
+      "name": "hoodModern",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/hoodModern.glb",
+      "bytes": 3968,
+      "sha256": "f5ac7dbadd1d98813c48315e56fa6ab2e8783870b1fb7be30825177bbf2b2afe",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "hoodModern — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/hoodModern.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 112,
+        "triangles": 28,
+        "unique_mesh_triangles": 28,
+        "bounds_m": {
+          "min": [
+            -1.4438228216156449e-15,
+            -0.030000001192092896,
+            -0.2849000096321106
+          ],
+          "max": [
+            0.4300000071525574,
+            0.3695317208766937,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525588,
+          "height": 399.5317220687866,
+          "depth": 284.9000096321106
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenBar",
+      "name": "kitchenBar",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenBar.glb",
+      "bytes": 6004,
+      "sha256": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenBar — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenBar.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 264,
+        "triangles": 76,
+        "unique_mesh_triangles": 76,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.20999999344348907
+          ],
+          "max": [
+            0.4300000071525574,
+            0.41999998688697815,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 419.99998688697815,
+          "depth": 209.99999344348907
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenBlender",
+      "name": "kitchenBlender",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenBlender.glb",
+      "bytes": 18728,
+      "sha256": "f471defb5b2b1cf3b949a1a8aaef0a8b727afe662b0815068cf4e963325a3c1f",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenBlender — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenBlender.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 418,
+        "triangles": 246,
+        "unique_mesh_triangles": 246,
+        "bounds_m": {
+          "min": [
+            3.5315752058839855e-10,
+            0,
+            -0.10911875218153
+          ],
+          "max": [
+            0.13582616316080093,
+            0.22751998964684247,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 135.82616280764339,
+          "height": 227.51998964684248,
+          "depth": 109.11875218153
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenCabinet",
+      "name": "kitchenCabinet",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenCabinet.glb",
+      "bytes": 10444,
+      "sha256": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenCabinet — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenCabinet.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 406,
+        "triangles": 114,
+        "unique_mesh_triangles": 114,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.44999998807907104
+          ],
+          "max": [
+            0.4300000071525574,
+            0.44999998807907104,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 449.99998807907104,
+          "depth": 449.99998807907104
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenCoffeeMachine",
+      "name": "kitchenCoffeeMachine",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenCoffeeMachine.glb",
+      "bytes": 13332,
+      "sha256": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenCoffeeMachine — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenCoffeeMachine.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 420,
+        "triangles": 166,
+        "unique_mesh_triangles": 166,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.24016705217957496
+          ],
+          "max": [
+            0.1895400075316429,
+            0.17748900577425955,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 189.5400075316429,
+          "height": 177.48900577425954,
+          "depth": 240.16705217957497
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenFridge",
+      "name": "kitchenFridge",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenFridge.glb",
+      "bytes": 20116,
+      "sha256": "8af4f4bbb1b5525ad8226e97926a5af60fa8fb20a3cb74dbda5328a9d320dbab",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenFridge — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenFridge.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 976,
+        "triangles": 250,
+        "unique_mesh_triangles": 250,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.28193390369415283
+          ],
+          "max": [
+            0.4300000071525574,
+            0.9200000166893005,
+            0.01000000014901161
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 920.0000166893005,
+          "depth": 291.93390384316444
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenMicrowave",
+      "name": "kitchenMicrowave",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenMicrowave.glb",
+      "bytes": 11248,
+      "sha256": "dd6a6c919f4bebc6e2080fe419262cf97a0d6461ead3f3998aa3c9edf4d2bd27",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenMicrowave — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenMicrowave.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 510,
+        "triangles": 152,
+        "unique_mesh_triangles": 152,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.2199999839067459
+          ],
+          "max": [
+            0.28999999165534973,
+            0.17999999225139618,
+            0.009999999776482492
+          ]
+        },
+        "dimensions_mm": {
+          "width": 289.99999165534973,
+          "height": 179.99999225139618,
+          "depth": 229.9999836832284
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenSink",
+      "name": "kitchenSink",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenSink.glb",
+      "bytes": 23480,
+      "sha256": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenSink — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenSink.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 2194,
+        "triangles": 318,
+        "unique_mesh_triangles": 318,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.44999998807907104
+          ],
+          "max": [
+            0.4300000071525574,
+            0.4899999797344208,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 489.9999797344208,
+          "depth": 449.99998807907104
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.kitchenStoveElectric",
+      "name": "kitchenStoveElectric",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/kitchenStoveElectric.glb",
+      "bytes": 18604,
+      "sha256": "cf646b960d7dfed1fac27898ff6de1f0671cfa33beecbed06ead7d0684517392",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "kitchenStoveElectric — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/kitchenStoveElectric.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 2040,
+        "triangles": 338,
+        "unique_mesh_triangles": 338,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.44999998807907104
+          ],
+          "max": [
+            0.4300000071525574,
+            0.44999998807907104,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 449.99998807907104,
+          "depth": 449.99998807907104
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.loungeSofa",
+      "name": "loungeSofa",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/loungeSofa.glb",
+      "bytes": 9644,
+      "sha256": "1886b811c0d3ad0d8525a4fd43adf4112c497c8e0ed906f06877ca3517f4c7dd",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "loungeSofa — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/loungeSofa.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 392,
+        "triangles": 128,
+        "unique_mesh_triangles": 128,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.4100000262260437
+          ],
+          "max": [
+            0.9799999594688416,
+            0.46000000834465027,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 979.9999594688416,
+          "height": 460.00000834465027,
+          "depth": 410.0000262260437
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.shower",
+      "name": "shower",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/shower.glb",
+      "bytes": 52020,
+      "sha256": "25c1cebad681fe369dc04839a8f08f5da2ccbd99b3a70aa83fe2e4d1590c6951",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "shower — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/shower.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 3483,
+        "triangles": 810,
+        "unique_mesh_triangles": 810,
+        "bounds_m": {
+          "min": [
+            -0.5617919927080053,
+            0,
+            -0.5617920120722791
+          ],
+          "max": [
+            1.9364273847239562e-8,
+            1.0940332029104234,
+            0.019999996847078136
+          ]
+        },
+        "dimensions_mm": {
+          "width": 561.7920120722791,
+          "height": 1094.0332029104234,
+          "depth": 581.7920089193573
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.stoolBar",
+      "name": "stoolBar",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/stoolBar.glb",
+      "bytes": 11816,
+      "sha256": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "stoolBar — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/stoolBar.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 492,
+        "triangles": 176,
+        "unique_mesh_triangles": 176,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.2298777848482132
+          ],
+          "max": [
+            0.2654399871826172,
+            0.4350000023841858,
+            0
+          ]
+        },
+        "dimensions_mm": {
+          "width": 265.4399871826172,
+          "height": 435.0000023841858,
+          "depth": 229.8777848482132
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.televisionModern",
+      "name": "televisionModern",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/televisionModern.glb",
+      "bytes": 6368,
+      "sha256": "d89519ad0a5f28b5b0dccb0d83209dccf610cda959578238dd21bbf9e219cfc6",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "televisionModern — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/televisionModern.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 228,
+        "triangles": 72,
+        "unique_mesh_triangles": 72,
+        "bounds_m": {
+          "min": [
+            -0.3424000144004822,
+            0,
+            -0.06419999897480011
+          ],
+          "max": [
+            0.3424000144004822,
+            0.4547500014305115,
+            0.06419999897480011
+          ]
+        },
+        "dimensions_mm": {
+          "width": 684.8000288009644,
+          "height": 454.7500014305115,
+          "depth": 128.39999794960022
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.toilet",
+      "name": "toilet",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/toilet.glb",
+      "bytes": 18112,
+      "sha256": "16165cfd03c56c2cb443b800570810a22ef770f65e7a468f6761d9dc14eaaeae",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "toilet — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/toilet.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1062,
+        "triangles": 230,
+        "unique_mesh_triangles": 230,
+        "bounds_m": {
+          "min": [
+            9.916778889664245e-9,
+            0,
+            -1.0619307654386379e-8
+          ],
+          "max": [
+            0.3125500092219908,
+            0.4509650036692619,
+            0.47717670082104985
+          ]
+        },
+        "dimensions_mm": {
+          "width": 312.5499993052119,
+          "height": 450.9650036692619,
+          "depth": 477.1767114403575
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.trashcan",
+      "name": "trashcan",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/trashcan.glb",
+      "bytes": 6452,
+      "sha256": "e0ccc1fe50cbd05386477fdff527171d1cf7c0de2ba7ff3233f8d9561feb2561",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "trashcan — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/trashcan.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 232,
+        "triangles": 68,
+        "unique_mesh_triangles": 68,
+        "bounds_m": {
+          "min": [
+            -0.10384674055672745,
+            -2.5062356547304757e-18,
+            -0.11163647732263944
+          ],
+          "max": [
+            0.10384674055672745,
+            0.42786596956182327,
+            0.1224877677452939
+          ]
+        },
+        "dimensions_mm": {
+          "width": 207.6934811134549,
+          "height": 427.86596956182325,
+          "depth": 234.12424506793334
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "kenney.furniture.washer",
+      "name": "washer",
+      "format": "glb",
+      "local_uri": "assets/models/kenney/washer.glb",
+      "bytes": 48104,
+      "sha256": "0c9704df1817d2699b72305b96cde097c9558bacabaef2fd5ab1ff4c03b81abf",
+      "source_url": "https://kenney.nl/assets/furniture-kit",
+      "download_url": null,
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "washer — Kenney, Furniture Kit — CC0 1.0 — https://kenney.nl/assets/furniture-kit",
+      "source_archive": "kenney_furniture-kit.zip",
+      "archive_sha256": "e67652d0932cee41683f74711c03d3e192a2af9979ef8e6b237711f5482d46b0",
+      "archive_member": "Models/GLTF format/washer.glb",
+      "modifications": "none",
+      "ai_generated": null,
+      "ai_model": null,
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [
+        "KHR_materials_unlit"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 3288,
+        "triangles": 720,
+        "unique_mesh_triangles": 720,
+        "bounds_m": {
+          "min": [
+            0,
+            0,
+            -0.3499999940395355
+          ],
+          "max": [
+            0.39000001549720764,
+            0.4699999988079071,
+            0.04000000223298684
+          ]
+        },
+        "dimensions_mm": {
+          "width": 390.00001549720764,
+          "height": 469.9999988079071,
+          "depth": 389.99999627252237
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.22155",
+      "name": "Refrigerated cake display cabinet (Cafe, Bakery and Coffee Bar)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/bakery-and-cafe-cake-display-refrigerated-a04e6421.glb",
+      "bytes": 86860,
+      "sha256": "48e05cbf6aa9ffb1d91fc1da85af6c27f240ec72b8886c6cbdc2cd2182ea6e0e",
+      "source_url": "https://3dassets.dev/assets/bakery-and-cafe-cake-display-refrigerated-a04e6421",
+      "download_url": "https://cdn.3dassets.dev/assets/22155/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Refrigerated cake display cabinet (Cafe, Bakery and Coffee Bar) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/bakery-and-cafe-cake-display-refrigerated-a04e6421",
+      "provider_asset_id": "22155",
+      "provider_published_at": "2026-09-07T17:35:18.132Z",
+      "provider_updated_at": "2026-11-12T19:40:24.575Z",
+      "provider_stats": {
+        "fileSize": 86860,
+        "triangles": 1740,
+        "vertices": 5220,
+        "meshes": 4,
+        "materials": 4,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.349979558870868,
+            0.000005705471215922131,
+            -0.34001115020750505
+          ],
+          "max": [
+            0.349979558870868,
+            1.600000023841858,
+            0.3500111406707619
+          ]
+        },
+        "sizeMeters": [
+          0.7,
+          1.6,
+          0.69
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 4,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 5220,
+        "triangles": 1740,
+        "unique_mesh_triangles": 1740,
+        "bounds_m": {
+          "min": [
+            -0.349979558870868,
+            0.000005705471215922131,
+            -0.34001115020750505
+          ],
+          "max": [
+            0.349979558870868,
+            1.600000023841858,
+            0.3500111406707619
+          ]
+        },
+        "dimensions_mm": {
+          "width": 699.959117741736,
+          "height": 1599.994318370642,
+          "depth": 690.022290878267
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.22111",
+      "name": "On demand espresso grinder (Cafe, Bakery and Coffee Bar)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/bakery-and-cafe-grinder-on-demand-4bcd3bea.glb",
+      "bytes": 116500,
+      "sha256": "1687e650e7890f2c403803cfe11fffc199f02cddf71ec16c8689887e91ef9edd",
+      "source_url": "https://3dassets.dev/assets/bakery-and-cafe-grinder-on-demand-4bcd3bea",
+      "download_url": "https://cdn.3dassets.dev/assets/22111/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "On demand espresso grinder (Cafe, Bakery and Coffee Bar) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/bakery-and-cafe-grinder-on-demand-4bcd3bea",
+      "provider_asset_id": "22111",
+      "provider_published_at": "2026-09-07T17:35:08.886Z",
+      "provider_updated_at": "2026-11-12T07:27:47.988Z",
+      "provider_stats": {
+        "fileSize": 116500,
+        "triangles": 2374,
+        "vertices": 7122,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.10001925363053,
+            0,
+            -0.1450050903176295
+          ],
+          "max": [
+            0.10001925363053,
+            0.765999972820282,
+            0.19500358707942034
+          ]
+        },
+        "sizeMeters": [
+          0.2,
+          0.766,
+          0.34
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 7122,
+        "triangles": 2374,
+        "unique_mesh_triangles": 2374,
+        "bounds_m": {
+          "min": [
+            -0.10001925363053,
+            0,
+            -0.1450050903176295
+          ],
+          "max": [
+            0.10001925363053,
+            0.765999972820282,
+            0.19500358707942034
+          ]
+        },
+        "dimensions_mm": {
+          "width": 200.03850726106,
+          "height": 765.999972820282,
+          "depth": 340.0086773970499
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.22118",
+      "name": "Counter water boiler (Cafe, Bakery and Coffee Bar)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/bakery-and-cafe-water-boiler-e3688ca1.glb",
+      "bytes": 71052,
+      "sha256": "5bb75821d6525ab1f264bc190f59faa4dc2db8026aa4435b0f474853d1f419c1",
+      "source_url": "https://3dassets.dev/assets/bakery-and-cafe-water-boiler-e3688ca1",
+      "download_url": "https://cdn.3dassets.dev/assets/22118/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Counter water boiler (Cafe, Bakery and Coffee Bar) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/bakery-and-cafe-water-boiler-e3688ca1",
+      "provider_asset_id": "22118",
+      "provider_published_at": "2026-09-07T17:35:11.634Z",
+      "provider_updated_at": "2026-11-13T07:25:32.047Z",
+      "provider_stats": {
+        "fileSize": 71052,
+        "triangles": 1428,
+        "vertices": 4284,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.12000262821950711,
+            0,
+            -0.1299929409913593
+          ],
+          "max": [
+            0.12000262821950711,
+            0.4359999895095825,
+            0.20355747041030461
+          ]
+        },
+        "sizeMeters": [
+          0.24,
+          0.436,
+          0.334
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 4284,
+        "triangles": 1428,
+        "unique_mesh_triangles": 1428,
+        "bounds_m": {
+          "min": [
+            -0.12000262821950711,
+            0,
+            -0.1299929409913593
+          ],
+          "max": [
+            0.12000262821950711,
+            0.4359999895095825,
+            0.20355747041030461
+          ]
+        },
+        "dimensions_mm": {
+          "width": 240.0052564390142,
+          "height": 435.9999895095825,
+          "depth": 333.5504114016639
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17188",
+      "name": "Wardrobe (Cozy Home Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/cozy-home-interiors-wardrobe-50e05964.glb",
+      "bytes": 8468,
+      "sha256": "823cb86cd309e348a28dc473c132b55ae4a4135b634e0d93f1e0c3704d1b071c",
+      "source_url": "https://3dassets.dev/assets/cozy-home-interiors-wardrobe-50e05964",
+      "download_url": "https://cdn.3dassets.dev/assets/17188/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Wardrobe (Cozy Home Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/cozy-home-interiors-wardrobe-50e05964",
+      "provider_asset_id": "17188",
+      "provider_published_at": "2026-09-07T16:26:57.409Z",
+      "provider_updated_at": "2026-11-12T03:36:29.181Z",
+      "provider_stats": {
+        "fileSize": 8468,
+        "triangles": 140,
+        "vertices": 420,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.549989311620227,
+            0,
+            -0.300044248073681
+          ],
+          "max": [
+            0.549989311620227,
+            1.899999976158142,
+            0.3774932132063013
+          ]
+        },
+        "sizeMeters": [
+          1.1,
+          1.9,
+          0.678
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 420,
+        "triangles": 140,
+        "unique_mesh_triangles": 140,
+        "bounds_m": {
+          "min": [
+            -0.549989311620227,
+            0,
+            -0.300044248073681
+          ],
+          "max": [
+            0.549989311620227,
+            1.899999976158142,
+            0.3774932132063013
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1099.978623240454,
+          "height": 1899.999976158142,
+          "depth": 677.5374612799823
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.16999",
+      "name": "Two-door office credenza (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-credenza-2-door-018b4a86.glb",
+      "bytes": 38512,
+      "sha256": "9a326deebf7596bebdea3db76ed09b84c54779c2999982b5f5b8e89de5798b6a",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-credenza-2-door-018b4a86",
+      "download_url": "https://cdn.3dassets.dev/assets/16999/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Two-door office credenza (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-credenza-2-door-018b4a86",
+      "provider_asset_id": "16999",
+      "provider_published_at": "2026-09-07T16:24:46.352Z",
+      "provider_updated_at": "2026-11-12T09:00:29.737Z",
+      "provider_stats": {
+        "fileSize": 38512,
+        "triangles": 824,
+        "vertices": 2472,
+        "meshes": 7,
+        "materials": 4,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.8100000023841858,
+            -0.000020904061715482092,
+            -0.23199713194297875
+          ],
+          "max": [
+            0.8100000023841858,
+            0.7759532876442112,
+            0.23199713194297875
+          ]
+        },
+        "sizeMeters": [
+          1.62,
+          0.776,
+          0.464
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 7,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 2472,
+        "triangles": 824,
+        "unique_mesh_triangles": 824,
+        "bounds_m": {
+          "min": [
+            -0.8100000023841858,
+            -0.000020904061715482092,
+            -0.23199713194297875
+          ],
+          "max": [
+            0.8100000023841858,
+            0.7759532876442112,
+            0.23199713194297875
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1620.0000047683716,
+          "height": 775.9741917059267,
+          "depth": 463.9942638859575
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17001",
+      "name": "Filing cabinet, four drawer (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-filing-cabinet-4-drawer-e816dbb7.glb",
+      "bytes": 43524,
+      "sha256": "c7db8a3ae22220b77dd4bed3c642f9972030b5a1c81664f60108fba2b8d93c76",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-filing-cabinet-4-drawer-e816dbb7",
+      "download_url": "https://cdn.3dassets.dev/assets/17001/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Filing cabinet, four drawer (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-filing-cabinet-4-drawer-e816dbb7",
+      "provider_asset_id": "17001",
+      "provider_published_at": "2026-09-07T16:24:47.088Z",
+      "provider_updated_at": "2026-11-14T13:19:35.838Z",
+      "provider_stats": {
+        "fileSize": 43524,
+        "triangles": 1050,
+        "vertices": 3150,
+        "meshes": 11,
+        "materials": 4,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.2380122300512548,
+            0.000006407024599475175,
+            -0.3129736216578005
+          ],
+          "max": [
+            0.2380122300512548,
+            1.3459999561309814,
+            0.3439993353858265
+          ]
+        },
+        "sizeMeters": [
+          0.476,
+          1.346,
+          0.657
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 11,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 3342,
+        "triangles": 1114,
+        "unique_mesh_triangles": 1050,
+        "bounds_m": {
+          "min": [
+            -0.2380122300512548,
+            0.000006407024599475175,
+            -0.3129736216578005
+          ],
+          "max": [
+            0.2380122300512548,
+            1.3459999561309814,
+            0.3439993353858265
+          ]
+        },
+        "dimensions_mm": {
+          "width": 476.0244601025096,
+          "height": 1345.9935491063818,
+          "depth": 656.972957043627
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17005",
+      "name": "Locker bank, six door (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-locker-bank-6-9938ad56.glb",
+      "bytes": 68916,
+      "sha256": "3d3e34dc3b66635575c5c99c45b93472d615d388251871ef107b7def87e2a854",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-locker-bank-6-9938ad56",
+      "download_url": "https://cdn.3dassets.dev/assets/17005/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Locker bank, six door (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-locker-bank-6-9938ad56",
+      "provider_asset_id": "17005",
+      "provider_published_at": "2026-09-07T16:24:47.904Z",
+      "provider_updated_at": "2026-11-11T23:54:16.037Z",
+      "provider_stats": {
+        "fileSize": 68916,
+        "triangles": 3328,
+        "vertices": 9984,
+        "meshes": 20,
+        "materials": 4,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.3159860414508701,
+            0,
+            -0.2300123515595347
+          ],
+          "max": [
+            0.3159860414508701,
+            1.4299999475479126,
+            0.2559996805478144
+          ]
+        },
+        "sizeMeters": [
+          0.632,
+          1.43,
+          0.486
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 20,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 9984,
+        "triangles": 3328,
+        "unique_mesh_triangles": 3328,
+        "bounds_m": {
+          "min": [
+            -0.3159860414508701,
+            0,
+            -0.2300123515595347
+          ],
+          "max": [
+            0.3159860414508701,
+            1.4299999475479126,
+            0.2559996805478144
+          ]
+        },
+        "dimensions_mm": {
+          "width": 631.9720829017402,
+          "height": 1429.9999475479126,
+          "depth": 486.0120321073491
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17044",
+      "name": "Desktop printer (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-printer-desktop-a228d16a.glb",
+      "bytes": 22964,
+      "sha256": "2832bc9564c7d29ef43a66b09165cbd90cd5814f887f0e654638d6dadba441bd",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-printer-desktop-a228d16a",
+      "download_url": "https://cdn.3dassets.dev/assets/17044/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Desktop printer (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-printer-desktop-a228d16a",
+      "provider_asset_id": "17044",
+      "provider_published_at": "2026-09-07T16:24:57.286Z",
+      "provider_updated_at": "2026-11-12T19:45:37.252Z",
+      "provider_stats": {
+        "fileSize": 22964,
+        "triangles": 410,
+        "vertices": 1230,
+        "meshes": 4,
+        "materials": 4,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.20999999344348907,
+            0.000011524507225024738,
+            -0.17000853987473477
+          ],
+          "max": [
+            0.20999999344348907,
+            0.29551247661429597,
+            0.17000853987473477
+          ]
+        },
+        "sizeMeters": [
+          0.42,
+          0.296,
+          0.34
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 4,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1230,
+        "triangles": 410,
+        "unique_mesh_triangles": 410,
+        "bounds_m": {
+          "min": [
+            -0.20999999344348907,
+            0.000011524507225024738,
+            -0.17000853987473477
+          ],
+          "max": [
+            0.20999999344348907,
+            0.29551247661429597,
+            0.17000853987473477
+          ]
+        },
+        "dimensions_mm": {
+          "width": 419.99998688697815,
+          "height": 295.50095210707093,
+          "depth": 340.01707974946953
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17043",
+      "name": "Multifunction printer (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-printer-multifunction-0b3b5d41.glb",
+      "bytes": 54824,
+      "sha256": "f4de8f74b0af658f39d65e0990098c486982fa76f1af84cf7ad5b167896c1b13",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-printer-multifunction-0b3b5d41",
+      "download_url": "https://cdn.3dassets.dev/assets/17043/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Multifunction printer (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-printer-multifunction-0b3b5d41",
+      "provider_asset_id": "17043",
+      "provider_published_at": "2026-09-07T16:24:57.019Z",
+      "provider_updated_at": "2026-11-12T19:44:55.330Z",
+      "provider_stats": {
+        "fileSize": 54824,
+        "triangles": 1338,
+        "vertices": 4014,
+        "meshes": 11,
+        "materials": 5,
+        "textures": 0,
+        "animations": [
+          "drawer-open",
+          "drawer-close",
+          "door-open",
+          "door-close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.2900073160076449,
+            0,
+            -0.31001830208905284
+          ],
+          "max": [
+            0.2900073160076449,
+            0.9499836564538567,
+            0.3439986898121641
+          ]
+        },
+        "sizeMeters": [
+          0.58,
+          0.95,
+          0.654
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 11,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 4014,
+        "triangles": 1338,
+        "unique_mesh_triangles": 1338,
+        "bounds_m": {
+          "min": [
+            -0.2900073160076449,
+            0,
+            -0.31001830208905284
+          ],
+          "max": [
+            0.2900073160076449,
+            0.9499836564538567,
+            0.3439986898121641
+          ]
+        },
+        "dimensions_mm": {
+          "width": 580.0146320152897,
+          "height": 949.9836564538567,
+          "depth": 654.0169919012169
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17026",
+      "name": "Ceiling-mount projector (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-projector-ceiling-mount-73d3f7cc.glb",
+      "bytes": 58620,
+      "sha256": "848164d59a2985341f27a6581f14ccbfbdcd949ce79576680f0d8f674198b1df",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-projector-ceiling-mount-73d3f7cc",
+      "download_url": "https://cdn.3dassets.dev/assets/17026/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Ceiling-mount projector (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-projector-ceiling-mount-73d3f7cc",
+      "provider_asset_id": "17026",
+      "provider_published_at": "2026-09-07T16:24:53.111Z",
+      "provider_updated_at": "2026-11-12T09:12:17.572Z",
+      "provider_stats": {
+        "fileSize": 58620,
+        "triangles": 1152,
+        "vertices": 3456,
+        "meshes": 4,
+        "materials": 4,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.1699971247898829,
+            0,
+            -0.15000640317762642
+          ],
+          "max": [
+            0.1699971247898829,
+            0.6639999747276306,
+            0.1859987179767217
+          ]
+        },
+        "sizeMeters": [
+          0.34,
+          0.664,
+          0.336
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 4,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 3456,
+        "triangles": 1152,
+        "unique_mesh_triangles": 1152,
+        "bounds_m": {
+          "min": [
+            -0.1699971247898829,
+            0,
+            -0.15000640317762642
+          ],
+          "max": [
+            0.1699971247898829,
+            0.6639999747276306,
+            0.1859987179767217
+          ]
+        },
+        "dimensions_mm": {
+          "width": 339.99424957976584,
+          "height": 663.9999747276306,
+          "depth": 336.0051211543481
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17046",
+      "name": "Cross-cut shredder (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-shredder-cross-cut-2b7fd832.glb",
+      "bytes": 34344,
+      "sha256": "c4ba7bfdde796d3a754f051f15e4c144e138b1de67f47f8459b777a0dfaf9535",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-shredder-cross-cut-2b7fd832",
+      "download_url": "https://cdn.3dassets.dev/assets/17046/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Cross-cut shredder (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-shredder-cross-cut-2b7fd832",
+      "provider_asset_id": "17046",
+      "provider_published_at": "2026-09-07T16:24:57.576Z",
+      "provider_updated_at": "2026-11-13T15:25:11.722Z",
+      "provider_stats": {
+        "fileSize": 34344,
+        "triangles": 632,
+        "vertices": 1896,
+        "meshes": 5,
+        "materials": 5,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.20999999344348907,
+            0,
+            -0.1650096081786405
+          ],
+          "max": [
+            0.20999999344348907,
+            0.5720000267028809,
+            0.178998521154898
+          ]
+        },
+        "sizeMeters": [
+          0.42,
+          0.572,
+          0.344
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 5,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1896,
+        "triangles": 632,
+        "unique_mesh_triangles": 632,
+        "bounds_m": {
+          "min": [
+            -0.20999999344348907,
+            0,
+            -0.1650096081786405
+          ],
+          "max": [
+            0.20999999344348907,
+            0.5720000267028809,
+            0.178998521154898
+          ]
+        },
+        "dimensions_mm": {
+          "width": 419.99998688697815,
+          "height": 572.0000267028809,
+          "depth": 344.00812933353853
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.17019",
+      "name": "Wall-mounted whiteboard (Downtown Office Interiors)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/downtown-office-interiors-whiteboard-wall-mounted-251627dd.glb",
+      "bytes": 25196,
+      "sha256": "ac0268a1f46a856fb84dacf7b43608f468dc35472f9d97a46e061858305ad49c",
+      "source_url": "https://3dassets.dev/assets/downtown-office-interiors-whiteboard-wall-mounted-251627dd",
+      "download_url": "https://cdn.3dassets.dev/assets/17019/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Wall-mounted whiteboard (Downtown Office Interiors) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/downtown-office-interiors-whiteboard-wall-mounted-251627dd",
+      "provider_asset_id": "17019",
+      "provider_published_at": "2026-09-07T16:24:51.491Z",
+      "provider_updated_at": "2026-11-14T06:04:34.921Z",
+      "provider_stats": {
+        "fileSize": 25196,
+        "triangles": 496,
+        "vertices": 1488,
+        "meshes": 5,
+        "materials": 5,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -1,
+            0.000044294837301193934,
+            -0.03503954835169223
+          ],
+          "max": [
+            1,
+            1.2600165513553812,
+            0.08295168778761447
+          ]
+        },
+        "sizeMeters": [
+          2,
+          1.26,
+          0.118
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 5,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1488,
+        "triangles": 496,
+        "unique_mesh_triangles": 496,
+        "bounds_m": {
+          "min": [
+            -1,
+            0.000025872642497072607,
+            -0.03504209890699023
+          ],
+          "max": [
+            1,
+            1.2600165513553812,
+            0.08295168778761447
+          ]
+        },
+        "dimensions_mm": {
+          "width": 2000,
+          "height": 1259.9906787128841,
+          "depth": 117.9937866946047
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.14110",
+      "name": "Integrated dishwasher 600 (Home Appliances and Utility Room)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/home-appliances-and-utility-dishwasher-integrated-070297f1.glb",
+      "bytes": 116580,
+      "sha256": "b5019108158b57731debbc5c901bf2dcaec839b7dd9372fc43dd468feb663b96",
+      "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-dishwasher-integrated-070297f1",
+      "download_url": "https://cdn.3dassets.dev/assets/14110/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Integrated dishwasher 600 (Home Appliances and Utility Room) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/home-appliances-and-utility-dishwasher-integrated-070297f1",
+      "provider_asset_id": "14110",
+      "provider_published_at": "2026-09-07T15:47:23.036Z",
+      "provider_updated_at": "2026-11-12T22:51:05.261Z",
+      "provider_stats": {
+        "fileSize": 116580,
+        "triangles": 2776,
+        "vertices": 8328,
+        "meshes": 7,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.32219652189178594,
+            0,
+            -0.33894326080184345
+          ],
+          "max": [
+            0.29897579621413,
+            0.8199999928474426,
+            0.3105003191852539
+          ]
+        },
+        "sizeMeters": [
+          0.621,
+          0.82,
+          0.649
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 7,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 8328,
+        "triangles": 2776,
+        "unique_mesh_triangles": 2776,
+        "bounds_m": {
+          "min": [
+            -0.32219652189178594,
+            0,
+            -0.33894326080184345
+          ],
+          "max": [
+            0.29897579621413,
+            0.8199999928474426,
+            0.3105003191852539
+          ]
+        },
+        "dimensions_mm": {
+          "width": 621.1723181059159,
+          "height": 819.9999928474426,
+          "depth": 649.4435799870973
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.14049",
+      "name": "Undercounter ice maker 400 (Home Appliances and Utility Room)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/home-appliances-and-utility-ice-maker-undercounter-8eec890c.glb",
+      "bytes": 76468,
+      "sha256": "96e54a65742e6215d89106e11f87ef472816e77dce9a4c33a42650d464be92ed",
+      "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-ice-maker-undercounter-8eec890c",
+      "download_url": "https://cdn.3dassets.dev/assets/14049/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Undercounter ice maker 400 (Home Appliances and Utility Room) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/home-appliances-and-utility-ice-maker-undercounter-8eec890c",
+      "provider_asset_id": "14049",
+      "provider_published_at": "2026-09-07T15:47:13.056Z",
+      "provider_updated_at": "2026-11-12T06:51:37.826Z",
+      "provider_stats": {
+        "fileSize": 76468,
+        "triangles": 1488,
+        "vertices": 4464,
+        "meshes": 7,
+        "materials": 5,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.20330332222197295,
+            0,
+            -0.39502723093561015
+          ],
+          "max": [
+            0.20000332889881073,
+            0.8500000238418579,
+            0.3630127803313462
+          ]
+        },
+        "sizeMeters": [
+          0.403,
+          0.85,
+          0.758
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 7,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 4464,
+        "triangles": 1488,
+        "unique_mesh_triangles": 1488,
+        "bounds_m": {
+          "min": [
+            -0.20330332222197295,
+            0,
+            -0.39502723093561015
+          ],
+          "max": [
+            0.20000332889881073,
+            0.8500000238418579,
+            0.3630127803313462
+          ]
+        },
+        "dimensions_mm": {
+          "width": 403.30665112078367,
+          "height": 850.0000238418579,
+          "depth": 758.0400112669563
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.14102",
+      "name": "Built-in steam oven 600 (Home Appliances and Utility Room)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/home-appliances-and-utility-oven-steam-built-in-c4a33f97.glb",
+      "bytes": 80780,
+      "sha256": "77be3b1f0ddec80dbe87aeaccb4def1e9b4a4ce2eebeb53c019149c93370b275",
+      "source_url": "https://3dassets.dev/assets/home-appliances-and-utility-oven-steam-built-in-c4a33f97",
+      "download_url": "https://cdn.3dassets.dev/assets/14102/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Built-in steam oven 600 (Home Appliances and Utility Room) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/home-appliances-and-utility-oven-steam-built-in-c4a33f97",
+      "provider_asset_id": "14102",
+      "provider_published_at": "2026-09-07T15:47:21.892Z",
+      "provider_updated_at": "2026-11-12T23:15:41.984Z",
+      "provider_stats": {
+        "fileSize": 80780,
+        "triangles": 1540,
+        "vertices": 4620,
+        "meshes": 10,
+        "materials": 5,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.3100000023841858,
+            0.000006140992861725092,
+            -0.32891231775283813
+          ],
+          "max": [
+            0.3100000023841858,
+            0.5425912755183577,
+            0.3689791493218364
+          ]
+        },
+        "sizeMeters": [
+          0.62,
+          0.543,
+          0.698
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 10,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 4620,
+        "triangles": 1540,
+        "unique_mesh_triangles": 1540,
+        "bounds_m": {
+          "min": [
+            -0.3100000023841858,
+            0.000006140992861725092,
+            -0.32891231775283813
+          ],
+          "max": [
+            0.3100000023841858,
+            0.5425912755183577,
+            0.3689791493218364
+          ]
+        },
+        "dimensions_mm": {
+          "width": 620.0000047683716,
+          "height": 542.585134525496,
+          "depth": 697.8914670746746
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.25922",
+      "name": "Tripod projection screen (Hotel and Resort Operations)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/hotel-and-resort-operations-projection-screen-2d55dd6b.glb",
+      "bytes": 33252,
+      "sha256": "d3e3d6a0921b9f7e9751b4ca5cad031ae2ebd38cca3bca19378c7a64f77dfd24",
+      "source_url": "https://3dassets.dev/assets/hotel-and-resort-operations-projection-screen-2d55dd6b",
+      "download_url": "https://cdn.3dassets.dev/assets/25922/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Tripod projection screen (Hotel and Resort Operations) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/hotel-and-resort-operations-projection-screen-2d55dd6b",
+      "provider_asset_id": "25922",
+      "provider_published_at": "2026-09-07T20:43:12.199Z",
+      "provider_updated_at": "2026-11-12T18:36:05.702Z",
+      "provider_stats": {
+        "fileSize": 33252,
+        "triangles": 640,
+        "vertices": 1920,
+        "meshes": 3,
+        "materials": 3,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.8999999761581421,
+            0.000014667259303324798,
+            -0.19996551027713116
+          ],
+          "max": [
+            0.8999999761581421,
+            1.6668651445030243,
+            0.37996550252852734
+          ]
+        },
+        "sizeMeters": [
+          1.8,
+          1.667,
+          0.58
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1920,
+        "triangles": 640,
+        "unique_mesh_triangles": 640,
+        "bounds_m": {
+          "min": [
+            -0.8999999761581421,
+            0.000014667259303324798,
+            -0.19996551027713116
+          ],
+          "max": [
+            0.8999999761581421,
+            1.6668651445030243,
+            0.37996550252852734
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1799.9999523162842,
+          "height": 1666.850477243721,
+          "depth": 579.9310128056585
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.30086",
+      "name": "Blackboard with Chalk Tray (Japanese School and City Street)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/japanese-school-and-city-street-blackboard-with-chalk--fc405c1d.glb",
+      "bytes": 96224,
+      "sha256": "38fe7d7b06d65a2fcda5bab63dff730c47c1c3c043064da8f350aea3e57f58ee",
+      "source_url": "https://3dassets.dev/assets/japanese-school-and-city-street-blackboard-with-chalk--fc405c1d",
+      "download_url": "https://cdn.3dassets.dev/assets/30086/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Blackboard with Chalk Tray (Japanese School and City Street) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/japanese-school-and-city-street-blackboard-with-chalk--fc405c1d",
+      "provider_asset_id": "30086",
+      "provider_published_at": "2026-09-08T05:12:26.259Z",
+      "provider_updated_at": "2026-11-12T00:03:48.987Z",
+      "provider_stats": {
+        "fileSize": 96224,
+        "triangles": 672,
+        "vertices": 1506,
+        "meshes": 4,
+        "materials": 4,
+        "textures": 2,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -1.7461999654769897,
+            -0.0000871888365253648,
+            -0.04005310856581015
+          ],
+          "max": [
+            1.7461999654769897,
+            1.9650872222151263,
+            0.13005310469150824
+          ]
+        },
+        "sizeMeters": [
+          3.492,
+          1.965,
+          0.17
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization",
+          "EXT_texture_webp"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 2,
+      "mesh_count": 4,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1506,
+        "triangles": 672,
+        "unique_mesh_triangles": 672,
+        "bounds_m": {
+          "min": [
+            -1.7461999654769897,
+            -0.0000871888365253648,
+            -0.04005310856581015
+          ],
+          "max": [
+            1.7461999654769897,
+            1.9650872222151263,
+            0.13005310469150824
+          ]
+        },
+        "dimensions_mm": {
+          "width": 3492.3999309539795,
+          "height": 1965.1744110516515,
+          "depth": 170.1062132573184
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.30088",
+      "name": "Cleaning Locker (Japanese School and City Street)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/japanese-school-and-city-street-cleaning-locker-66eb1ddc.glb",
+      "bytes": 31756,
+      "sha256": "32840498f5bb9383b7ddcd99fab18b2d0d3a367e2b9d81edd8e094e883584705",
+      "source_url": "https://3dassets.dev/assets/japanese-school-and-city-street-cleaning-locker-66eb1ddc",
+      "download_url": "https://cdn.3dassets.dev/assets/30088/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Cleaning Locker (Japanese School and City Street) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/japanese-school-and-city-street-cleaning-locker-66eb1ddc",
+      "provider_asset_id": "30088",
+      "provider_published_at": "2026-09-08T05:12:26.589Z",
+      "provider_updated_at": "2026-11-12T08:09:04.687Z",
+      "provider_stats": {
+        "fileSize": 31756,
+        "triangles": 768,
+        "vertices": 1744,
+        "meshes": 3,
+        "materials": 1,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -0.4599326142939671,
+            0,
+            -0.25997755520365684
+          ],
+          "max": [
+            0.4599326142939671,
+            2.7249999046325684,
+            0.2754646038356746
+          ]
+        },
+        "sizeMeters": [
+          0.92,
+          2.725,
+          0.535
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 3,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1744,
+        "triangles": 768,
+        "unique_mesh_triangles": 768,
+        "bounds_m": {
+          "min": [
+            -0.4599326142939671,
+            0,
+            -0.25997755520365684
+          ],
+          "max": [
+            0.4599326142939671,
+            2.7249999046325684,
+            0.2754646038356746
+          ]
+        },
+        "dimensions_mm": {
+          "width": 919.8652285879342,
+          "height": 2724.9999046325684,
+          "depth": 535.4421590393315
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.30085",
+      "name": "Lectern (Japanese School and City Street)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/japanese-school-and-city-street-lectern-f8b909de.glb",
+      "bytes": 82252,
+      "sha256": "fdbd9f2e1e8ae96e30c98d758dee82301eb32b5811e925d96854e56d685d65ea",
+      "source_url": "https://3dassets.dev/assets/japanese-school-and-city-street-lectern-f8b909de",
+      "download_url": "https://cdn.3dassets.dev/assets/30085/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Lectern (Japanese School and City Street) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/japanese-school-and-city-street-lectern-f8b909de",
+      "provider_asset_id": "30085",
+      "provider_published_at": "2026-09-08T05:12:25.889Z",
+      "provider_updated_at": "2026-11-12T14:35:32.488Z",
+      "provider_stats": {
+        "fileSize": 82252,
+        "triangles": 416,
+        "vertices": 914,
+        "meshes": 2,
+        "materials": 2,
+        "textures": 2,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.309994879538959,
+            0,
+            -0.19003455309961248
+          ],
+          "max": [
+            0.309994879538959,
+            1.5449999570846558,
+            0.2300345596561234
+          ]
+        },
+        "sizeMeters": [
+          0.62,
+          1.545,
+          0.42
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization",
+          "EXT_texture_webp"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 2,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 914,
+        "triangles": 416,
+        "unique_mesh_triangles": 416,
+        "bounds_m": {
+          "min": [
+            -0.309994879538959,
+            0,
+            -0.19003455309961248
+          ],
+          "max": [
+            0.309994879538959,
+            1.5449999570846558,
+            0.2300345596561234
+          ]
+        },
+        "dimensions_mm": {
+          "width": 619.9897590779179,
+          "height": 1544.9999570846558,
+          "depth": 420.0691127557359
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.30081",
+      "name": "Student Desk (Japanese School and City Street)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/japanese-school-and-city-street-student-desk-9e5d008a.glb",
+      "bytes": 51796,
+      "sha256": "d04e65e2aa7e20bedcf29bf5ba68ac7c3698628c597bee2bf02d5e1113f382e3",
+      "source_url": "https://3dassets.dev/assets/japanese-school-and-city-street-student-desk-9e5d008a",
+      "download_url": "https://cdn.3dassets.dev/assets/30081/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Student Desk (Japanese School and City Street) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/japanese-school-and-city-street-student-desk-9e5d008a",
+      "provider_asset_id": "30081",
+      "provider_published_at": "2026-09-08T05:12:24.695Z",
+      "provider_updated_at": "2026-11-12T07:34:38.251Z",
+      "provider_stats": {
+        "fileSize": 51796,
+        "triangles": 780,
+        "vertices": 1795,
+        "meshes": 2,
+        "materials": 2,
+        "textures": 1,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.30000001192092896,
+            0,
+            -0.21001007945317754
+          ],
+          "max": [
+            0.30000001192092896,
+            0.7000151096430232,
+            0.29001116080623845
+          ]
+        },
+        "sizeMeters": [
+          0.6,
+          0.7,
+          0.5
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization",
+          "EXT_texture_webp"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "EXT_texture_webp",
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 1,
+      "mesh_count": 2,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 1795,
+        "triangles": 780,
+        "unique_mesh_triangles": 780,
+        "bounds_m": {
+          "min": [
+            -0.30000001192092896,
+            0,
+            -0.21001007945317754
+          ],
+          "max": [
+            0.30000001192092896,
+            0.7000151096430232,
+            0.29001116080623845
+          ]
+        },
+        "dimensions_mm": {
+          "width": 600.0000238418579,
+          "height": 700.0151096430232,
+          "depth": 500.02124025941595
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.26218",
+      "name": "Bottled water dispenser (Office Lobby and Building Facilities)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/office-lobby-and-facilities-water-dispenser-f53b156e.glb",
+      "bytes": 47684,
+      "sha256": "0a4c5a31880d0bca942683a1f2ecbef431fee6363ed9641a67939e01141e24a0",
+      "source_url": "https://3dassets.dev/assets/office-lobby-and-facilities-water-dispenser-f53b156e",
+      "download_url": "https://cdn.3dassets.dev/assets/26218/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Bottled water dispenser (Office Lobby and Building Facilities) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/office-lobby-and-facilities-water-dispenser-f53b156e",
+      "provider_asset_id": "26218",
+      "provider_published_at": "2026-09-07T20:47:51.489Z",
+      "provider_updated_at": "2026-11-14T21:40:04.305Z",
+      "provider_stats": {
+        "fileSize": 47684,
+        "triangles": 912,
+        "vertices": 2736,
+        "meshes": 5,
+        "materials": 5,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.16997969747189945,
+            0,
+            -0.16997969747189945
+          ],
+          "max": [
+            0.16997969747189945,
+            1.5499999523162842,
+            0.23400610430432103
+          ]
+        },
+        "sizeMeters": [
+          0.34,
+          1.55,
+          0.404
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 5,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 2736,
+        "triangles": 912,
+        "unique_mesh_triangles": 912,
+        "bounds_m": {
+          "min": [
+            -0.16997969747189945,
+            0,
+            -0.16997969747189945
+          ],
+          "max": [
+            0.16997969747189945,
+            1.5499999523162842,
+            0.23400610430432103
+          ]
+        },
+        "dimensions_mm": {
+          "width": 339.9593949437989,
+          "height": 1549.9999523162842,
+          "depth": 403.98580177622046
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.16423",
+      "name": "Stainless prep table (Restaurant Kitchen and Dining Room)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/restaurant-kitchen-and-dining-prep-table-21e16598.glb",
+      "bytes": 50216,
+      "sha256": "dc314c8701858217e7fcc07e16b9171629471a9765442d2ca5e12298c00498ae",
+      "source_url": "https://3dassets.dev/assets/restaurant-kitchen-and-dining-prep-table-21e16598",
+      "download_url": "https://cdn.3dassets.dev/assets/16423/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Stainless prep table (Restaurant Kitchen and Dining Room) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/restaurant-kitchen-and-dining-prep-table-21e16598",
+      "provider_asset_id": "16423",
+      "provider_published_at": "2026-09-07T16:18:00.423Z",
+      "provider_updated_at": "2026-11-14T23:35:15.306Z",
+      "provider_stats": {
+        "fileSize": 50216,
+        "triangles": 1024,
+        "vertices": 3072,
+        "meshes": 1,
+        "materials": 1,
+        "textures": 0,
+        "animations": [],
+        "boundingBox": {
+          "min": [
+            -0.6060000061988831,
+            -0.000021586520527638875,
+            -0.3559806304368588
+          ],
+          "max": [
+            0.6060000061988831,
+            1.0100215769837844,
+            0.34998061827751126
+          ]
+        },
+        "sizeMeters": [
+          1.212,
+          1.01,
+          0.706
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Fable 5.1",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "preview_candidate",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 1,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 3072,
+        "triangles": 1024,
+        "unique_mesh_triangles": 1024,
+        "bounds_m": {
+          "min": [
+            -0.6060000061988831,
+            -0.000021586520527638875,
+            -0.3559806304368588
+          ],
+          "max": [
+            0.6060000061988831,
+            1.0100215769837844,
+            0.34998061827751126
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1212.000012397766,
+          "height": 1010.0431635043119,
+          "depth": 705.9612487143701
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "3dassets.34752",
+      "name": "Teaching Lab Bench with Sink and Service Spine (University Lecture Hall and Campus)",
+      "format": "glb",
+      "local_uri": "assets/models/3dassets/university-lecture-hall-and-campus-lab-bench-with-sink-ffde2f63.glb",
+      "bytes": 104852,
+      "sha256": "c8a833fd24aa6669026bef03ba83f3e036a8ba9a4cd8d478337d749db41d06b2",
+      "source_url": "https://3dassets.dev/assets/university-lecture-hall-and-campus-lab-bench-with-sink-ffde2f63",
+      "download_url": "https://cdn.3dassets.dev/assets/34752/v1/model.glb",
+      "author": "3D Assets",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "Teaching Lab Bench with Sink and Service Spine (University Lecture Hall and Campus) — 3D Assets — CC0 1.0 — https://3dassets.dev/assets/university-lecture-hall-and-campus-lab-bench-with-sink-ffde2f63",
+      "provider_asset_id": "34752",
+      "provider_published_at": "2026-09-11T10:10:38.562Z",
+      "provider_updated_at": "2026-11-14T04:46:42.629Z",
+      "provider_stats": {
+        "fileSize": 104852,
+        "triangles": 2512,
+        "vertices": 5585,
+        "meshes": 8,
+        "materials": 4,
+        "textures": 0,
+        "animations": [
+          "open",
+          "close"
+        ],
+        "boundingBox": {
+          "min": [
+            -1.2000000476837158,
+            -0.00004412408321385897,
+            -0.4249635321070314
+          ],
+          "max": [
+            1.2000000476837158,
+            1.4759393560733627,
+            0.3905800650347671
+          ]
+        },
+        "sizeMeters": [
+          2.4,
+          1.476,
+          0.816
+        ],
+        "hasDraco": false,
+        "hasMeshopt": false,
+        "hasKTX2": false,
+        "extensionsUsed": [
+          "KHR_mesh_quantization"
+        ]
+      },
+      "modifications": "none",
+      "ai_generated": true,
+      "ai_model": "Claude Opus 5",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "status": "downloaded",
+      "scene_integration": "pending",
+      "gltf_extensions_required": [
+        "KHR_mesh_quantization"
+      ],
+      "gltf_extensions_used": [
+        "KHR_mesh_quantization"
+      ],
+      "embedded_image_count": 0,
+      "mesh_count": 8,
+      "inspection": {
+        "method": "decoded_positions_and_default_scene_transforms",
+        "vertices": 5585,
+        "triangles": 2512,
+        "unique_mesh_triangles": 2512,
+        "bounds_m": {
+          "min": [
+            -1.2000000476837158,
+            -0.00004412408321385897,
+            -0.4249635321070314
+          ],
+          "max": [
+            1.2000000476837158,
+            1.4759393560733627,
+            0.3905800650347671
+          ]
+        },
+        "dimensions_mm": {
+          "width": 2400.0000953674316,
+          "height": 1475.9834801565764,
+          "depth": 815.5435971417986
+        },
+        "visual_review": false
+      }
+    },
+    {
+      "id": "twothreeD.generated.dish_dryer",
+      "name": "檯上烘碗機",
+      "format": "glb",
+      "local_uri": "assets/models/generated/dish_dryer.glb",
+      "bytes": 148264,
+      "sha256": "0a852e5b9ce96fad5797db931e61dbbc418dfc24e7bf7baa066e089fa0d2ed9c",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "檯上烘碗機 — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "雙層烘碗機：透明門、碗盤架、控制鈕與散熱口。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 58,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 3209,
+        "triangles": 2448,
+        "unique_mesh_triangles": 2448,
+        "bounds_m": {
+          "min": [
+            -0.30000001192092896,
+            -1.8626451769865326e-10,
+            -0.22499999403953552
+          ],
+          "max": [
+            0.30000001192092896,
+            0.5799999833106995,
+            0.2644999921321869
+          ]
+        },
+        "dimensions_mm": {
+          "width": 600.0000238418579,
+          "height": 579.999983496964,
+          "depth": 489.4999861717224
+        },
+        "visual_review": true
+      }
+    },
+    {
+      "id": "twothreeD.generated.cup_sealer",
+      "name": "飲料杯封口機",
+      "format": "glb",
+      "local_uri": "assets/models/generated/cup_sealer.glb",
+      "bytes": 70236,
+      "sha256": "fa75ceab4aa601a880639f07b660ddf53955dcdfb66e14e7ebc1da26c1b96f4e",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "飲料杯封口機 — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "杯用封膜機：上方膜捲、封口壓頭、滑動杯架與控制面板；非袋口封口機。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 24,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 1595,
+        "triangles": 1152,
+        "unique_mesh_triangles": 1152,
+        "bounds_m": {
+          "min": [
+            -0.1599999964237213,
+            -1.8626451769865326e-10,
+            -0.19499999284744263
+          ],
+          "max": [
+            0.1599999964237213,
+            0.5799999833106995,
+            0.22200000286102295
+          ]
+        },
+        "dimensions_mm": {
+          "width": 319.9999928474426,
+          "height": 579.999983496964,
+          "depth": 416.9999957084656
+        },
+        "visual_review": true
+      }
+    },
+    {
+      "id": "twothreeD.generated.tea_brewer",
+      "name": "檯上煮茶機",
+      "format": "glb",
+      "local_uri": "assets/models/generated/tea_brewer.glb",
+      "bytes": 89624,
+      "sha256": "9ab6679ada95150f80c137b52915a0ba0c5f68b3d0eee6c05ae352a3fb3127ba",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "檯上煮茶機 — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "茶用萃煮設備示意：上層濾茶槽、下層出茶容器、出茶嘴與時間／溫度控制；非咖啡機或製茶揉捻機。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 37,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 2004,
+        "triangles": 1200,
+        "unique_mesh_triangles": 1200,
+        "bounds_m": {
+          "min": [
+            -0.2150000035762787,
+            -1.8626451769865326e-10,
+            -0.2150000035762787
+          ],
+          "max": [
+            0.2150000035762787,
+            0.6259999871253967,
+            0.23100000619888306
+          ]
+        },
+        "dimensions_mm": {
+          "width": 430.0000071525574,
+          "height": 625.9999873116612,
+          "depth": 446.00000977516174
+        },
+        "visual_review": true
+      }
+    },
+    {
+      "id": "twothreeD.generated.water_dispenser_countertop",
+      "name": "檯上飲水機",
+      "format": "glb",
+      "local_uri": "assets/models/generated/water_dispenser_countertop.glb",
+      "bytes": 73220,
+      "sha256": "e347b45b5bad3b3352bf8a1d483c95050d04a7f4a74220b4cae66dbf06f9b026",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "檯上飲水機 — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "無桶檯上飲水機：冷／熱雙出水口、內凹接水區、滴水盤；由桌／櫃承載時使用。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 34,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 1560,
+        "triangles": 912,
+        "unique_mesh_triangles": 912,
+        "bounds_m": {
+          "min": [
+            -0.16500000655651093,
+            -1.8626451769865326e-10,
+            -0.17499999701976776
+          ],
+          "max": [
+            0.16699999570846558,
+            0.5299999713897705,
+            0.17499999701976776
+          ]
+        },
+        "dimensions_mm": {
+          "width": 332.0000022649765,
+          "height": 529.999971576035,
+          "depth": 349.9999940395355
+        },
+        "visual_review": true
+      }
+    },
+    {
+      "id": "twothreeD.generated.whiteboard",
+      "name": "一般白板（支架式）",
+      "format": "glb",
+      "local_uri": "assets/models/generated/whiteboard.glb",
+      "bytes": 58956,
+      "sha256": "ac7b36e1a67a9a61176b1d5531d0a1da352064ab197053a34362b1f05db7fe2a",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "一般白板（支架式） — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "帶腳輪與支架的白板，含板框、筆槽與高度調整旋鈕；原型 W140×D65×H193 cm。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 24,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 1320,
+        "triangles": 792,
+        "unique_mesh_triangles": 792,
+        "bounds_m": {
+          "min": [
+            -0.699999988079071,
+            -1.490116086078075e-10,
+            -0.32499998807907104
+          ],
+          "max": [
+            0.699999988079071,
+            1.9300000667572021,
+            0.32499998807907104
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1399.999976158142,
+          "height": 1930.0000669062138,
+          "depth": 649.9999761581421
+        },
+        "visual_review": true
+      }
+    },
+    {
+      "id": "twothreeD.generated.electronic_whiteboard",
+      "name": "電子白板（支架式）",
+      "format": "glb",
+      "local_uri": "assets/models/generated/electronic_whiteboard.glb",
+      "bytes": 67280,
+      "sha256": "f1a27e4051be9bf2ffb75d8d9e5a3fda1a598bbf2a367f6071110cf4fdb02bce",
+      "source_kind": "generated",
+      "source_url": "assets/models/generated/SOURCES.txt",
+      "download_url": null,
+      "author": "twothreeD",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "attribution_text": "電子白板（支架式） — twothreeD original procedural model — CC0-1.0 — assets/models/generated/SOURCES.txt",
+      "modifications": "Original generic geometry; no third-party mesh or product branding.",
+      "ai_generated": true,
+      "ai_model": "Coding assistant authored procedural geometry",
+      "source_up_axis": "Y",
+      "source_units": "m",
+      "front_axis": "+Z",
+      "status": "generated",
+      "scene_integration": "preview_candidate",
+      "generation": {
+        "script": "scripts/generate-model-assets.mjs",
+        "version": "1.0.0",
+        "description": "帶支架的電子白板示意，含控制面板與筆槽；原型 W130×D85×H176 cm，非特定產品或螢幕技術。"
+      },
+      "gltf_extensions_required": [],
+      "gltf_extensions_used": [],
+      "embedded_image_count": 0,
+      "mesh_count": 27,
+      "inspection": {
+        "method": "generated_and_measured_positions",
+        "vertices": 1516,
+        "triangles": 912,
+        "unique_mesh_triangles": 912,
+        "bounds_m": {
+          "min": [
+            -0.6499999761581421,
+            -1.490116086078075e-10,
+            -0.42500001192092896
+          ],
+          "max": [
+            0.6499999761581421,
+            1.7599999904632568,
+            0.42500001192092896
+          ]
+        },
+        "dimensions_mm": {
+          "width": 1299.9999523162842,
+          "height": 1759.9999906122684,
+          "depth": 850.0000238418579
+        },
+        "visual_review": true
+      }
+    }
+  ],
+  "types": [
+    {
+      "type_id": "coffee_machine",
+      "name": "咖啡機",
+      "asset_id": "kenney.furniture.kitchenCoffeeMachine",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "refrigerator",
+      "name": "冰箱",
+      "asset_id": "kenney.furniture.kitchenFridge",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "water_dispenser",
+      "name": "飲水機",
+      "asset_id": "3dassets.26218",
+      "match": "category_match",
+      "notes": "有桌／櫃承載時使用自產檯上款；沒有承載物時使用既有落地桶裝款。承載與正面方向仍依圖面估計。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ],
+      "placement_variants": {
+        "on_support": "twothreeD.generated.water_dispenser_countertop"
+      }
+    },
+    {
+      "type_id": "whiteboard",
+      "name": "白板",
+      "asset_id": "twothreeD.generated.whiteboard",
+      "match": "generic",
+      "notes": "帶腳輪與支架的白板，含板框、筆槽與高度調整旋鈕；原型 W140×D65×H193 cm。 原創通用示意，並非產品精確規格。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ],
+      "dimension_policy": "explicit_wdh"
+    },
+    {
+      "type_id": "television",
+      "name": "電視",
+      "asset_id": "kenney.furniture.televisionModern",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "printer",
+      "name": "印表機",
+      "asset_id": "3dassets.17044",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "paper_shredder",
+      "name": "碎紙機",
+      "asset_id": "3dassets.17046",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "photocopier",
+      "name": "影印機",
+      "asset_id": "3dassets.17043",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "dish_dryer",
+      "name": "烘碗機",
+      "asset_id": "twothreeD.generated.dish_dryer",
+      "match": "generic",
+      "notes": "雙層烘碗機：透明門、碗盤架、控制鈕與散熱口。 原創通用示意，並非產品精確規格。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "dishwasher",
+      "name": "洗碗機",
+      "asset_id": "3dassets.14110",
+      "match": "variant_review",
+      "notes": "嵌入式洗碗機，外觀需要搭配櫥櫃飾板。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "wardrobe",
+      "name": "衣櫃",
+      "asset_id": "3dassets.17188",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "tall_cabinet",
+      "name": "高櫃",
+      "asset_id": "kenney.furniture.bookcaseClosedDoors",
+      "match": "generic",
+      "notes": "封閉雙門收納櫃示意；不代表特定高櫃款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "low_cabinet",
+      "name": "矮櫃",
+      "asset_id": "kenney.furniture.cabinetTelevisionDoors",
+      "match": "generic",
+      "notes": "低矮電視收納櫃，作為通用矮櫃備選。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "bookcase",
+      "name": "書櫃",
+      "asset_id": "kenney.furniture.bookcaseOpen",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "filing_cabinet",
+      "name": "檔案櫃",
+      "asset_id": "3dassets.17001",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "system_cabinet",
+      "name": "系統櫃",
+      "asset_id": "kenney.furniture.kitchenCabinet",
+      "match": "generic",
+      "notes": "廚房下櫃模組，僅為系統櫃造型備選。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "half_height_cabinet",
+      "name": "半高櫃",
+      "asset_id": "3dassets.16999",
+      "match": "generic",
+      "notes": "雙門辦公櫃，來源高度不取代已確認的 150 cm。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "system_half_height_cabinet",
+      "name": "系統半高櫃",
+      "asset_id": "3dassets.16999",
+      "match": "generic",
+      "notes": "雙門辦公櫃，來源高度不取代已確認的 150 cm。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "cabinet",
+      "name": "櫃子",
+      "asset_id": "kenney.furniture.bookcaseClosedDoors",
+      "match": "generic",
+      "notes": "通用封閉收納櫃；實際外形需核對。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "sofa",
+      "name": "沙發",
+      "asset_id": "kenney.furniture.loungeSofa",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "bed",
+      "name": "床",
+      "asset_id": "kenney.furniture.bedSingle",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "bedside_cabinet",
+      "name": "床頭櫃",
+      "asset_id": "kenney.furniture.cabinetBed",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "washing_machine",
+      "name": "洗衣機",
+      "asset_id": "kenney.furniture.washer",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "dryer",
+      "name": "乾衣機",
+      "asset_id": "kenney.furniture.dryer",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "stove",
+      "name": "爐具",
+      "asset_id": "kenney.furniture.kitchenStoveElectric",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "range_hood",
+      "name": "抽油煙機",
+      "asset_id": "kenney.furniture.hoodModern",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "microwave",
+      "name": "微波爐",
+      "asset_id": "kenney.furniture.kitchenMicrowave",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "oven",
+      "name": "烤箱",
+      "asset_id": "3dassets.14102",
+      "match": "variant_review",
+      "notes": "嵌入式蒸烤箱，非獨立桌上型烤箱。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "bar_counter",
+      "name": "吧台",
+      "asset_id": "kenney.furniture.kitchenBar",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "bar_stool",
+      "name": "吧台椅",
+      "asset_id": "kenney.furniture.stoolBar",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "coffee_grinder",
+      "name": "磨豆機",
+      "asset_id": "3dassets.22111",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "ice_maker",
+      "name": "製冰機",
+      "asset_id": "3dassets.14049",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "refrigerated_display_cabinet",
+      "name": "冷藏展示櫃",
+      "asset_id": "3dassets.22155",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "workbench",
+      "name": "工作台",
+      "asset_id": "3dassets.16423",
+      "match": "variant_review",
+      "notes": "餐飲用不鏽鋼工作台，不等同工業工作台。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "sink",
+      "name": "水槽",
+      "asset_id": "kenney.furniture.kitchenSink",
+      "match": "variant_review",
+      "notes": "含下櫃的廚房水槽組；與既有承載櫃一起使用時須避免重複櫃體。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "cup_sealer",
+      "name": "封口機",
+      "asset_id": "twothreeD.generated.cup_sealer",
+      "match": "generic",
+      "notes": "杯用封膜機：上方膜捲、封口壓頭、滑動杯架與控制面板；非袋口封口機。 原創通用示意，並非產品精確規格。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "blender",
+      "name": "果汁機／調理機",
+      "asset_id": "kenney.furniture.kitchenBlender",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "tea_brewer",
+      "name": "煮茶機",
+      "asset_id": "twothreeD.generated.tea_brewer",
+      "match": "generic",
+      "notes": "茶用萃煮設備示意：上層濾茶槽、下層出茶容器、出茶嘴與時間／溫度控制；非咖啡機或製茶揉捻機。 原創通用示意，並非產品精確規格。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "water_boiler",
+      "name": "開水機",
+      "asset_id": "3dassets.22118",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "prep_table",
+      "name": "備料台",
+      "asset_id": "3dassets.16423",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "student_desk",
+      "name": "課桌",
+      "asset_id": "3dassets.30081",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。 來源含貼圖，目前共用 Scene3D 尚未支援該貼圖，保留標名方塊。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "lectern",
+      "name": "講桌",
+      "asset_id": "3dassets.30085",
+      "match": "variant_review",
+      "notes": "斜面站立講台，若圖面為教師桌需另選平面桌款。 來源含貼圖，目前共用 Scene3D 尚未支援該貼圖，保留標名方塊。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "blackboard",
+      "name": "黑板",
+      "asset_id": "3dassets.30086",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。 來源含貼圖，目前共用 Scene3D 尚未支援該貼圖，保留標名方塊。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "projector",
+      "name": "投影機",
+      "asset_id": "3dassets.17026",
+      "match": "variant_review",
+      "notes": "含天花吊架；放在桌上時須選無吊架版本。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "projection_screen",
+      "name": "投影幕",
+      "asset_id": "3dassets.25922",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "locker",
+      "name": "置物櫃",
+      "asset_id": "3dassets.17005",
+      "match": "variant_review",
+      "notes": "六門置物櫃組，需核對圖面是一組或單格櫃。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "bookshelf",
+      "name": "書架",
+      "asset_id": "kenney.furniture.bookcaseOpen",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "lab_bench",
+      "name": "實驗台",
+      "asset_id": "3dassets.34752",
+      "match": "variant_review",
+      "notes": "含水槽、層架與服務管線的實驗桌，非單純空桌。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "washbasin",
+      "name": "洗手台",
+      "asset_id": "kenney.furniture.bathroomSink",
+      "match": "variant_review",
+      "notes": "洗手台組，安裝方式及與櫃體重疊需核對。",
+      "active_model_id": null,
+      "runtime_enabled": false,
+      "pending": [
+        "尺寸與朝向",
+        "支撐或安裝方式",
+        "Scene3D 材質轉換",
+        "SketchUp 匯出驗證"
+      ]
+    },
+    {
+      "type_id": "toilet",
+      "name": "馬桶",
+      "asset_id": "kenney.furniture.toilet",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "shower",
+      "name": "淋浴設備",
+      "asset_id": "kenney.furniture.shower",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "trash_bin",
+      "name": "垃圾桶",
+      "asset_id": "kenney.furniture.trashcan",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "cleaning_cabinet",
+      "name": "清潔用具櫃",
+      "asset_id": "3dassets.30088",
+      "match": "category_match",
+      "notes": "類別符合；並非原圖物件的精確款式。",
+      "active_model_id": "builtin.cabinet.v1",
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ]
+    },
+    {
+      "type_id": "electronic_whiteboard",
+      "name": "電子白板",
+      "asset_id": "twothreeD.generated.electronic_whiteboard",
+      "match": "generic",
+      "notes": "帶支架的電子白板示意，含控制面板與筆槽；原型 W130×D85×H176 cm，非特定產品或螢幕技術。 原創通用示意，並非產品精確規格。",
+      "active_model_id": null,
+      "runtime_enabled": true,
+      "pending": [
+        "實際款式與正面方向核對",
+        "Windows SketchUp 匯出／編輯驗收"
+      ],
+      "dimension_policy": "explicit_wdh"
+    }
+  ]
+}

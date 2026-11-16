@@ -1,0 +1,707 @@
+{
+  "schema": "Scene3D",
+  "schema_version": "1.0.0",
+  "units": "mm",
+  "materials": [
+    {
+      "id": "wall_paint",
+      "name": "待核對牆體",
+      "color_rgba": [
+        0.72,
+        0.78,
+        0.68,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "level_level_1",
+      "name": "圖面第 1 頁",
+      "kind": "group",
+      "parent_id": null,
+      "source_2d_ids": [
+        "level_1"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "level",
+        "base_elevation_mm": 0
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_12xa9q9",
+      "name": "候選牆 4 · 原有牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_12xa9q9"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_12xa9q9",
+        "thickness_mm": 202.46913580246863,
+        "height_mm": 2500,
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_12xa9q9_0_0",
+      "name": "候選牆 4 · 原有牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_12xa9q9",
+      "source_2d_ids": [
+        "wall_12xa9q9"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            877.283951,
+            729.1358020987657,
+            0
+          ],
+          [
+            6287.160494,
+            729.1358020987657,
+            0
+          ],
+          [
+            6287.160494,
+            931.6049379012343,
+            0
+          ],
+          [
+            877.283951,
+            931.6049379012343,
+            0
+          ],
+          [
+            877.283951,
+            729.1358020987657,
+            2500
+          ],
+          [
+            6287.160494,
+            729.1358020987657,
+            2500
+          ],
+          [
+            6287.160494,
+            931.6049379012343,
+            2500
+          ],
+          [
+            877.283951,
+            931.6049379012343,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_12xa9q9",
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_140m60g",
+      "name": "候選牆 2 · 原有牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_140m60g"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_140m60g",
+        "thickness_mm": 200,
+        "height_mm": 2500,
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_140m60g_0_0",
+      "name": "候選牆 2 · 原有牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_140m60g",
+      "source_2d_ids": [
+        "wall_140m60g"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            6852.592593,
+            11588.395062,
+            0
+          ],
+          [
+            11062.469136,
+            11588.395062,
+            0
+          ],
+          [
+            11062.469136,
+            11788.395062,
+            0
+          ],
+          [
+            6852.592593,
+            11788.395062,
+            0
+          ],
+          [
+            6852.592593,
+            11588.395062,
+            2500
+          ],
+          [
+            11062.469136,
+            11588.395062,
+            2500
+          ],
+          [
+            11062.469136,
+            11788.395062,
+            2500
+          ],
+          [
+            6852.592593,
+            11788.395062,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_140m60g",
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_19fiq01",
+      "name": "候選牆 1 · 原有牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_19fiq01"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_19fiq01",
+        "thickness_mm": 200,
+        "height_mm": 2500,
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_19fiq01_0_0",
+      "name": "候選牆 1 · 原有牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_19fiq01",
+      "source_2d_ids": [
+        "wall_19fiq01"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            2035.308642,
+            11588.395062,
+            0
+          ],
+          [
+            6287.160494,
+            11588.395062,
+            0
+          ],
+          [
+            6287.160494,
+            11788.395062,
+            0
+          ],
+          [
+            2035.308642,
+            11788.395062,
+            0
+          ],
+          [
+            2035.308642,
+            11588.395062,
+            2500
+          ],
+          [
+            6287.160494,
+            11588.395062,
+            2500
+          ],
+          [
+            6287.160494,
+            11788.395062,
+            2500
+          ],
+          [
+            2035.308642,
+            11788.395062,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_19fiq01",
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_sjussw",
+      "name": "候選牆 3 · 原有牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_sjussw"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_sjussw",
+        "thickness_mm": 160.4938271604936,
+        "height_mm": 2500,
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_sjussw_0_0",
+      "name": "候選牆 3 · 原有牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_sjussw",
+      "source_2d_ids": [
+        "wall_sjussw"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            850.1234565802467,
+            1052.592593,
+            0
+          ],
+          [
+            850.1234565802467,
+            10968.641975,
+            0
+          ],
+          [
+            689.6296294197532,
+            10968.641975,
+            0
+          ],
+          [
+            689.6296294197532,
+            1052.592593,
+            0
+          ],
+          [
+            850.1234565802467,
+            1052.592593,
+            2500
+          ],
+          [
+            850.1234565802467,
+            10968.641975,
+            2500
+          ],
+          [
+            689.6296294197532,
+            10968.641975,
+            2500
+          ],
+          [
+            689.6296294197532,
+            1052.592593,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_sjussw",
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "wall_wall_u6m245",
+      "name": "候選牆 5 · 原有牆",
+      "kind": "group",
+      "parent_id": "level_level_1",
+      "source_2d_ids": [
+        "wall_u6m245"
+      ],
+      "mesh": null,
+      "semantic": {
+        "category": "wall",
+        "wall_id": "wall_u6m245",
+        "thickness_mm": 202.46913580246863,
+        "height_mm": 2500,
+        "opening_ids": []
+      },
+      "editable": true
+    },
+    {
+      "id": "solid_wall_u6m245_0_0",
+      "name": "候選牆 5 · 原有牆 區段 1.1",
+      "kind": "mesh",
+      "parent_id": "wall_wall_u6m245",
+      "source_2d_ids": [
+        "wall_u6m245"
+      ],
+      "mesh": {
+        "vertices_mm": [
+          [
+            6864.938272,
+            729.1358020987657,
+            0
+          ],
+          [
+            12232.839506,
+            729.1358020987657,
+            0
+          ],
+          [
+            12232.839506,
+            931.6049379012343,
+            0
+          ],
+          [
+            6864.938272,
+            931.6049379012343,
+            0
+          ],
+          [
+            6864.938272,
+            729.1358020987657,
+            2500
+          ],
+          [
+            12232.839506,
+            729.1358020987657,
+            2500
+          ],
+          [
+            12232.839506,
+            931.6049379012343,
+            2500
+          ],
+          [
+            6864.938272,
+            931.6049379012343,
+            2500
+          ]
+        ],
+        "faces": [
+          {
+            "indices": [
+              0,
+              3,
+              2,
+              1
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              0,
+              1,
+              5,
+              4
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              1,
+              2,
+              6,
+              5
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              2,
+              3,
+              7,
+              6
+            ],
+            "material_id": "wall_paint"
+          },
+          {
+            "indices": [
+              3,
+              0,
+              4,
+              7
+            ],
+            "material_id": "wall_paint"
+          }
+        ]
+      },
+      "semantic": {
+        "category": "wall_segment",
+        "wall_id": "wall_u6m245",
+        "opening_ids": []
+      },
+      "editable": true
+    }
+  ],
+  "extensions": {
+    "twothreeD": {
+      "preview_only": true,
+      "source_filename": "基隆女中秘書室-平面規劃圖(5)1105.pdf",
+      "source_sha256": "4353aa12450c23763f1e22d691c473d8584133c9f2bd4acc7b8b08943a042ac3",
+      "scope": "wall_candidates_only"
+    }
+  }
+}

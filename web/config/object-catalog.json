@@ -1,0 +1,959 @@
+{
+  "catalog_version": "0.3.0",
+  "status": "recognition_and_preview",
+  "runtime_integrated": true,
+  "units": "mm",
+  "description": "物件名稱、櫃子高度與模型對照設定。場景分類僅用於整理字典，不會自行產生該場景的設備。缺少模型的物件以 400 mm 紅色無字方塊顯示，離地面或承載檯面 100 mm；此尺寸不代表實物。",
+  "name_normalization": [
+    "NFKC",
+    "trim",
+    "remove_whitespace"
+  ],
+  "classification": {
+    "rule_order": [
+      "cabinet_keyword",
+      "known_type_alias",
+      "unclassified"
+    ],
+    "cabinet_keyword": {
+      "contains_any": [
+        "櫃",
+        "柜"
+      ],
+      "category": "cabinet",
+      "type_selection": "longest_matching_alias",
+      "fallback_type_id": "cabinet"
+    },
+    "known_type_alias": {
+      "type_selection": "longest_matching_alias"
+    },
+    "unclassified": {
+      "requires_physical_object_evidence": true,
+      "requires_review": true
+    }
+  },
+  "cabinet_height_groups": {
+    "low": {
+      "name": "小／矮櫃",
+      "height_mm": 900,
+      "source": "user_default"
+    },
+    "tall": {
+      "name": "高櫃／衣櫃",
+      "height_mm": 2100,
+      "source": "user_default"
+    },
+    "general": {
+      "name": "其餘櫃子",
+      "height_mm": 1500,
+      "source": "user_default"
+    }
+  },
+  "cabinet_height_policy": {
+    "scope": "cabinet",
+    "matching": "first_matching_rule",
+    "input": "normalized_full_object_name",
+    "rules": [
+      {
+        "id": "small_or_low",
+        "contains_any": [
+          "小",
+          "矮"
+        ],
+        "height_group": "low"
+      },
+      {
+        "id": "half_height_before_tall",
+        "contains_any": [
+          "半高櫃",
+          "半高柜"
+        ],
+        "height_group": "general"
+      },
+      {
+        "id": "tall_or_wardrobe",
+        "contains_any": [
+          "高櫃",
+          "高柜",
+          "衣櫃",
+          "衣柜"
+        ],
+        "height_group": "tall"
+      }
+    ],
+    "fallback_height_group": "general"
+  },
+  "unlabelled_symbol_rules": [
+    {
+      "id": "large_closed_frame_with_x",
+      "requires": [
+        "large_closed_frame",
+        "paired_crossing_diagonals",
+        "not_repeated_hatching"
+      ],
+      "type_id": "tall_cabinet",
+      "height_group": "tall",
+      "scope": "unlabelled_objects_only"
+    }
+  ],
+  "missing_model_policy": {
+    "representation": "floating_labeled_cube",
+    "label_faces": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "label_source": "original_object_name",
+    "cube_edge_mm": 400,
+    "hover_offset_mm": 100,
+    "preserve": [
+      "object_id",
+      "source_refs",
+      "source_footprint",
+      "support_relation"
+    ],
+    "export_requirements": {
+      "independently_selectable": true,
+      "independently_deletable": true,
+      "replacement_ready": true,
+      "labels_in_same_object": true,
+      "preferred_sketchup_entity": "component",
+      "sketchup_import_verified": false
+    }
+  },
+  "types": [
+    {
+      "id": "coffee_machine",
+      "name": "咖啡機",
+      "aliases": [
+        "咖啡機",
+        "咖啡机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenCoffeeMachine"
+    },
+    {
+      "id": "refrigerator",
+      "name": "冰箱",
+      "aliases": [
+        "冰箱"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenFridge"
+    },
+    {
+      "id": "water_dispenser",
+      "name": "飲水機",
+      "aliases": [
+        "飲水機",
+        "饮水机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.26218"
+    },
+    {
+      "id": "whiteboard",
+      "name": "白板",
+      "aliases": [
+        "白板"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "twothreeD.generated.whiteboard"
+    },
+    {
+      "id": "television",
+      "name": "電視",
+      "aliases": [
+        "電視",
+        "电视"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.televisionModern"
+    },
+    {
+      "id": "printer",
+      "name": "印表機",
+      "aliases": [
+        "印表機",
+        "印表机",
+        "打印機",
+        "打印机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.17044"
+    },
+    {
+      "id": "paper_shredder",
+      "name": "碎紙機",
+      "aliases": [
+        "碎紙機",
+        "碎纸机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.17046"
+    },
+    {
+      "id": "photocopier",
+      "name": "影印機",
+      "aliases": [
+        "影印機",
+        "影印机",
+        "複印機",
+        "复印机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.17043"
+    },
+    {
+      "id": "dish_dryer",
+      "name": "烘碗機",
+      "aliases": [
+        "烘碗機",
+        "烘碗机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "twothreeD.generated.dish_dryer"
+    },
+    {
+      "id": "dishwasher",
+      "name": "洗碗機",
+      "aliases": [
+        "洗碗機",
+        "洗碗机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.14110"
+    },
+    {
+      "id": "wardrobe",
+      "name": "衣櫃",
+      "aliases": [
+        "衣櫃",
+        "衣柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "tall",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.17188"
+    },
+    {
+      "id": "tall_cabinet",
+      "name": "高櫃",
+      "aliases": [
+        "高櫃",
+        "高柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "tall",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.bookcaseClosedDoors"
+    },
+    {
+      "id": "low_cabinet",
+      "name": "矮櫃",
+      "aliases": [
+        "矮櫃",
+        "矮柜",
+        "小櫃",
+        "小柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "low",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.cabinetTelevisionDoors"
+    },
+    {
+      "id": "bookcase",
+      "name": "書櫃",
+      "aliases": [
+        "書櫃",
+        "书柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.bookcaseOpen"
+    },
+    {
+      "id": "filing_cabinet",
+      "name": "檔案櫃",
+      "aliases": [
+        "檔案櫃",
+        "档案柜",
+        "文件櫃",
+        "文件柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.17001"
+    },
+    {
+      "id": "system_cabinet",
+      "name": "系統櫃",
+      "aliases": [
+        "系統櫃",
+        "系统柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.kitchenCabinet"
+    },
+    {
+      "id": "half_height_cabinet",
+      "name": "半高櫃",
+      "aliases": [
+        "半高櫃",
+        "半高柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.16999"
+    },
+    {
+      "id": "system_half_height_cabinet",
+      "name": "系統半高櫃",
+      "aliases": [
+        "系統半高櫃",
+        "系统半高柜"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.16999"
+    },
+    {
+      "id": "cabinet",
+      "name": "櫃子",
+      "aliases": [
+        "櫃子",
+        "柜子"
+      ],
+      "category": "cabinet",
+      "default_height_group": "general",
+      "placement": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.bookcaseClosedDoors"
+    },
+    {
+      "id": "sofa",
+      "name": "沙發",
+      "aliases": [
+        "沙發",
+        "沙发"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.loungeSofa"
+    },
+    {
+      "id": "bed",
+      "name": "床",
+      "aliases": [
+        "床",
+        "床鋪",
+        "床铺",
+        "雙人床",
+        "双人床",
+        "單人床",
+        "单人床"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.bedSingle"
+    },
+    {
+      "id": "bedside_cabinet",
+      "name": "床頭櫃",
+      "aliases": [
+        "床頭櫃",
+        "床头柜"
+      ],
+      "category": "cabinet",
+      "placement": null,
+      "height_mm": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "kenney.furniture.cabinetBed"
+    },
+    {
+      "id": "washing_machine",
+      "name": "洗衣機",
+      "aliases": [
+        "洗衣機",
+        "洗衣机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.washer"
+    },
+    {
+      "id": "dryer",
+      "name": "乾衣機",
+      "aliases": [
+        "乾衣機",
+        "烘衣機",
+        "干衣机",
+        "烘衣机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.dryer"
+    },
+    {
+      "id": "stove",
+      "name": "爐具",
+      "aliases": [
+        "爐具",
+        "瓦斯爐",
+        "電磁爐",
+        "炉具",
+        "瓦斯炉",
+        "电磁炉"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenStoveElectric"
+    },
+    {
+      "id": "range_hood",
+      "name": "抽油煙機",
+      "aliases": [
+        "抽油煙機",
+        "抽油烟机",
+        "排油煙機",
+        "排油烟机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.hoodModern"
+    },
+    {
+      "id": "microwave",
+      "name": "微波爐",
+      "aliases": [
+        "微波爐",
+        "微波炉"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenMicrowave"
+    },
+    {
+      "id": "oven",
+      "name": "烤箱",
+      "aliases": [
+        "烤箱"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.14102"
+    },
+    {
+      "id": "bar_counter",
+      "name": "吧台",
+      "aliases": [
+        "吧台",
+        "吧檯"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenBar"
+    },
+    {
+      "id": "bar_stool",
+      "name": "吧台椅",
+      "aliases": [
+        "吧台椅",
+        "吧檯椅",
+        "高腳椅",
+        "高脚椅"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.stoolBar"
+    },
+    {
+      "id": "coffee_grinder",
+      "name": "磨豆機",
+      "aliases": [
+        "磨豆機",
+        "磨豆机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.22111"
+    },
+    {
+      "id": "ice_maker",
+      "name": "製冰機",
+      "aliases": [
+        "製冰機",
+        "制冰机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.14049"
+    },
+    {
+      "id": "refrigerated_display_cabinet",
+      "name": "冷藏展示櫃",
+      "aliases": [
+        "冷藏展示櫃",
+        "冷藏展示柜"
+      ],
+      "category": "cabinet",
+      "placement": null,
+      "height_mm": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.22155"
+    },
+    {
+      "id": "workbench",
+      "name": "工作台",
+      "aliases": [
+        "工作台",
+        "工作檯"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.16423"
+    },
+    {
+      "id": "sink",
+      "name": "水槽",
+      "aliases": [
+        "水槽",
+        "洗滌槽",
+        "洗涤槽"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenSink"
+    },
+    {
+      "id": "cup_sealer",
+      "name": "封口機",
+      "aliases": [
+        "封口機",
+        "封口机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "twothreeD.generated.cup_sealer"
+    },
+    {
+      "id": "blender",
+      "name": "果汁機／調理機",
+      "aliases": [
+        "果汁機／調理機",
+        "果汁機",
+        "果汁机",
+        "調理機",
+        "调理机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.kitchenBlender"
+    },
+    {
+      "id": "tea_brewer",
+      "name": "煮茶機",
+      "aliases": [
+        "煮茶機",
+        "煮茶机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "twothreeD.generated.tea_brewer"
+    },
+    {
+      "id": "water_boiler",
+      "name": "開水機",
+      "aliases": [
+        "開水機",
+        "开水机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.22118"
+    },
+    {
+      "id": "prep_table",
+      "name": "備料台",
+      "aliases": [
+        "備料台",
+        "備料檯",
+        "备料台"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.16423"
+    },
+    {
+      "id": "student_desk",
+      "name": "課桌",
+      "aliases": [
+        "課桌",
+        "课桌"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.30081"
+    },
+    {
+      "id": "lectern",
+      "name": "講桌",
+      "aliases": [
+        "講桌",
+        "讲桌"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.30085"
+    },
+    {
+      "id": "blackboard",
+      "name": "黑板",
+      "aliases": [
+        "黑板"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.30086"
+    },
+    {
+      "id": "projector",
+      "name": "投影機",
+      "aliases": [
+        "投影機",
+        "投影机"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.17026"
+    },
+    {
+      "id": "projection_screen",
+      "name": "投影幕",
+      "aliases": [
+        "投影幕",
+        "投影布幕"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.25922"
+    },
+    {
+      "id": "locker",
+      "name": "置物櫃",
+      "aliases": [
+        "置物櫃",
+        "置物柜"
+      ],
+      "category": "cabinet",
+      "placement": null,
+      "height_mm": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.17005"
+    },
+    {
+      "id": "bookshelf",
+      "name": "書架",
+      "aliases": [
+        "書架",
+        "书架"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.bookcaseOpen"
+    },
+    {
+      "id": "lab_bench",
+      "name": "實驗台",
+      "aliases": [
+        "實驗台",
+        "實驗檯",
+        "实验台"
+      ],
+      "category": "furniture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "3dassets.34752"
+    },
+    {
+      "id": "washbasin",
+      "name": "洗手台",
+      "aliases": [
+        "洗手台",
+        "洗手檯",
+        "洗手盆"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.bathroomSink"
+    },
+    {
+      "id": "toilet",
+      "name": "馬桶",
+      "aliases": [
+        "馬桶",
+        "马桶"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.toilet"
+    },
+    {
+      "id": "shower",
+      "name": "淋浴設備",
+      "aliases": [
+        "淋浴設備",
+        "淋浴设备",
+        "淋浴間",
+        "淋浴间",
+        "淋浴"
+      ],
+      "category": "fixture",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.shower"
+    },
+    {
+      "id": "trash_bin",
+      "name": "垃圾桶",
+      "aliases": [
+        "垃圾桶"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "kenney.furniture.trashcan"
+    },
+    {
+      "id": "cleaning_cabinet",
+      "name": "清潔用具櫃",
+      "aliases": [
+        "清潔用具櫃",
+        "清洁用具柜",
+        "清潔櫃",
+        "清洁柜"
+      ],
+      "category": "cabinet",
+      "placement": null,
+      "height_mm": null,
+      "model_id": "builtin.cabinet.v1",
+      "reference_asset_id": "3dassets.30088"
+    },
+    {
+      "id": "electronic_whiteboard",
+      "name": "電子白板",
+      "aliases": [
+        "電子白板",
+        "电子白板"
+      ],
+      "category": "equipment",
+      "placement": null,
+      "height_mm": null,
+      "model_id": null,
+      "reference_asset_id": "twothreeD.generated.electronic_whiteboard"
+    }
+  ],
+  "models": [
+    {
+      "id": "builtin.cabinet.v1",
+      "template_id": "builtin.cabinet.v1",
+      "source": "project_parametric_geometry",
+      "description": "現有簡化雙門櫃體模板，依物件寬深及三組高度生成；非特定品牌或款式。"
+    }
+  ],
+  "scene_categories": [
+    {
+      "id": "home",
+      "name": "居家",
+      "type_ids": [
+        "sofa",
+        "bed",
+        "bedside_cabinet",
+        "washing_machine",
+        "dryer",
+        "stove",
+        "range_hood",
+        "microwave",
+        "oven"
+      ]
+    },
+    {
+      "id": "cafe",
+      "name": "咖啡廳",
+      "type_ids": [
+        "bar_counter",
+        "bar_stool",
+        "coffee_grinder",
+        "ice_maker",
+        "refrigerated_display_cabinet",
+        "workbench",
+        "sink"
+      ]
+    },
+    {
+      "id": "beverage_shop",
+      "name": "飲料店",
+      "type_ids": [
+        "cup_sealer",
+        "blender",
+        "tea_brewer",
+        "water_boiler",
+        "prep_table"
+      ]
+    },
+    {
+      "id": "school",
+      "name": "學校",
+      "type_ids": [
+        "student_desk",
+        "lectern",
+        "blackboard",
+        "projector",
+        "projection_screen",
+        "locker",
+        "bookshelf",
+        "lab_bench"
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "共用空間",
+      "type_ids": [
+        "washbasin",
+        "toilet",
+        "shower",
+        "trash_bin",
+        "cleaning_cabinet"
+      ]
+    },
+    {
+      "id": "office",
+      "name": "辦公室",
+      "type_ids": [
+        "printer",
+        "paper_shredder",
+        "photocopier",
+        "whiteboard",
+        "water_dispenser",
+        "filing_cabinet",
+        "electronic_whiteboard"
+      ]
+    }
+  ],
+  "ignored_object_labels": [
+    "電鍋X2",
+    "電鍋×2",
+    "电锅X2",
+    "电锅×2"
+  ],
+  "asset_sources": {
+    "catalog_uri": "model-assets.json",
+    "purpose": "preview_asset_selection",
+    "runtime_selection_enabled": true
+  }
+}

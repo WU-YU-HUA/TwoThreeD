@@ -1,0 +1,122 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "5.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "cabinet_fixture",
+      "generated_node_ids": [
+        "furniture_cabinet_fixture",
+        "solid_cabinet_fixture_left",
+        "solid_cabinet_fixture_right",
+        "solid_cabinet_fixture_bottom",
+        "solid_cabinet_fixture_top",
+        "solid_cabinet_fixture_back",
+        "solid_cabinet_fixture_door_left",
+        "solid_cabinet_fixture_door_right",
+        "solid_cabinet_fixture_handle_0",
+        "solid_cabinet_fixture_handle_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_fixture",
+      "generated_node_ids": [
+        "furniture_chair_fixture",
+        "solid_chair_fixture_seat",
+        "solid_chair_fixture_back",
+        "solid_chair_fixture_leg_0_0",
+        "solid_chair_fixture_leg_0_1",
+        "solid_chair_fixture_leg_1_0",
+        "solid_chair_fixture_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "column_1",
+      "generated_node_ids": [
+        "column_column_1",
+        "solid_column_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "door_1",
+      "generated_node_ids": [
+        "door_door_1",
+        "solid_door_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "table_l",
+      "generated_node_ids": [
+        "furniture_table_l",
+        "solid_table_l_tabletop",
+        "solid_table_l_leg_0",
+        "solid_table_l_leg_1",
+        "solid_table_l_leg_2",
+        "solid_table_l_leg_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_ring",
+      "generated_node_ids": [
+        "furniture_table_ring",
+        "solid_table_ring_tabletop",
+        "solid_table_ring_leg_0",
+        "solid_table_ring_leg_1",
+        "solid_table_ring_leg_2",
+        "solid_table_ring_leg_3",
+        "solid_table_ring_leg_4",
+        "solid_table_ring_leg_5"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_L",
+      "generated_node_ids": [
+        "wall_wall_L",
+        "solid_wall_L"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_light",
+      "generated_node_ids": [
+        "wall_wall_light",
+        "solid_wall_light"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 2,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 40,
+    "columns": 1,
+    "doors": 1,
+    "chairs": 1,
+    "tall_cabinets": 1,
+    "tables": 2
+  },
+  "preview_only": false
+}

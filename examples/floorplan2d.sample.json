@@ -1,0 +1,130 @@
+{
+  "schema": "FloorPlan2D",
+  "schema_version": "1.0.0",
+  "units": "mm",
+  "source": {
+    "filename": "手工測試圖",
+    "format": "manual",
+    "scale_verified": true,
+    "source_to_model_3x3": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "id": "wall_paint",
+      "name": "牆面",
+      "color_rgba": [
+        0.9,
+        0.9,
+        0.87,
+        1
+      ]
+    },
+    {
+      "id": "floor",
+      "name": "地板",
+      "color_rgba": [
+        0.65,
+        0.55,
+        0.4,
+        1
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "levels": [
+    {
+      "id": "level_1",
+      "name": "一樓",
+      "base_elevation_mm": 0,
+      "walls": [
+        {
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "id": "wall_1",
+          "name": "測試牆",
+          "start_mm": [
+            0,
+            0
+          ],
+          "end_mm": [
+            5000,
+            0
+          ],
+          "thickness_mm": 150,
+          "height_mm": 2500,
+          "alignment": "center",
+          "material_id": "wall_paint"
+        }
+      ],
+      "openings": [
+        {
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "id": "door_1",
+          "kind": "door",
+          "wall_id": "wall_1",
+          "offset_from_start_mm": 1000,
+          "width_mm": 900,
+          "height_mm": 2100,
+          "sill_height_mm": 0
+        },
+        {
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "id": "window_1",
+          "kind": "window",
+          "wall_id": "wall_1",
+          "offset_from_start_mm": 3000,
+          "width_mm": 1000,
+          "height_mm": 1000,
+          "sill_height_mm": 900
+        }
+      ],
+      "slabs": [
+        {
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "id": "slab_1",
+          "name": "地板",
+          "boundary_mm": [
+            [
+              0,
+              0
+            ],
+            [
+              5000,
+              0
+            ],
+            [
+              5000,
+              3000
+            ],
+            [
+              0,
+              3000
+            ]
+          ],
+          "holes_mm": [],
+          "thickness_mm": 100,
+          "top_elevation_mm": 0,
+          "material_id": "floor"
+        }
+      ],
+      "rooms": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "walls": 2,
+  "columns": 1,
+  "volume_mm3": {
+    "wall_L": 2400000000,
+    "wall_light": 2000000000,
+    "column_1": 750000000
+  },
+  "mesh_count": 3,
+  "group_count": 4
+}

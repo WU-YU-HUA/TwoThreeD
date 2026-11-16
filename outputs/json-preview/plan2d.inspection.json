@@ -1,0 +1,622 @@
+{
+  "schema": "Plan2DInspection",
+  "schema_version": "0.1.0",
+  "status": "needs_calibration_and_object_recognition",
+  "description": "從原始 PDF 主要選區擷取的 2D 證據；尚未形成正式 FloorPlan2D。",
+  "source": {
+    "filename": "基隆女中秘書室-平面規劃圖(5)1105.pdf",
+    "sha256": "4353aa12450c23763f1e22d691c473d8584133c9f2bd4acc7b8b08943a042ac3",
+    "page_count": 1,
+    "exported_pages": [1],
+    "page_bbox_pdf_pt": [0,0,1191,842],
+    "pdf_user_unit": 1,
+    "pdf_rotation_degrees": 0
+  },
+  "coordinates": {
+    "units": "pdf_pt",
+    "origin": "原始 PDF 頁面座標原點",
+    "x_axis": "right",
+    "y_axis": "up",
+    "bbox_order": ["min_x","min_y","max_x","max_y"],
+    "path_points": "已套用 PDF 繪圖矩陣；全部為原始頁面座標，不再重複變換"
+  },
+  "calibration": {
+    "scale_verified": false,
+    "method": "reference_wall_thickness_ratio",
+    "reference_wall": {
+      "kind": "exterior_wall",
+      "proposed_thickness_mm": 200,
+      "source": "user_proposed_reference",
+      "boundary_points_pdf_pt": null,
+      "measured_gap_pdf_pt": null,
+      "confirmed": false
+    },
+    "model_mm_per_pdf_pt": null,
+    "source_to_model_3x3": null,
+    "wall_thickness_formula": "wall_gap_pdf_pt / reference_wall_gap_pdf_pt * 200",
+    "note": "PDF 點數表示紙張座標，不能直接當成建築毫米；尚未校正。"
+  },
+  "model_defaults": {
+    "wall_height_mm": 2500,
+    "wall_height_source": "user_default",
+    "note": "牆高為使用者指定預設值，不是從 PDF 量得；厚度須依選定外牆的 200 mm 參考比例計算。"
+  },
+  "main_region": {
+    "method": "optional_content_layers",
+    "bbox_pdf_pt": [207.524,156.804,875.636,746.316],
+    "confirmed": false,
+    "excluded_content": ["圖框","標題欄","公司與日期等頁面資訊","純尺寸標示"],
+    "clipping_policy": "以路徑包圍盒相交選取完整來源路徑，不切斷跨界路徑"
+  },
+  "summary": {
+    "object_layer_categories": 8,
+    "structural_auxiliary_layers": 1,
+    "object_label_occurrences": 29,
+    "vector_paths": 1371,
+    "physical_object_count": null,
+    "label_counts": [
+      {
+        "title": "空間",
+        "items": [
+          {
+            "name": "茶水間",
+            "count": 1
+          },
+          {
+            "name": "辦公區",
+            "count": 1
+          },
+          {
+            "name": "會議區",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "title": "牆體與開口",
+        "items": [
+          {
+            "name": "封門(不出入)",
+            "count": 1
+          },
+          {
+            "name": "新做隔間牆",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "title": "家具與收納",
+        "items": [
+          {
+            "name": "原有事務鐵櫃",
+            "count": 2
+          },
+          {
+            "name": "雨傘架",
+            "count": 1
+          },
+          {
+            "name": "小檔案櫃",
+            "count": 1
+          },
+          {
+            "name": "新作系統半高櫃",
+            "count": 1
+          },
+          {
+            "name": "新做系統半高櫃",
+            "count": 1
+          },
+          {
+            "name": "新做系統高櫃",
+            "count": 1
+          },
+          {
+            "name": "新做茶水櫃",
+            "count": 1
+          },
+          {
+            "name": "新做OA辦公家具",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "title": "設備",
+        "items": [
+          {
+            "name": "碎紙機",
+            "count": 1
+          },
+          {
+            "name": "影印機",
+            "count": 1
+          },
+          {
+            "name": "電鍋X2",
+            "count": 1
+          },
+          {
+            "name": "飲水機",
+            "count": 1
+          },
+          {
+            "name": "冰箱",
+            "count": 1
+          },
+          {
+            "name": "白板",
+            "count": 1
+          },
+          {
+            "name": "電子白板",
+            "count": 1
+          },
+          {
+            "name": "海報機",
+            "count": 1
+          },
+          {
+            "name": "印表機",
+            "count": 3
+          },
+          {
+            "name": "烘碗機",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "unresolved_model_geometry": {
+    "walls": null,
+    "openings": null,
+    "slabs": null,
+    "rooms": null,
+    "furniture": null,
+    "note": "null 表示尚未辨識，不表示圖面沒有這類物件。"
+  },
+  "diagnostics": [
+    {
+      "code": "E_SCALE_UNVERIFIED",
+      "message": "使用者提出外牆 200 mm 作為參考；尚未選定並確認該外牆的兩側邊線。"
+    },
+    {
+      "code": "E_UNRESOLVED_ELEMENT",
+      "message": "圖層類別、文字標示與向量路徑尚未配對成獨立牆、門窗、家具。"
+    },
+    {
+      "code": "W_LABEL_COUNT_ONLY",
+      "message": "標示次數不是實際物件數；不能將文字外框當成家具外框。"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer_ba304dbc14181f98",
+      "name": "HATCH",
+      "role": "structural_hatching",
+      "source_group_ids": ["16R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [222.68,171.96,830.84,729.72],
+      "drawing_path_count": 868,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_a4f61a5f64f81e52",
+      "name": "原有牆",
+      "role": "object_category",
+      "source_group_ids": ["17R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [222.68,171.96,830.84,729.72],
+      "drawing_path_count": 20,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_e8da7e7b6cbc4038",
+      "name": "平面地坪",
+      "role": "object_category",
+      "source_group_ids": ["18R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [250.16,729.72,803.36,729.72],
+      "drawing_path_count": 2,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_e1b75eb5597b1630",
+      "name": "廚具設備",
+      "role": "object_category",
+      "source_group_ids": ["21R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [248.84,207.96,288.08,364.92],
+      "drawing_path_count": 13,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_3b2b239eea4a9e7b",
+      "name": "木作",
+      "role": "object_category",
+      "source_group_ids": ["15R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [248.84,199.8,829.52,727.44],
+      "drawing_path_count": 57,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_79834ee6f811c5d3",
+      "name": "活動家具",
+      "role": "object_category",
+      "source_group_ids": ["14R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [249.68,202.08,754.28,717.36],
+      "drawing_path_count": 329,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_a47642bdf0650fb3",
+      "name": "窗",
+      "role": "object_category",
+      "source_group_ids": ["19R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [250.16,190.32,802.04,731.16],
+      "drawing_path_count": 60,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_2c96a30c1fb43f2c",
+      "name": "鐵件",
+      "role": "object_category",
+      "source_group_ids": ["22R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [248.84,657.24,258.68,689.88],
+      "drawing_path_count": 11,
+      "physical_object_count": null,
+      "confirmed": false
+    },
+    {
+      "id": "layer_26035388ce1b0cd9",
+      "name": "門",
+      "role": "object_category",
+      "source_group_ids": ["20R"],
+      "source_page": 1,
+      "bbox_pdf_pt": [250.16,638.88,860.48,727.44],
+      "drawing_path_count": 11,
+      "physical_object_count": null,
+      "confirmed": false
+    }
+  ],
+  "object_labels": [
+    {
+      "id": "label_fbc5f0cb3971083d",
+      "category": "空間",
+      "name": "茶水間",
+      "source_text": "茶水間",
+      "source_page": 1,
+      "bbox_pdf_pt": [295.04,304.2,327.15668,314.90556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_a063dc9d06b059bc",
+      "category": "空間",
+      "name": "辦公區",
+      "source_text": "辦公區",
+      "source_page": 1,
+      "bbox_pdf_pt": [766.4,452.04,798.51668,462.74556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_e825856af9dfec74",
+      "category": "空間",
+      "name": "會議區",
+      "source_text": "會議區",
+      "source_page": 1,
+      "bbox_pdf_pt": [454.76,451.8,486.87668,462.50556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_2ea4fa23ad84209b",
+      "category": "牆體與開口",
+      "name": "封門(不出入)",
+      "source_text": "封門(不出入)",
+      "source_page": 1,
+      "bbox_pdf_pt": [254.36,731.52,303.638359,740.27904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_c8389c3126f12c50",
+      "category": "牆體與開口",
+      "name": "新做隔間牆",
+      "source_text": "新做隔間牆",
+      "source_page": 1,
+      "bbox_pdf_pt": [340.01444,316.2,350.72,369.7278],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_bebc2aed3164234e",
+      "category": "家具與收納",
+      "name": "原有事務鐵櫃",
+      "source_text": "原有事務鐵櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [627.32,481.80576,636.07904,534.36],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_9044cc2c49511e76",
+      "category": "家具與收納",
+      "name": "雨傘架",
+      "source_text": "雨傘架",
+      "source_page": 1,
+      "bbox_pdf_pt": [718.04,695.16,744.31712,703.91904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_66b0d7f79885394a",
+      "category": "家具與收納",
+      "name": "小檔案櫃",
+      "source_text": "小檔案櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [627.68,410.28,662.71616,419.03904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_b2be18182666be94",
+      "category": "家具與收納",
+      "name": "新作系統半高櫃",
+      "source_text": "新作系統半高櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [599.72,702.12,674.65892,712.82556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_163bae51e6869f36",
+      "category": "家具與收納",
+      "name": "新做系統半高櫃",
+      "source_text": "新做系統半高櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [389.84,213.6,464.77892,224.30556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_9b602b418e19ec3f",
+      "category": "家具與收納",
+      "name": "原有事務鐵櫃",
+      "source_text": "原有事務鐵櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [627.32,427.20576,636.07904,479.76],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_af5e849ce346eaf4",
+      "category": "家具與收納",
+      "name": "新做系統高櫃",
+      "source_text": "新做系統高櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [282.53444,503.76,293.24,567.99336],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_6d1c0a9cf248ae1e",
+      "category": "家具與收納",
+      "name": "新做茶水櫃",
+      "source_text": "新做茶水櫃",
+      "source_page": 1,
+      "bbox_pdf_pt": [251.72,274.8,305.2478,285.50556],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_ac5ed06394b0338f",
+      "category": "家具與收納",
+      "name": "新做OA辦公家具",
+      "source_text": "新做OA辦公家具",
+      "source_page": 1,
+      "bbox_pdf_pt": [677.12,604.8,741.551498,613.55904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_7780ef0095309efe",
+      "category": "家具與收納",
+      "name": "新做OA辦公家具",
+      "source_text": "新做OA辦公家具",
+      "source_page": 1,
+      "bbox_pdf_pt": [677.12,496.2,741.551498,504.95904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_6304f933b0cb33a5",
+      "category": "家具與收納",
+      "name": "新做OA辦公家具",
+      "source_text": "新做OA辦公家具",
+      "source_page": 1,
+      "bbox_pdf_pt": [677.12,389.52,741.551498,398.27904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_2637eccd3d8034b9",
+      "category": "家具與收納",
+      "name": "新做OA辦公家具",
+      "source_text": "新做OA辦公家具",
+      "source_page": 1,
+      "bbox_pdf_pt": [677.12,284.76,741.551498,293.51904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_fd194adeb70b7b88",
+      "category": "設備",
+      "name": "碎紙機",
+      "source_text": "碎紙機",
+      "source_page": 1,
+      "bbox_pdf_pt": [636.08,382.44,662.35712,391.19904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_c8b6f3f77701d590",
+      "category": "設備",
+      "name": "影印機",
+      "source_text": "影印機",
+      "source_page": 1,
+      "bbox_pdf_pt": [627.92,337.8,654.19712,346.55904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_8d52bda1c982ef72",
+      "category": "設備",
+      "name": "電鍋X2",
+      "source_text": "電鍋X2",
+      "source_page": 1,
+      "bbox_pdf_pt": [254.96,326.04,282.533458,334.79904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_eb3ad4466a370950",
+      "category": "設備",
+      "name": "飲水機",
+      "source_text": "飲水機",
+      "source_page": 1,
+      "bbox_pdf_pt": [255.8,312.84,282.07712,321.59904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_4eeed0bcb0a3af0e",
+      "category": "設備",
+      "name": "冰箱",
+      "source_text": "冰箱",
+      "source_page": 1,
+      "bbox_pdf_pt": [267.8,385.08,285.31808,393.83904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_5b998810b58bb0f0",
+      "category": "設備",
+      "name": "白板",
+      "source_text": "白板",
+      "source_page": 1,
+      "bbox_pdf_pt": [455.12,704.64,472.63808,713.39904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_95173bfe47b18900",
+      "category": "設備",
+      "name": "電子白板",
+      "source_text": "電子白板",
+      "source_page": 1,
+      "bbox_pdf_pt": [342.44,698.76,377.47616,707.51904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_757ea80cad0c2778",
+      "category": "設備",
+      "name": "海報機",
+      "source_text": "海報機",
+      "source_page": 1,
+      "bbox_pdf_pt": [574.76,232.92,601.03712,241.67904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_934d9a43804a555f",
+      "category": "設備",
+      "name": "印表機",
+      "source_text": "印表機",
+      "source_page": 1,
+      "bbox_pdf_pt": [638.48,519.24,664.75712,527.99904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_c4be1404145bd939",
+      "category": "設備",
+      "name": "烘碗機",
+      "source_text": "烘碗機",
+      "source_page": 1,
+      "bbox_pdf_pt": [255.56,344.04,281.83712,352.79904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_a41145c8fe4ec774",
+      "category": "設備",
+      "name": "印表機",
+      "source_text": "印表機",
+      "source_page": 1,
+      "bbox_pdf_pt": [638.48,473.64,664.75712,482.39904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    },
+    {
+      "id": "label_27d3994fe34f3010",
+      "category": "設備",
+      "name": "印表機",
+      "source_text": "印表機",
+      "source_page": 1,
+      "bbox_pdf_pt": [638.48,442.08,664.75712,450.83904],
+      "position_meaning": "文字標示的範圍，不是物件的外框或中心",
+      "physical_object_id": null,
+      "confirmed": false
+    }
+  ],
+  "vector_geometry": {
+    "file": "plan2d.geometry.json",
+    "path_count": 1371,
+    "units": "pdf_pt",
+    "note": "完整向量指令較多，另存於附檔；這些線條尚未組成建築語意物件。"
+  }
+}

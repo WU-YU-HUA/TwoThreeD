@@ -1,0 +1,150 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "7.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "cabinet_fixture",
+      "generated_node_ids": [
+        "furniture_cabinet_fixture",
+        "solid_cabinet_fixture_part_0",
+        "solid_cabinet_fixture_part_1",
+        "solid_cabinet_fixture_part_2",
+        "solid_cabinet_fixture_part_3",
+        "solid_cabinet_fixture_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "catalog_cabinet",
+      "generated_node_ids": [
+        "furniture_catalog_cabinet",
+        "solid_catalog_cabinet_part_0",
+        "solid_catalog_cabinet_part_1",
+        "solid_catalog_cabinet_part_2",
+        "solid_catalog_cabinet_part_3",
+        "solid_catalog_cabinet_part_4"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "chair_fixture",
+      "generated_node_ids": [
+        "furniture_chair_fixture",
+        "solid_chair_fixture_seat",
+        "solid_chair_fixture_back",
+        "solid_chair_fixture_leg_0_0",
+        "solid_chair_fixture_leg_0_1",
+        "solid_chair_fixture_leg_1_0",
+        "solid_chair_fixture_leg_1_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "column_1",
+      "generated_node_ids": [
+        "column_column_1",
+        "solid_column_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "dispenser_placeholder",
+      "generated_node_ids": [
+        "furniture_dispenser_placeholder",
+        "solid_dispenser_placeholder_part_0",
+        "solid_dispenser_placeholder_part_1",
+        "solid_dispenser_placeholder_part_2",
+        "solid_dispenser_placeholder_part_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "door_1",
+      "generated_node_ids": [
+        "door_door_1",
+        "solid_door_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "table_l",
+      "generated_node_ids": [
+        "furniture_table_l",
+        "solid_table_l_tabletop",
+        "solid_table_l_leg_0",
+        "solid_table_l_leg_1",
+        "solid_table_l_leg_2",
+        "solid_table_l_leg_3"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "table_ring",
+      "generated_node_ids": [
+        "furniture_table_ring",
+        "solid_table_ring_tabletop",
+        "solid_table_ring_leg_0",
+        "solid_table_ring_leg_1",
+        "solid_table_ring_leg_2",
+        "solid_table_ring_leg_3",
+        "solid_table_ring_leg_4",
+        "solid_table_ring_leg_5"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_L",
+      "generated_node_ids": [
+        "wall_wall_L",
+        "solid_wall_L"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_light",
+      "generated_node_ids": [
+        "wall_wall_light",
+        "solid_wall_light"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_ASSET_PREVIEW",
+      "message": "外部模型依自身外框估算尺寸，方向與款式仍待核對；使用來源預設姿態與簡化純色材質。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 2,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 47,
+    "columns": 1,
+    "doors": 1,
+    "chairs": 1,
+    "tall_cabinets": 1,
+    "tables": 2,
+    "cabinets": 1,
+    "placeholders": 0,
+    "asset_models": 3
+  },
+  "preview_only": true
+}

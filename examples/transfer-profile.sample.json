@@ -1,0 +1,6 @@
+{
+  "schema": "TransferProfile",
+  "schema_version": "1.0.0",
+  "mode": "strict",
+  "wall_join_policy": "butt"
+}

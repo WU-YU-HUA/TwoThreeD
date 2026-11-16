@@ -1,0 +1,22 @@
+{
+  "wall_volume_mm3": 1441500000,
+  "floor_volume_mm3": 1500000000,
+  "bounds_mm": [
+    [
+      0,
+      -75,
+      -100
+    ],
+    [
+      5000,
+      3000,
+      2500
+    ]
+  ],
+  "source_ids": [
+    "wall_1",
+    "door_1",
+    "window_1",
+    "slab_1"
+  ]
+}

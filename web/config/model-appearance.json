@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "profiles": [
+    {"asset_id":"twothreeD.generated.dish_dryer","name":"檯上烘碗機","region":"外殼","default_hex":"#F1F5F6","part_names":["base","side","roof"]},
+    {"asset_id":"twothreeD.generated.cup_sealer","name":"飲料杯封口機","region":"機身外殼","default_hex":"#3895B5","part_names":["rear_column","sealing_head"]},
+    {"asset_id":"twothreeD.generated.tea_brewer","name":"檯上煮茶機","region":"加熱機身外殼","default_hex":"#BFCBD1","part_names":["heating_column"]},
+    {"asset_id":"twothreeD.generated.water_dispenser_countertop","name":"檯上飲水機","region":"外殼","default_hex":"#F1F5F6","part_names":["base","back","side","top"]},
+    {"asset_id":"twothreeD.generated.whiteboard","name":"一般白板（支架式）","region":"板框","default_hex":"#BFCBD1","part_names":["side_frame","horizontal_frame"]},
+    {"asset_id":"twothreeD.generated.electronic_whiteboard","name":"電子白板（支架式）","region":"板框","default_hex":"#35424B","part_names":["side_frame","horizontal_frame"]}
+  ]
+}

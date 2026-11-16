@@ -1,0 +1,18 @@
+twothreeD original appliance models / 原創設備模型
+
+Models: whiteboard.glb, electronic_whiteboard.glb, dish_dryer.glb, cup_sealer.glb, tea_brewer.glb, water_dispenser_countertop.glb
+Author: twothreeD; procedural geometry authored with a coding assistant.
+License: CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+To the extent possible under law, the author dedicates these original model assets to the public domain under CC0 1.0.
+No third-party model meshes, product logos or product specifications were copied.
+These are generic layout illustrations, not manufacturer CAD or functional appliance designs.
+Units: metres; Y up; front +Z. Appliance size comes from calibrated drawing footprints; standing boards use explicit drawing W/D/H labels.
+Rebuild: node scripts/generate-model-assets.mjs (uses bundled Three.js primitive geometry, MIT).
+Generator source is included in the project; geometry and parts can be edited and regenerated.
+
+whiteboard: 帶腳輪與支架的白板，含板框、筆槽與高度調整旋鈕；原型 W140×D65×H193 cm。
+electronic_whiteboard: 帶支架的電子白板示意，含控制面板與筆槽；原型 W130×D85×H176 cm，非特定產品或螢幕技術。
+dish_dryer: 雙層烘碗機：透明門、碗盤架、控制鈕與散熱口。
+cup_sealer: 杯用封膜機：上方膜捲、封口壓頭、滑動杯架與控制面板；非袋口封口機。
+tea_brewer: 茶用萃煮設備示意：上層濾茶槽、下層出茶容器、出茶嘴與時間／溫度控制；非咖啡機或製茶揉捻機。
+water_dispenser_countertop: 無桶檯上飲水機：冷／熱雙出水口、內凹接水區、滴水盤；由桌／櫃承載時使用。

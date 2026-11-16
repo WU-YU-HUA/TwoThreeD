@@ -1,0 +1,444 @@
+{
+  "schema": "FloorPlan2D",
+  "schema_version": "8.0.0",
+  "units": "mm",
+  "source": {
+    "filename": "手工測試圖",
+    "format": "manual",
+    "scale_verified": true,
+    "source_to_model_3x3": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "id": "concrete",
+      "name": "水泥",
+      "color_rgba": [
+        0.59,
+        0.61,
+        0.6,
+        1
+      ]
+    },
+    {
+      "id": "light_wood",
+      "name": "淺木色輕隔間",
+      "color_rgba": [
+        0.77,
+        0.65,
+        0.46,
+        1
+      ]
+    },
+    {
+      "id": "chair_fabric",
+      "name": "椅面",
+      "color_rgba": [
+        0.12,
+        0.27,
+        0.3,
+        1
+      ]
+    },
+    {
+      "id": "furniture_metal",
+      "name": "深灰金屬",
+      "color_rgba": [
+        0.16,
+        0.18,
+        0.19,
+        1
+      ]
+    },
+    {
+      "id": "cabinet_wood",
+      "name": "缺少模型的紅色方塊",
+      "color_rgba": [
+        0.85,
+        0.16,
+        0.12,
+        1
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_MODEL_FALLBACK",
+      "element_id": "missing_model",
+      "message": "「未知設備」保留紅色方塊：尚無對應模型。"
+    }
+  ],
+  "levels": [
+    {
+      "id": "level_1",
+      "base_elevation_mm": 0,
+      "walls": [
+        {
+          "id": "wall_L",
+          "name": "wall_L",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              0,
+              0
+            ],
+            [
+              200,
+              0
+            ],
+            [
+              200,
+              2800
+            ],
+            [
+              2000,
+              2800
+            ],
+            [
+              2000,
+              3000
+            ],
+            [
+              0,
+              3000
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "concrete",
+          "representation": "footprint"
+        },
+        {
+          "id": "wall_light",
+          "name": "wall_light",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              3000,
+              0
+            ],
+            [
+              3200,
+              0
+            ],
+            [
+              3200,
+              4000
+            ],
+            [
+              3000,
+              4000
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "light_wood",
+          "representation": "footprint"
+        }
+      ],
+      "columns": [
+        {
+          "id": "column_1",
+          "name": "column_1",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              4000,
+              1000
+            ],
+            [
+              4500,
+              1000
+            ],
+            [
+              4500,
+              1600
+            ],
+            [
+              4000,
+              1600
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "concrete"
+        }
+      ],
+      "openings": [],
+      "slabs": [],
+      "rooms": [],
+      "doors": [
+        {
+          "id": "door_1",
+          "name": "門 D1",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:door:1",
+              "method": "arc_and_leaf"
+            }
+          ],
+          "kind": "hinged",
+          "placement": "existing_gap",
+          "boundary_mm": [
+            [
+              4960,
+              1000
+            ],
+            [
+              5000,
+              1000
+            ],
+            [
+              5000,
+              1900
+            ],
+            [
+              4960,
+              1900
+            ]
+          ],
+          "hinge_mm": [
+            5000,
+            1000
+          ],
+          "closed_end_mm": [
+            5900,
+            1000
+          ],
+          "height_mm": 2100,
+          "material_id": "light_wood"
+        }
+      ],
+      "furniture": [
+        {
+          "id": "whiteboard",
+          "name": "whiteboard",
+          "kind": "model_object",
+          "role": "equipment",
+          "asset_id": "twothreeD.generated.whiteboard",
+          "catalog_type_id": "whiteboard",
+          "fit_mode": "equipment_dimensions",
+          "position_mm": [
+            2000,
+            6000
+          ],
+          "rotation_deg": 0,
+          "width_mm": 1400,
+          "depth_mm": 650,
+          "height_mm": 1930,
+          "boundary_mm": [
+            [
+              1300,
+              5675
+            ],
+            [
+              2700,
+              5675
+            ],
+            [
+              2700,
+              6325
+            ],
+            [
+              1300,
+              6325
+            ]
+          ],
+          "holes_mm": [],
+          "support_id": null,
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:dispenser",
+              "method": "label_with_outline"
+            }
+          ],
+          "extensions": {
+            "dimensions_source": "explicit_wdh_label",
+            "labelled_dimensions": {
+              "width_mm": 1400,
+              "depth_mm": 650,
+              "height_mm": 1930,
+              "text": "W140xD65xH193cm",
+              "units": "cm"
+            },
+            "calibrated_outline_mm": [
+              [
+                1800,
+                5800
+              ],
+              [
+                2200,
+                5800
+              ],
+              [
+                2200,
+                6200
+              ],
+              [
+                1800,
+                6200
+              ]
+            ],
+            "height_source": "explicit_wdh_label",
+            "orientation_basis": "drawing_axes_estimate",
+            "asset_match": "generic",
+            "source_template_id": "builtin.labeled_cube.v1"
+          }
+        },
+        {
+          "id": "electronic_whiteboard",
+          "name": "electronic_whiteboard",
+          "kind": "model_object",
+          "role": "equipment",
+          "asset_id": "twothreeD.generated.electronic_whiteboard",
+          "catalog_type_id": "electronic_whiteboard",
+          "fit_mode": "equipment_dimensions",
+          "position_mm": [
+            4000,
+            6000
+          ],
+          "rotation_deg": 0,
+          "width_mm": 1300,
+          "depth_mm": 850,
+          "height_mm": 1760,
+          "boundary_mm": [
+            [
+              3350,
+              5575
+            ],
+            [
+              4650,
+              5575
+            ],
+            [
+              4650,
+              6425
+            ],
+            [
+              3350,
+              6425
+            ]
+          ],
+          "holes_mm": [],
+          "support_id": null,
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:dispenser",
+              "method": "label_with_outline"
+            }
+          ],
+          "extensions": {
+            "dimensions_source": "explicit_wdh_label",
+            "labelled_dimensions": {
+              "width_mm": 1300,
+              "depth_mm": 850,
+              "height_mm": 1760,
+              "text": "W130xD85xH176cm",
+              "units": "cm"
+            },
+            "calibrated_outline_mm": [
+              [
+                3800,
+                5800
+              ],
+              [
+                4200,
+                5800
+              ],
+              [
+                4200,
+                6200
+              ],
+              [
+                3800,
+                6200
+              ]
+            ],
+            "height_source": "explicit_wdh_label",
+            "orientation_basis": "drawing_axes_estimate",
+            "asset_match": "generic",
+            "source_template_id": "builtin.labeled_cube.v1"
+          }
+        },
+        {
+          "id": "missing_model",
+          "name": "未知設備",
+          "kind": "placeholder",
+          "template_id": "builtin.marker_cube.v1",
+          "catalog_type_id": "unclassified",
+          "label_text": "未知設備",
+          "cube_edge_mm": 400,
+          "hover_mm": 100,
+          "support_id": null,
+          "quantity": 1,
+          "position_mm": [
+            8000,
+            6000
+          ],
+          "boundary_mm": [
+            [
+              7800,
+              5800
+            ],
+            [
+              8200,
+              5800
+            ],
+            [
+              8200,
+              6200
+            ],
+            [
+              7800,
+              6200
+            ]
+          ],
+          "holes_mm": [],
+          "material_id": "cabinet_wood",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:dispenser",
+              "method": "label_with_outline"
+            }
+          ],
+          "extensions": {
+            "appearance": "red_unlabelled_cube"
+          }
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "model_sizing": {
+      "method": "own_footprint",
+      "equipment_fit": "uniform_contain",
+      "cabinet_fit": "measured_width_depth_user_height",
+      "clearance_factor": 1,
+      "labelled_equipment_fit": "explicit_wdh"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "8.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "column_1",
+      "generated_node_ids": [
+        "column_column_1",
+        "solid_column_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "door_1",
+      "generated_node_ids": [
+        "door_door_1",
+        "solid_door_1"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "electronic_whiteboard",
+      "generated_node_ids": [
+        "furniture_electronic_whiteboard",
+        "solid_electronic_whiteboard_part_0",
+        "solid_electronic_whiteboard_part_1",
+        "solid_electronic_whiteboard_part_2",
+        "solid_electronic_whiteboard_part_3",
+        "solid_electronic_whiteboard_part_4",
+        "solid_electronic_whiteboard_part_5",
+        "solid_electronic_whiteboard_part_6",
+        "solid_electronic_whiteboard_part_7",
+        "solid_electronic_whiteboard_part_8",
+        "solid_electronic_whiteboard_part_9",
+        "solid_electronic_whiteboard_part_10",
+        "solid_electronic_whiteboard_part_11",
+        "solid_electronic_whiteboard_part_12",
+        "solid_electronic_whiteboard_part_13",
+        "solid_electronic_whiteboard_part_14",
+        "solid_electronic_whiteboard_part_15",
+        "solid_electronic_whiteboard_part_16",
+        "solid_electronic_whiteboard_part_17",
+        "solid_electronic_whiteboard_part_18",
+        "solid_electronic_whiteboard_part_19",
+        "solid_electronic_whiteboard_part_20",
+        "solid_electronic_whiteboard_part_21",
+        "solid_electronic_whiteboard_part_22",
+        "solid_electronic_whiteboard_part_23",
+        "solid_electronic_whiteboard_part_24",
+        "solid_electronic_whiteboard_part_25",
+        "solid_electronic_whiteboard_part_26"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "missing_model",
+      "generated_node_ids": [
+        "furniture_missing_model",
+        "solid_missing_model_cube"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_L",
+      "generated_node_ids": [
+        "wall_wall_L",
+        "solid_wall_L"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_light",
+      "generated_node_ids": [
+        "wall_wall_light",
+        "solid_wall_light"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "whiteboard",
+      "generated_node_ids": [
+        "furniture_whiteboard",
+        "solid_whiteboard_part_0",
+        "solid_whiteboard_part_1",
+        "solid_whiteboard_part_2",
+        "solid_whiteboard_part_3",
+        "solid_whiteboard_part_4",
+        "solid_whiteboard_part_5",
+        "solid_whiteboard_part_6",
+        "solid_whiteboard_part_7",
+        "solid_whiteboard_part_8",
+        "solid_whiteboard_part_9",
+        "solid_whiteboard_part_10",
+        "solid_whiteboard_part_11",
+        "solid_whiteboard_part_12",
+        "solid_whiteboard_part_13",
+        "solid_whiteboard_part_14",
+        "solid_whiteboard_part_15",
+        "solid_whiteboard_part_16",
+        "solid_whiteboard_part_17",
+        "solid_whiteboard_part_18",
+        "solid_whiteboard_part_19",
+        "solid_whiteboard_part_20",
+        "solid_whiteboard_part_21",
+        "solid_whiteboard_part_22",
+        "solid_whiteboard_part_23"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_MODEL_FALLBACK",
+      "element_id": "missing_model",
+      "message": "「未知設備」保留紅色方塊：尚無對應模型。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_ASSET_PREVIEW",
+      "message": "外部模型依自身外框估算尺寸，方向與款式仍待核對；使用來源預設姿態與簡化純色材質。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 2,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 64,
+    "columns": 1,
+    "doors": 1,
+    "chairs": 0,
+    "tall_cabinets": 0,
+    "tables": 0,
+    "cabinets": 0,
+    "placeholders": 1,
+    "asset_models": 2
+  },
+  "preview_only": true
+}

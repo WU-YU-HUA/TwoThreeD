@@ -1,0 +1,118 @@
+{
+  "schema": "TransferReport",
+  "schema_version": "1.0.0",
+  "status": "success",
+  "mapping": [
+    {
+      "source_2d_id": "level_1",
+      "generated_node_ids": [
+        "level_level_1"
+      ],
+      "method": "group"
+    },
+    {
+      "source_2d_id": "wall_12xa9q9",
+      "generated_node_ids": [
+        "wall_wall_12xa9q9",
+        "solid_wall_12xa9q9_0_0"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_140m60g",
+      "generated_node_ids": [
+        "wall_wall_140m60g",
+        "solid_wall_140m60g_0_0"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_19fiq01",
+      "generated_node_ids": [
+        "wall_wall_19fiq01",
+        "solid_wall_19fiq01_0_0"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_sjussw",
+      "generated_node_ids": [
+        "wall_wall_sjussw",
+        "solid_wall_sjussw_0_0"
+      ],
+      "method": "solid"
+    },
+    {
+      "source_2d_id": "wall_u6m245",
+      "generated_node_ids": [
+        "wall_wall_u6m245",
+        "solid_wall_u6m245_0_0"
+      ],
+      "method": "solid"
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "W_SCALE_UNVERIFIED",
+      "message": "目前依使用者指定的參考牆厚換算比例；參考牆的邊線配對仍待核對。",
+      "element_id": null
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNRESOLVED_ELEMENT",
+      "element_id": null,
+      "message": "尚未建模的圖層：活動家具、木作、平面地坪、窗、門、廚具設備、鐵件。門窗與家具不會被猜測成牆。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNPAIRED_WALL_EVIDENCE",
+      "element_id": null,
+      "message": "牆圖層仍有 26 段未配對線及 0 組曲線，請核對是否漏牆或包含柱體。"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "wall_19fiq01"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "wall_140m60g"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "wall_sjussw"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "wall_12xa9q9"
+    },
+    {
+      "severity": "warning",
+      "code": "W_UNCONFIRMED_ELEMENT",
+      "message": "物件尚待人工核對。",
+      "element_id": "wall_u6m245"
+    },
+    {
+      "severity": "warning",
+      "code": "W_BUTT_JOINS",
+      "message": "牆體以獨立分段接合；牆角接縫與重疊面仍需核對。",
+      "element_id": null
+    }
+  ],
+  "metrics": {
+    "walls": 5,
+    "openings": 0,
+    "slabs": 0,
+    "rooms": 0,
+    "nodes": 11
+  },
+  "preview_only": true
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "FloorPlan2D",
+  "schema_version": "4.0.0",
+  "units": "mm",
+  "source": {
+    "filename": "手工測試圖",
+    "format": "manual",
+    "scale_verified": true,
+    "source_to_model_3x3": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "materials": [
+    {
+      "id": "concrete",
+      "name": "水泥",
+      "color_rgba": [
+        0.59,
+        0.61,
+        0.6,
+        1
+      ]
+    },
+    {
+      "id": "light_wood",
+      "name": "淺木色輕隔間",
+      "color_rgba": [
+        0.77,
+        0.65,
+        0.46,
+        1
+      ]
+    },
+    {
+      "id": "chair_fabric",
+      "name": "椅面",
+      "color_rgba": [
+        0.12,
+        0.27,
+        0.3,
+        1
+      ]
+    },
+    {
+      "id": "furniture_metal",
+      "name": "深灰金屬",
+      "color_rgba": [
+        0.16,
+        0.18,
+        0.19,
+        1
+      ]
+    },
+    {
+      "id": "cabinet_wood",
+      "name": "淺木色高櫃",
+      "color_rgba": [
+        0.68,
+        0.51,
+        0.32,
+        1
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "levels": [
+    {
+      "id": "level_1",
+      "base_elevation_mm": 0,
+      "walls": [
+        {
+          "id": "wall_L",
+          "name": "wall_L",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              0,
+              0
+            ],
+            [
+              200,
+              0
+            ],
+            [
+              200,
+              2800
+            ],
+            [
+              2000,
+              2800
+            ],
+            [
+              2000,
+              3000
+            ],
+            [
+              0,
+              3000
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "concrete",
+          "representation": "footprint"
+        },
+        {
+          "id": "wall_light",
+          "name": "wall_light",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              3000,
+              0
+            ],
+            [
+              3200,
+              0
+            ],
+            [
+              3200,
+              4000
+            ],
+            [
+              3000,
+              4000
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "light_wood",
+          "representation": "footprint"
+        }
+      ],
+      "columns": [
+        {
+          "id": "column_1",
+          "name": "column_1",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [],
+          "boundary_mm": [
+            [
+              4000,
+              1000
+            ],
+            [
+              4500,
+              1000
+            ],
+            [
+              4500,
+              1600
+            ],
+            [
+              4000,
+              1600
+            ]
+          ],
+          "holes_mm": [],
+          "height_mm": 2500,
+          "material_id": "concrete"
+        }
+      ],
+      "openings": [],
+      "slabs": [],
+      "rooms": [],
+      "doors": [
+        {
+          "id": "door_1",
+          "name": "門 D1",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:door:1",
+              "method": "arc_and_leaf"
+            }
+          ],
+          "kind": "hinged",
+          "placement": "existing_gap",
+          "boundary_mm": [
+            [
+              4960,
+              1000
+            ],
+            [
+              5000,
+              1000
+            ],
+            [
+              5000,
+              1900
+            ],
+            [
+              4960,
+              1900
+            ]
+          ],
+          "hinge_mm": [
+            5000,
+            1000
+          ],
+          "closed_end_mm": [
+            5900,
+            1000
+          ],
+          "height_mm": 2100,
+          "material_id": "light_wood"
+        }
+      ],
+      "furniture": [
+        {
+          "id": "chair_fixture",
+          "kind": "chair",
+          "template_id": "builtin.chair.v1",
+          "position_mm": [
+            5000,
+            3000
+          ],
+          "rotation_deg": 30,
+          "width_mm": 600,
+          "depth_mm": 650,
+          "height_mm": 850,
+          "seat_height_mm": 450,
+          "material_id": "chair_fabric",
+          "accent_material_id": "furniture_metal",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:chair"
+            }
+          ]
+        },
+        {
+          "id": "cabinet_fixture",
+          "kind": "tall_cabinet",
+          "template_id": "builtin.tall_cabinet.v1",
+          "position_mm": [
+            7000,
+            3000
+          ],
+          "rotation_deg": 90,
+          "width_mm": 900,
+          "depth_mm": 450,
+          "height_mm": 2100,
+          "material_id": "cabinet_wood",
+          "accent_material_id": "furniture_metal",
+          "confirmed": true,
+          "confidence": 1,
+          "source_refs": [
+            {
+              "source_id": "fixture:cabinet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

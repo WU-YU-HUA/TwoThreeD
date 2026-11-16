@@ -1,0 +1,394 @@
+[
+  {
+    "id": "cabinet_jp54mn",
+    "name": "櫃子 NC1 · 新作系統半高櫃",
+    "role": "cabinet",
+    "frame_width_mm": 3565.4320990000006,
+    "frame_depth_mm": 607.4074069999992,
+    "model_dimensions_mm": [
+      3565.432099000001,
+      607.4074069999992,
+      1500
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_iidehz",
+    "name": "電子白板",
+    "role": "equipment",
+    "frame_width_mm": 1300,
+    "frame_depth_mm": 850,
+    "model_dimensions_mm": [
+      1300,
+      850,
+      1760
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_447as2",
+    "name": "白板",
+    "role": "equipment",
+    "frame_width_mm": 1400,
+    "frame_depth_mm": 650,
+    "model_dimensions_mm": [
+      1400,
+      650,
+      1930
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_rd0psi",
+    "name": "高櫃 CB1",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1076.5432099999998,
+    "frame_depth_mm": 604.938272,
+    "model_dimensions_mm": [
+      1076.5432099999998,
+      604.938272,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1lhli9w",
+    "name": "高櫃 CB2",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1143.2098770000011,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1143.2098770000011,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_d356pq",
+    "name": "高櫃 CB3 · 新做系統高櫃",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1076.5432099999998,
+    "frame_depth_mm": 604.938272,
+    "model_dimensions_mm": [
+      1076.5432099999998,
+      604.938272,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_3qpvso",
+    "name": "高櫃 CB4",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.7037039999996,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.7037039999996,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1h0v0dc",
+    "name": "櫃子 NC2 · 原有事務鐵櫃",
+    "role": "cabinet",
+    "frame_width_mm": 1209.8765430000003,
+    "frame_depth_mm": 619.7530860000007,
+    "model_dimensions_mm": [
+      1209.8765430000003,
+      619.7530860000007,
+      1500
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_ugqdx1",
+    "name": "印表機",
+    "role": "equipment",
+    "frame_width_mm": 740.7407399999993,
+    "frame_depth_mm": 538.2716049999999,
+    "model_dimensions_mm": [
+      664.8903261218758,
+      538.2716049999999,
+      467.79935845252004
+    ],
+    "bottom_mm": 1500,
+    "support_id": "cabinet_1h0v0dc"
+  },
+  {
+    "id": "cabinet_3pq5gy",
+    "name": "高櫃 CB5",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1076.5432099999998,
+    "frame_depth_mm": 604.938272,
+    "model_dimensions_mm": [
+      1076.5432099999998,
+      604.938272,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1olwqgy",
+    "name": "高櫃 CB6",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.7037039999996,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.7037039999996,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_1cjqg8j",
+    "name": "印表機",
+    "role": "equipment",
+    "frame_width_mm": 740.7407409999996,
+    "frame_depth_mm": 538.2716049999999,
+    "model_dimensions_mm": [
+      664.8903261218758,
+      538.2716049999999,
+      467.79935845252004
+    ],
+    "bottom_mm": 1500,
+    "support_id": "cabinet_1h0v0dc"
+  },
+  {
+    "id": "cabinet_1hh8a04",
+    "name": "櫃子 NC3 · 原有事務鐵櫃",
+    "role": "cabinet",
+    "frame_width_mm": 1209.8765430000003,
+    "frame_depth_mm": 619.7530860000007,
+    "model_dimensions_mm": [
+      1209.8765430000003,
+      619.7530860000007,
+      1500
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_2hckc6",
+    "name": "高櫃 CB7",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1076.5432099999998,
+    "frame_depth_mm": 604.938272,
+    "model_dimensions_mm": [
+      1076.5432099999998,
+      604.938272,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1tkbp70",
+    "name": "高櫃 CB8",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.7037039999996,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.7037039999996,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_6c5sgh",
+    "name": "印表機",
+    "role": "equipment",
+    "frame_width_mm": 738.2716049999999,
+    "frame_depth_mm": 538.2716049999999,
+    "model_dimensions_mm": [
+      664.8903261218758,
+      538.2716049999999,
+      467.79935845252004
+    ],
+    "bottom_mm": 1500,
+    "support_id": "cabinet_1hh8a04"
+  },
+  {
+    "id": "cabinet_1cmnini",
+    "name": "櫃子 NC4 · 小檔案櫃",
+    "role": "cabinet",
+    "frame_width_mm": 553.0864199999996,
+    "frame_depth_mm": 432.09876500000064,
+    "model_dimensions_mm": [
+      553.0864199999996,
+      432.09876500000064,
+      900
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_10jdqgu",
+    "name": "高櫃 CB9",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1101.2345679999999,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1101.2345679999999,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_b5cpwh",
+    "name": "冰箱",
+    "role": "equipment",
+    "frame_width_mm": 792.592593,
+    "frame_depth_mm": 725.9259259999999,
+    "model_dimensions_mm": [
+      792.592593,
+      538.1038278670881,
+      1695.779503857339
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_1thdel0",
+    "name": "碎紙機",
+    "role": "equipment",
+    "frame_width_mm": 538.2716049999999,
+    "frame_depth_mm": 429.62963000000036,
+    "model_dimensions_mm": [
+      524.5353919857652,
+      429.62963000000036,
+      714.3673037856615
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1ttpxb8",
+    "name": "高櫃 CB10",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.7037039999996,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.7037039999996,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_y49ttv",
+    "name": "櫃子 NC5 · 新做茶水櫃",
+    "role": "cabinet",
+    "frame_width_mm": 3229.6296300000004,
+    "frame_depth_mm": 807.4074070000004,
+    "model_dimensions_mm": [
+      3229.6296300000004,
+      807.4074070000004,
+      1500
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_1ra8fj0",
+    "name": "影印機",
+    "role": "equipment",
+    "frame_width_mm": 940.7407409999996,
+    "frame_depth_mm": 943.2098759999999,
+    "model_dimensions_mm": [
+      836.4851921522517,
+      943.2098759999999,
+      1370.0469221772241
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "placeholder_1ccxwwc",
+    "name": "烘碗機",
+    "role": "equipment",
+    "frame_width_mm": 617.28395,
+    "frame_depth_mm": 674.074074,
+    "model_dimensions_mm": [
+      617.28395,
+      503.60078830374624,
+      596.7077776438645
+    ],
+    "bottom_mm": 1500,
+    "support_id": "cabinet_y49ttv"
+  },
+  {
+    "id": "placeholder_ik0zk1",
+    "name": "飲水機",
+    "role": "equipment",
+    "frame_width_mm": 429.6296290000001,
+    "frame_depth_mm": 644.444444,
+    "model_dimensions_mm": [
+      429.629629,
+      452.92279085345905,
+      685.8544867613801
+    ],
+    "bottom_mm": 1500,
+    "support_id": "cabinet_y49ttv"
+  },
+  {
+    "id": "cabinet_1jark2y",
+    "name": "高櫃 CB11",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.7037039999996,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.7037039999996,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_97pcpy",
+    "name": "高櫃 CB12",
+    "role": "tall_cabinet",
+    "frame_width_mm": 1103.703704,
+    "frame_depth_mm": 471.60493800000046,
+    "model_dimensions_mm": [
+      1103.703704,
+      471.60493800000046,
+      2100
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  },
+  {
+    "id": "cabinet_1td4tmz",
+    "name": "櫃子 NC6 · 新做系統半高櫃",
+    "role": "cabinet",
+    "frame_width_mm": 3572.8395060000003,
+    "frame_depth_mm": 604.9382719999999,
+    "model_dimensions_mm": [
+      3572.839506,
+      604.9382719999999,
+      1500
+    ],
+    "bottom_mm": 0,
+    "support_id": null
+  }
+]
